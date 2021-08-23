@@ -1,0 +1,804 @@
+0:00:04.400,0:00:09.599
+this problem requires
+
+0:00:05.759,0:00:11.920
+us to obtain two integers from the user
+
+0:00:09.599,0:00:16.080
+and print the results of dividing the
+
+0:00:11.920,0:00:18.480
+first by the second
+
+0:00:16.080,0:00:20.240
+we must ensure that the second number is
+
+0:00:18.480,0:00:22.240
+not zero
+
+0:00:20.240,0:00:23.359
+and we also need to validate both
+
+0:00:22.240,0:00:25.359
+numbers using
+
+0:00:23.359,0:00:27.920
+a method that has been given to us
+
+0:00:25.359,0:00:30.720
+called valid number
+
+0:00:27.920,0:00:33.200
+this method will return a boolean and
+
+0:00:30.720,0:00:35.600
+it's just a simplified way to verify
+
+0:00:33.200,0:00:37.520
+whether the user input was valid
+
+0:00:35.600,0:00:39.760
+there are edge cases for which this
+
+0:00:37.520,0:00:43.760
+valid number method would not work
+
+0:00:39.760,0:00:45.520
+but it's sufficient for this exercise
+
+0:00:43.760,0:00:47.760
+you can see on line two that we're using
+
+0:00:45.520,0:00:50.559
+comparison so we know that this method
+
+0:00:47.760,0:00:52.719
+will return either true or false
+
+0:00:50.559,0:00:54.079
+if it returns true we'll assume the
+
+0:00:52.719,0:00:56.399
+number is valid
+
+0:00:54.079,0:00:59.280
+and if it returns false we'll assume
+
+0:00:56.399,0:01:01.680
+that it is invalid
+
+0:00:59.280,0:01:02.800
+we've also been given some example code
+
+0:01:01.680,0:01:04.720
+to see what
+
+0:01:02.800,0:01:06.720
+the prompts of our program should look
+
+0:01:04.720,0:01:09.200
+like in this problem we're not
+
+0:01:06.720,0:01:11.200
+accepting floats as input and the
+
+0:01:09.200,0:01:13.840
+division that we're doing is going to be
+
+0:01:11.200,0:01:13.840
+integer division
+
+0:01:14.400,0:01:18.000
+the first thing that we want to do is
+
+0:01:16.640,0:01:23.360
+prompt the user to
+
+0:01:18.000,0:01:25.200
+enter the numerator we'll call put s
+
+0:01:23.360,0:01:26.540
+and tell them to please enter the
+
+0:01:25.200,0:01:28.479
+numerator
+
+0:01:26.540,0:01:31.200
+[Music]
+
+0:01:28.479,0:01:32.500
+and we can store that input in a local
+
+0:01:31.200,0:01:34.000
+variable numerator
+
+0:01:32.500,0:01:37.119
+[Music]
+
+0:01:34.000,0:01:39.040
+and remember that we'll use chomp to
+
+0:01:37.119,0:01:41.759
+remove the newline character from the
+
+0:01:39.040,0:01:44.640
+end of the user input
+
+0:01:41.759,0:01:45.759
+we need to pass numerator to our valid
+
+0:01:44.640,0:01:48.240
+number method as an
+
+0:01:45.759,0:01:48.240
+argument
+
+0:01:49.920,0:01:53.870
+and to see this working let's output the
+
+0:01:52.320,0:01:55.119
+return value of this
+
+0:01:53.870,0:01:57.070
+[Music]
+
+0:01:55.119,0:02:00.240
+and run our code a few times
+
+0:01:57.070,0:02:02.960
+[Music]
+
+0:02:00.240,0:02:03.360
+first i'll enter a valid number let's
+
+0:02:02.960,0:02:07.280
+use
+
+0:02:03.360,0:02:08.319
+4 and you can see that the valid number
+
+0:02:07.280,0:02:11.920
+method returned
+
+0:02:08.319,0:02:13.310
+true let's see what happens if i enter
+
+0:02:11.920,0:02:16.319
+a letter instead
+
+0:02:13.310,0:02:18.160
+[Music]
+
+0:02:16.319,0:02:19.450
+and the method we use to validate the
+
+0:02:18.160,0:02:20.560
+number returned false
+
+0:02:19.450,0:02:23.010
+[Music]
+
+0:02:20.560,0:02:24.720
+lastly let's test if we input a float
+
+0:02:23.010,0:02:27.680
+[Music]
+
+0:02:24.720,0:02:28.620
+again our valid number method returns
+
+0:02:27.680,0:02:31.120
+false
+
+0:02:28.620,0:02:33.200
+[Music]
+
+0:02:31.120,0:02:36.319
+now we don't want to actually output the
+
+0:02:33.200,0:02:37.440
+return value of valid number what we're
+
+0:02:36.319,0:02:40.879
+using that for
+
+0:02:37.440,0:02:40.879
+is input validation
+
+0:02:41.040,0:02:44.400
+we'll use a simple loop
+
+0:02:44.420,0:02:48.400
+[Music]
+
+0:02:45.840,0:02:51.840
+and only break out of this loop if the
+
+0:02:48.400,0:02:51.840
+user input is valid
+
+0:02:53.760,0:02:56.959
+so we'll add the reserve word break on
+
+0:02:55.599,0:03:00.560
+line eight and
+
+0:02:56.959,0:03:02.640
+a condition will break if the numerator
+
+0:03:00.560,0:03:04.879
+is a valid number
+
+0:03:02.640,0:03:06.319
+so if our method call to valid number
+
+0:03:04.879,0:03:08.560
+returns true
+
+0:03:06.319,0:03:10.000
+we'll break out of the loop otherwise
+
+0:03:08.560,0:03:11.760
+we'll continue to loop
+
+0:03:10.000,0:03:14.400
+and prompt the user to enter the
+
+0:03:11.760,0:03:14.400
+numerator
+
+0:03:15.440,0:03:19.680
+now we want to tell the user if their
+
+0:03:17.599,0:03:22.000
+input was invalid
+
+0:03:19.680,0:03:23.920
+so perhaps they didn't realize that only
+
+0:03:22.000,0:03:33.840
+integers were allowed and they tried to
+
+0:03:23.920,0:03:33.840
+enter a float
+
+0:03:34.080,0:03:40.000
+our error message directs the user to
+
+0:03:36.640,0:03:40.000
+only enter an integer
+
+0:03:40.340,0:03:45.680
+[Music]
+
+0:03:43.599,0:03:46.799
+running our code again you can see if i
+
+0:03:45.680,0:03:51.440
+enter a
+
+0:03:46.799,0:03:53.760
+g which is an invalid input
+
+0:03:51.440,0:03:55.760
+i see the appropriate error message and
+
+0:03:53.760,0:03:58.840
+i'm prompted again
+
+0:03:55.760,0:04:00.640
+this time when i enter 4 which is valid
+
+0:03:58.840,0:04:03.200
+input
+
+0:04:00.640,0:04:05.680
+i have no error message and we've broken
+
+0:04:03.200,0:04:08.080
+out of the loop
+
+0:04:05.680,0:04:10.000
+now the numerator is not the only user
+
+0:04:08.080,0:04:12.879
+input that we need here
+
+0:04:10.000,0:04:14.400
+we also need the user to enter a
+
+0:04:12.879,0:04:15.680
+denominator
+
+0:04:14.400,0:04:19.440
+and we need to make sure that the
+
+0:04:15.680,0:04:19.440
+denominator is not zero
+
+0:04:20.799,0:04:24.720
+so we'll use a similar loop structure
+
+0:04:23.040,0:04:26.720
+but we need to change our code up a
+
+0:04:24.720,0:04:28.960
+little bit
+
+0:04:26.720,0:04:29.880
+so we'll prompt the user to enter the
+
+0:04:28.960,0:04:31.520
+denominator
+
+0:04:29.880,0:04:33.520
+[Music]
+
+0:04:31.520,0:04:35.680
+and we'll store it in a local variable
+
+0:04:33.520,0:04:39.440
+called denominator
+
+0:04:35.680,0:04:43.600
+on line 17 we need to pass denominator
+
+0:04:39.440,0:04:45.759
+to the valid number method
+
+0:04:43.600,0:04:47.520
+and we still want to display the same
+
+0:04:45.759,0:04:50.240
+error message we see on line
+
+0:04:47.520,0:04:51.440
+18 if somebody enters anything that's
+
+0:04:50.240,0:04:54.479
+not an integer
+
+0:04:51.440,0:04:54.479
+for the denominator
+
+0:04:55.440,0:05:00.560
+running our code again i'll enter a
+
+0:04:57.520,0:05:04.400
+valid numerator
+
+0:05:00.560,0:05:04.400
+and an invalid denominator
+
+0:05:04.880,0:05:10.000
+you can see that the error message is
+
+0:05:06.800,0:05:12.680
+still displayed appropriately
+
+0:05:10.000,0:05:14.240
+and when i enter a valid denominator
+
+0:05:12.680,0:05:18.800
+[Music]
+
+0:05:14.240,0:05:21.199
+we break out of the loop so that's okay
+
+0:05:18.800,0:05:22.560
+but what happens if i run the program
+
+0:05:21.199,0:05:25.840
+again and i enter
+
+0:05:22.560,0:05:25.840
+0 for the denominator
+
+0:05:25.850,0:05:29.520
+[Music]
+
+0:05:27.280,0:05:31.199
+our program accepts it and breaks out of
+
+0:05:29.520,0:05:36.000
+the loop
+
+0:05:31.199,0:05:36.000
+but we can't allow 0 for the denominator
+
+0:05:37.120,0:05:42.720
+so let's add an if statement and compare
+
+0:05:39.759,0:05:42.720
+denominator to
+
+0:05:43.140,0:05:53.680
+[Music]
+
+0:05:50.840,0:05:56.600
+zero we'll tell the user specifically
+
+0:05:53.680,0:05:59.779
+that a denominator of 0 is not allowed
+
+0:05:56.600,0:05:59.779
+[Music]
+
+0:06:00.479,0:06:07.840
+now if this code looks correct to you
+
+0:06:02.880,0:06:07.840
+rethink what our user input is
+
+0:06:08.639,0:06:13.199
+recall that we've never converted the
+
+0:06:10.639,0:06:15.919
+user input into an integer
+
+0:06:13.199,0:06:16.800
+so we should be comparing our
+
+0:06:15.919,0:06:21.200
+denominator
+
+0:06:16.800,0:06:25.759
+to a string representation of 0.
+
+0:06:21.200,0:06:28.800
+[Music]
+
+0:06:25.759,0:06:30.639
+now when i enter a denominator of zero i
+
+0:06:28.800,0:06:32.400
+get a specific error message
+
+0:06:30.639,0:06:35.360
+telling me that i did not enter the
+
+0:06:32.400,0:06:37.919
+correct value
+
+0:06:35.360,0:06:41.840
+however we still broke out of our loop
+
+0:06:37.919,0:06:41.840
+so we need to take a closer look at that
+
+0:06:42.160,0:06:46.400
+i should have been prompted again to
+
+0:06:44.080,0:06:48.140
+enter a new denominator after the error
+
+0:06:46.400,0:06:52.190
+message was issued
+
+0:06:48.140,0:06:52.190
+[Music]
+
+0:06:52.800,0:06:57.280
+you can see that after line 18 was
+
+0:06:55.039,0:06:58.400
+executed and the error message was
+
+0:06:57.280,0:07:00.720
+displayed
+
+0:06:58.400,0:07:02.000
+our code continued down through the loop
+
+0:07:00.720,0:07:06.400
+and executed line
+
+0:07:02.000,0:07:09.520
+21. now our valid number method will
+
+0:07:06.400,0:07:11.680
+return true for zero
+
+0:07:09.520,0:07:13.680
+so we only want to execute the code
+
+0:07:11.680,0:07:17.199
+that's currently on line 21
+
+0:07:13.680,0:07:20.080
+if denominator is not equal to zero
+
+0:07:17.199,0:07:22.560
+what we can do is actually expand our if
+
+0:07:20.080,0:07:22.560
+statement
+
+0:07:22.720,0:07:28.720
+[Music]
+
+0:07:25.599,0:07:31.919
+we can put this code on lines 21 and 22
+
+0:07:28.720,0:07:34.880
+into an else branch of this if statement
+
+0:07:31.919,0:07:35.280
+and then it will only be executed if
+
+0:07:34.880,0:07:38.740
+line
+
+0:07:35.280,0:07:41.759
+17 does not evaluate as true
+
+0:07:38.740,0:07:43.840
+[Music]
+
+0:07:41.759,0:07:46.319
+in an if-else statement only one of
+
+0:07:43.840,0:07:49.520
+these two branches will be executed
+
+0:07:46.319,0:07:50.800
+so if our condition on line 17 evaluates
+
+0:07:49.520,0:07:53.759
+as true
+
+0:07:50.800,0:07:56.560
+then line 18 will be executed and we'll
+
+0:07:53.759,0:07:58.960
+go back to the beginning of this loop
+
+0:07:56.560,0:08:00.879
+otherwise if the denominator is not
+
+0:07:58.960,0:08:04.160
+equal to 0
+
+0:08:00.879,0:08:05.520
+then lines 20 and 21 our else branch
+
+0:08:04.160,0:08:07.280
+will be executed
+
+0:08:05.520,0:08:09.759
+and we'll be given the option to break
+
+0:08:07.280,0:08:13.520
+out of the loop if the denominator is a
+
+0:08:09.759,0:08:15.040
+valid number
+
+0:08:13.520,0:08:18.879
+so let's run our code now
+
+0:08:15.040,0:08:21.199
+[Music]
+
+0:08:18.879,0:08:24.240
+i'll enter a valid numerator and this
+
+0:08:21.199,0:08:26.160
+time when i enter 0 as the denominator
+
+0:08:24.240,0:08:28.720
+not only will i see the error message
+
+0:08:26.160,0:08:29.280
+displayed but i'll be prompted again to
+
+0:08:28.720,0:08:32.399
+enter
+
+0:08:29.280,0:08:40.320
+a valid denominator
+
+0:08:32.399,0:08:42.159
+and when i do we break out of the loop
+
+0:08:40.320,0:08:43.919
+so at this point we're successfully
+
+0:08:42.159,0:08:45.920
+validating both pieces
+
+0:08:43.919,0:08:46.790
+of information that we're soliciting
+
+0:08:45.920,0:08:48.640
+from the user
+
+0:08:46.790,0:08:50.640
+[Music]
+
+0:08:48.640,0:08:53.040
+the last step here is to actually
+
+0:08:50.640,0:08:55.839
+perform the integer division and display
+
+0:08:53.040,0:08:55.839
+it to the user
+
+0:08:56.290,0:09:01.220
+[Music]
+
+0:08:58.160,0:09:03.279
+let's initialize a local variable result
+
+0:09:01.220,0:09:05.279
+[Music]
+
+0:09:03.279,0:09:07.920
+and recall that we did not convert
+
+0:09:05.279,0:09:09.519
+numerator and denominator to integers
+
+0:09:07.920,0:09:11.020
+earlier in our code
+
+0:09:09.519,0:09:14.000
+so we'll need to do that now
+
+0:09:11.020,0:09:15.440
+[Music]
+
+0:09:14.000,0:09:23.839
+and we'll do that by calling the
+
+0:09:15.440,0:09:23.839
+string2i method
+
+0:09:24.160,0:09:31.519
+for now let's output our result
+
+0:09:27.030,0:09:34.959
+[Music]
+
+0:09:31.519,0:09:38.000
+i'll enter two valid integers
+
+0:09:34.959,0:09:39.839
+we're dividing four by two
+
+0:09:38.000,0:09:41.839
+and you'll see that an exception was
+
+0:09:39.839,0:09:44.959
+raised
+
+0:09:41.839,0:09:50.160
+on line 25 ruby sees an undefined local
+
+0:09:44.959,0:09:53.440
+variable or method numerator
+
+0:09:50.160,0:09:56.160
+going back to our code line 25
+
+0:09:53.440,0:09:57.040
+is when we try to access numerator and
+
+0:09:56.160,0:10:00.320
+denominator
+
+0:09:57.040,0:10:02.560
+in the outer scope however numerator and
+
+0:10:00.320,0:10:05.519
+denominator were both initialized
+
+0:10:02.560,0:10:07.600
+in the inner scope of a block so it's
+
+0:10:05.519,0:10:11.120
+not possible for us to access them in
+
+0:10:07.600,0:10:13.600
+this outer scope on line 25.
+
+0:10:11.120,0:10:15.440
+in order to solve this issue we can
+
+0:10:13.600,0:10:19.680
+initialize these variables
+
+0:10:15.440,0:10:22.560
+in the outer scope
+
+0:10:19.680,0:10:25.360
+and because we don't solicit the input
+
+0:10:22.560,0:10:28.240
+from the user until later
+
+0:10:25.360,0:10:29.200
+we'll set them equal to nil for now and
+
+0:10:28.240,0:10:31.839
+now
+
+0:10:29.200,0:10:34.160
+numerator on line 8 is not a new
+
+0:10:31.839,0:10:36.640
+variable being initialized
+
+0:10:34.160,0:10:38.640
+it's an existing variable that was
+
+0:10:36.640,0:10:41.680
+initialized in the outer scope
+
+0:10:38.640,0:10:47.839
+being reassigned
+
+0:10:41.680,0:10:47.839
+and we can do the same for denominator
+
+0:10:48.560,0:11:00.000
+now we can expect that our code will run
+
+0:10:50.480,0:11:02.000
+without error
+
+0:11:00.000,0:11:03.770
+and the result of our integer division
+
+0:11:02.000,0:11:07.040
+is 2.
+
+0:11:03.770,0:11:08.720
+[Music]
+
+0:11:07.040,0:11:14.240
+we want to display this a little bit
+
+0:11:08.720,0:11:16.240
+more nicely to the user
+
+0:11:14.240,0:11:18.399
+so we'll create a nice message that
+
+0:11:16.240,0:11:20.560
+displays the numerator the denominator
+
+0:11:18.399,0:11:22.560
+and the result
+
+0:11:20.560,0:11:24.640
+now we could display this with either
+
+0:11:22.560,0:11:27.360
+string concatenation or string
+
+0:11:24.640,0:11:27.360
+interpolation
+
+0:11:27.600,0:11:38.580
+let's use interpolation
+
+0:11:30.990,0:11:38.580
+[Music]
+
+0:11:40.000,0:11:43.860
+now we can display a nice message to the
+
+0:11:42.800,0:11:47.760
+user
+
+0:11:43.860,0:11:57.839
+[Music]
+
+0:11:47.760,0:11:57.839
+and it displays 4 divided by 2 is 2.
+
+0:11:58.240,0:12:00.320
+you
+
