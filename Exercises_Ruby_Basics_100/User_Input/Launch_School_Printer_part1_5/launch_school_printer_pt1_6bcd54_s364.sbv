@@ -1,0 +1,423 @@
+0:00:06.560,0:00:09.679
+we want to
+
+0:00:07.359,0:00:11.200
+write a program that prints a given
+
+0:00:09.679,0:00:13.360
+string repeatedly
+
+0:00:11.200,0:00:14.880
+until a certain number of lines has been
+
+0:00:13.360,0:00:16.640
+printed
+
+0:00:14.880,0:00:18.480
+and we're going to ask the user to
+
+0:00:16.640,0:00:21.039
+dictate the number of lines
+
+0:00:18.480,0:00:22.320
+greater than or equal to three the
+
+0:00:21.039,0:00:24.880
+problem gives us
+
+0:00:22.320,0:00:25.599
+a detailed example of how the program
+
+0:00:24.880,0:00:29.920
+should run
+
+0:00:25.599,0:00:31.850
+to help us along as we write this code
+
+0:00:29.920,0:00:34.000
+we know we want to prompt the user
+
+0:00:31.850,0:00:38.000
+[Music]
+
+0:00:34.000,0:00:38.000
+how many output lines do they want
+
+0:00:38.079,0:00:41.200
+and we're dictating that the number of
+
+0:00:40.160,0:00:45.280
+lines should be
+
+0:00:41.200,0:00:47.920
+at least three we want to store the user
+
+0:00:45.280,0:00:49.840
+input in a local variable
+
+0:00:47.920,0:00:51.120
+and we'll call that local variable
+
+0:00:49.840,0:00:54.640
+number of lines
+
+0:00:51.120,0:00:57.680
+give it a nice descriptive name
+
+0:00:54.640,0:00:59.120
+and we'll use get s to capture that user
+
+0:00:57.680,0:01:01.840
+input
+
+0:00:59.120,0:01:02.960
+now knowing that all user input comes in
+
+0:01:01.840,0:01:05.600
+as a string
+
+0:01:02.960,0:01:06.880
+and we need to use this input as an
+
+0:01:05.600,0:01:09.360
+integer
+
+0:01:06.880,0:01:11.360
+we'll go ahead and call 2i on that user
+
+0:01:09.360,0:01:13.840
+input when we store it in our local
+
+0:01:11.360,0:01:13.840
+variable
+
+0:01:13.920,0:01:19.759
+for now let's just run our code with the
+
+0:01:18.640,0:01:21.920
+prompt as is
+
+0:01:19.759,0:01:27.840
+and print the number of lines back out
+
+0:01:21.920,0:01:27.840
+to ourselves
+
+0:01:28.400,0:01:33.759
+so we'll enter five
+
+0:01:30.910,0:01:35.759
+[Music]
+
+0:01:33.759,0:01:37.600
+and the program prints that back to us
+
+0:01:35.759,0:01:39.920
+so we can see that our
+
+0:01:37.600,0:01:42.159
+number of lines was successfully stored
+
+0:01:39.920,0:01:44.880
+in the local variable
+
+0:01:42.159,0:01:46.560
+now what happens if we input a number
+
+0:01:44.880,0:01:48.460
+less than three
+
+0:01:46.560,0:01:50.000
+i'll input one
+
+0:01:48.460,0:01:52.960
+[Music]
+
+0:01:50.000,0:01:55.040
+at this point the program doesn't object
+
+0:01:52.960,0:01:56.130
+so we need to build that functionality
+
+0:01:55.040,0:01:59.280
+in
+
+0:01:56.130,0:02:01.439
+[Music]
+
+0:01:59.280,0:02:04.320
+we can achieve this by putting our
+
+0:02:01.439,0:02:06.240
+prompt into a loop
+
+0:02:04.320,0:02:09.240
+and we'll break out of the loop when we
+
+0:02:06.240,0:02:13.929
+get the desired input from the user
+
+0:02:09.240,0:02:13.929
+[Music]
+
+0:02:14.879,0:02:18.959
+so we know the condition of breaking out
+
+0:02:17.280,0:02:22.000
+of this loop should be
+
+0:02:18.959,0:02:25.840
+if the number of
+
+0:02:22.000,0:02:28.959
+lines is greater than or equal to three
+
+0:02:25.840,0:02:28.959
+let's run our code again
+
+0:02:29.760,0:02:33.280
+this time you'll see that if i input a
+
+0:02:31.760,0:02:37.040
+number less than three
+
+0:02:33.280,0:02:38.160
+i'll input one our loop continues to
+
+0:02:37.040,0:02:40.340
+iterate
+
+0:02:38.160,0:02:42.319
+and we're prompted again
+
+0:02:40.340,0:02:44.560
+[Music]
+
+0:02:42.319,0:02:46.690
+now i'll input 3 and see if our code
+
+0:02:44.560,0:02:47.920
+breaks out of the loop
+
+0:02:46.690,0:02:51.390
+[Music]
+
+0:02:47.920,0:02:53.680
+and it does
+
+0:02:51.390,0:02:56.319
+[Music]
+
+0:02:53.680,0:02:58.640
+now we want to output some type of error
+
+0:02:56.319,0:02:59.120
+message to the user if the number they
+
+0:02:58.640,0:03:02.239
+enter
+
+0:02:59.120,0:03:02.239
+is less than three
+
+0:03:02.640,0:03:05.840
+so we can display
+
+0:03:05.920,0:03:09.280
+that's not enough lines
+
+0:03:09.610,0:03:14.640
+[Music]
+
+0:03:12.239,0:03:15.760
+running the code again you can see our
+
+0:03:14.640,0:03:19.450
+error message
+
+0:03:15.760,0:03:21.200
+and the prompt displayed again
+
+0:03:19.450,0:03:23.280
+[Music]
+
+0:03:21.200,0:03:24.799
+we want to output the string launch
+
+0:03:23.280,0:03:28.560
+school is the best
+
+0:03:24.799,0:03:31.120
+number of lines times so if the number
+
+0:03:28.560,0:03:32.480
+of lines is 3 we want to output the
+
+0:03:31.120,0:03:35.120
+string three times
+
+0:03:32.480,0:03:37.280
+and we want to do this after we verified
+
+0:03:35.120,0:03:39.920
+that the user has input a valid number
+
+0:03:37.280,0:03:43.840
+of lines
+
+0:03:39.920,0:03:43.840
+so after we break out of our loop
+
+0:03:45.519,0:03:50.159
+we want to print this line but we need
+
+0:03:47.760,0:03:53.120
+to control how many times it's printed
+
+0:03:50.159,0:03:54.720
+based on what the user input was we can
+
+0:03:53.120,0:03:59.439
+use the local variable
+
+0:03:54.720,0:03:59.439
+number of lines as somewhat of a counter
+
+0:03:59.599,0:04:03.040
+we can use a while loop
+
+0:04:04.560,0:04:09.300
+and say while number of lines is greater
+
+0:04:07.040,0:04:12.640
+than zero
+
+0:04:09.300,0:04:15.519
+[Music]
+
+0:04:12.640,0:04:16.000
+and decrement number of lines each time
+
+0:04:15.519,0:04:19.040
+that we
+
+0:04:16.000,0:04:21.600
+iterate through this loop and we'll do
+
+0:04:19.040,0:04:25.360
+that by reassigning number of lines
+
+0:04:21.600,0:04:27.600
+to number of lines minus one
+
+0:04:25.360,0:04:30.560
+now there's a problem in our code and
+
+0:04:27.600,0:04:33.120
+hopefully you've already spotted it
+
+0:04:30.560,0:04:34.240
+number of lines was initialized on line
+
+0:04:33.120,0:04:37.199
+three
+
+0:04:34.240,0:04:39.919
+in the inner scope of this block passed
+
+0:04:37.199,0:04:42.240
+to our loop method
+
+0:04:39.919,0:04:43.360
+so as our code is currently written we
+
+0:04:42.240,0:04:46.560
+can't actually
+
+0:04:43.360,0:04:47.740
+access number of lines and let's run our
+
+0:04:46.560,0:04:50.880
+code and see that
+
+0:04:47.740,0:04:55.120
+[Music]
+
+0:04:50.880,0:04:58.240
+i'll input 4 for how many lines we want
+
+0:04:55.120,0:05:00.320
+and you can see that on line eight
+
+0:04:58.240,0:05:03.759
+we have an undefined local variable or
+
+0:05:00.320,0:05:03.759
+method number of lines
+
+0:05:06.160,0:05:10.960
+so we're unable to access number of
+
+0:05:08.400,0:05:14.080
+lines outside of the inner scope of the
+
+0:05:10.960,0:05:16.160
+block in which it was initialized
+
+0:05:14.080,0:05:17.919
+and in order to solve that we'll simply
+
+0:05:16.160,0:05:20.880
+initialize number of lines
+
+0:05:17.919,0:05:20.880
+on line one
+
+0:05:23.120,0:05:28.080
+now when our program executes line one
+
+0:05:25.840,0:05:29.440
+we don't yet have a value to assign to
+
+0:05:28.080,0:05:31.360
+number of lines
+
+0:05:29.440,0:05:32.960
+since we need to wait for the user to
+
+0:05:31.360,0:05:35.440
+give their input
+
+0:05:32.960,0:05:36.560
+so we'll simply assign it to nil now
+
+0:05:35.440,0:05:37.860
+let's run our code
+
+0:05:36.560,0:05:40.880
+and see what we've got
+
+0:05:37.860,0:05:43.360
+[Music]
+
+0:05:40.880,0:05:46.000
+first i'll enter 2 which is going to be
+
+0:05:43.360,0:05:48.400
+an invalid number of lines
+
+0:05:46.000,0:05:49.600
+i see my error message and i'm prompted
+
+0:05:48.400,0:05:52.200
+again
+
+0:05:49.600,0:05:53.680
+this time i'll enter four
+
+0:05:52.200,0:06:06.639
+[Music]
+
+0:05:53.680,0:06:06.639
+and our string was printed four times
+

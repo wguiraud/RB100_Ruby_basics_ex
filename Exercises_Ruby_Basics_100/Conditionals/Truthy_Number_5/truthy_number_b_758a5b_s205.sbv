@@ -1,0 +1,36 @@
+in this problem we've been given some code and without running the code we need to determine what it will print 
+
+on line one we have a local variable number that references the integer seven and on lines three through seven we have an if statement
+
+if the first branch of our if statement is executed the code will output my favorite number is 7. 
+if the else branch of our if statement is executed then our program will output i don't have a favorite number 
+
+in order to determine what this program outputs we need to understand the condition that we've provided to our if statement
+
+in this case we've just provided the local variable number
+
+now we know that if the condition provided to our if statement evaluates as true then that first branch of the if statement on line 4 will be executed
+otherwise if our condition evaluates as false
+the else branch will be executed and ruby will output i don't have a favorite number
+
+so in this case the condition that ruby is evaluating for truthiness is the integer seven and this will always evaluate as true
+
+in ruby everything is truthy except for false and nil
+
+so because 7 is a truthy value line 4 will be executed every time that we run this code
+
+that's the first branch of our if statement
+
+so every time we run this program we expect that it will output my favorite number is 7. 
+and let's run our code to see that
+
+we've run our program repeatedly and we see that we get the same output every time
+
+to demonstrate how ruby would behave if the condition provided to our if statement was a falsy value we can set number to reference the boolean false on line 1. 
+
+now the condition we provide to our if statement on line 3 evaluates as false because of this we can expect that the first branch of our if statement will not be executed 
+
+and the else branch the code on line 6 will be executed and we'll output i don't have a favorite number and that's the behavior we see
+
+so it's very important to understand that in ruby everything is truthy except for false and nil
+

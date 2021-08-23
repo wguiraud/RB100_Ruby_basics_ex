@@ -1,0 +1,555 @@
+0:00:05.040,0:00:08.639
+in this problem
+
+0:00:06.080,0:00:11.519
+we must ask the user if they want the
+
+0:00:08.639,0:00:14.400
+program to print something
+
+0:00:11.519,0:00:15.360
+if the user enters y the program will
+
+0:00:14.400,0:00:18.160
+print the string
+
+0:00:15.360,0:00:19.439
+something otherwise nothing will be
+
+0:00:18.160,0:00:21.359
+printed
+
+0:00:19.439,0:00:22.990
+the first step of this problem is just
+
+0:00:21.359,0:00:25.680
+to prompt the user
+
+0:00:22.990,0:00:28.000
+[Music]
+
+0:00:25.680,0:00:30.320
+so based off of the problem description
+
+0:00:28.000,0:00:32.270
+we know we want to ask the user
+
+0:00:30.320,0:00:34.160
+do you want me to print something
+
+0:00:32.270,0:00:37.440
+[Music]
+
+0:00:34.160,0:00:40.559
+and in parentheses we'll display y or
+
+0:00:37.440,0:00:45.039
+n this is telling the user what we want
+
+0:00:40.559,0:00:47.520
+them to enter
+
+0:00:45.039,0:00:49.680
+now we want to save the user input into
+
+0:00:47.520,0:00:51.039
+a local variable so that we can use it
+
+0:00:49.680,0:00:54.160
+later in our program
+
+0:00:51.039,0:00:57.440
+to check its value
+
+0:00:54.160,0:01:00.000
+so let's call this local variable choice
+
+0:00:57.440,0:01:01.280
+and we'll use the get s method to get
+
+0:01:00.000,0:01:04.879
+this user input
+
+0:01:01.280,0:01:04.879
+to be stored in choice
+
+0:01:05.519,0:01:10.840
+let's just run our program as it is
+
+0:01:07.360,0:01:12.030
+before we continue coding more of our
+
+0:01:10.840,0:01:13.360
+solution
+
+0:01:12.030,0:01:15.439
+[Music]
+
+0:01:13.360,0:01:16.960
+so the program prompts us do you want me
+
+0:01:15.439,0:01:19.040
+to print something
+
+0:01:16.960,0:01:20.640
+and at this point we haven't specified
+
+0:01:19.040,0:01:23.600
+any action to take so
+
+0:01:20.640,0:01:27.840
+no matter what we input the program
+
+0:01:23.600,0:01:27.840
+won't print anything
+
+0:01:30.079,0:01:34.560
+but our prompt is working correctly so
+
+0:01:32.159,0:01:36.720
+we can move forward
+
+0:01:34.560,0:01:38.159
+we know we want to print the string
+
+0:01:36.720,0:01:42.560
+something
+
+0:01:38.159,0:01:42.560
+if the user input is y
+
+0:01:43.600,0:01:49.920
+so let's compare choice to y
+
+0:01:47.090,0:01:53.439
+[Music]
+
+0:01:49.920,0:01:54.320
+and if choice is equal to y then we'll
+
+0:01:53.439,0:01:57.439
+output
+
+0:01:54.320,0:01:57.439
+the string something
+
+0:01:57.759,0:02:02.880
+if choice is not equal to y then we
+
+0:01:59.840,0:02:06.399
+don't need to print anything
+
+0:02:02.880,0:02:06.399
+so let's run our program again
+
+0:02:06.960,0:02:10.080
+and when prompted this time we'll input
+
+0:02:09.200,0:02:12.080
+y
+
+0:02:10.080,0:02:13.660
+and we expect that the program will
+
+0:02:12.080,0:02:15.360
+output something
+
+0:02:13.660,0:02:23.599
+[Music]
+
+0:02:15.360,0:02:26.510
+and you can see that it doesn't
+
+0:02:23.599,0:02:29.920
+so we need to think about why that is
+
+0:02:26.510,0:02:31.840
+[Music]
+
+0:02:29.920,0:02:33.200
+we can comment out our if statement
+
+0:02:31.840,0:02:36.160
+right now and let's just
+
+0:02:33.200,0:02:38.640
+print choice to the screen and see what
+
+0:02:36.160,0:02:41.519
+exactly that value is
+
+0:02:38.640,0:02:42.080
+now you'll notice that i'm using p p
+
+0:02:41.519,0:02:45.190
+calls
+
+0:02:42.080,0:02:46.800
+inspect on its argument
+
+0:02:45.190,0:02:50.400
+[Music]
+
+0:02:46.800,0:02:52.879
+so when we input y
+
+0:02:50.400,0:02:55.280
+you can see there's a newline character
+
+0:02:52.879,0:02:58.640
+at the end of our user input
+
+0:02:55.280,0:02:59.120
+so we input y but then we had to hit the
+
+0:02:58.640,0:03:02.080
+enter
+
+0:02:59.120,0:03:04.239
+or return key to get the program to
+
+0:03:02.080,0:03:05.760
+recognize our user input
+
+0:03:04.239,0:03:09.519
+and that's why we have a new line
+
+0:03:05.760,0:03:09.519
+character at the end of this input
+
+0:03:11.200,0:03:14.879
+so our choice variable is actually not
+
+0:03:14.159,0:03:17.599
+equal to
+
+0:03:14.879,0:03:20.590
+the string y because we also have a new
+
+0:03:17.599,0:03:23.040
+line character at the end
+
+0:03:20.590,0:03:25.920
+[Music]
+
+0:03:23.040,0:03:28.159
+that's why on line four when we compared
+
+0:03:25.920,0:03:31.440
+choice to the string y
+
+0:03:28.159,0:03:31.440
+it returned false
+
+0:03:31.599,0:03:35.360
+so how can we remove this newline
+
+0:03:33.760,0:03:37.920
+character
+
+0:03:35.360,0:03:39.440
+we can do that by calling chomp on the
+
+0:03:37.920,0:03:42.480
+user input
+
+0:03:39.440,0:03:44.959
+so we'll use get s to get the user input
+
+0:03:42.480,0:03:48.159
+and then call chomp on it when we store
+
+0:03:44.959,0:03:51.280
+it into our choice local variable
+
+0:03:48.159,0:03:53.920
+so let's run our program one more time
+
+0:03:51.280,0:03:56.560
+printing the value of choice on line
+
+0:03:53.920,0:03:56.560
+three again
+
+0:03:57.280,0:04:04.000
+and we'll input the same lowercase y
+
+0:04:00.799,0:04:06.239
+and hit enter and now you can see that
+
+0:04:04.000,0:04:08.159
+there is no newline character at the end
+
+0:04:06.239,0:04:10.239
+of our user input
+
+0:04:08.159,0:04:11.599
+we removed it when we sort it into the
+
+0:04:10.239,0:04:14.550
+choicelocal variable
+
+0:04:11.599,0:04:18.069
+using chomp
+
+0:04:14.550,0:04:18.069
+[Music]
+
+0:04:19.040,0:04:23.600
+so now let's uncomment our if statement
+
+0:04:21.759,0:04:29.440
+and see if we can get our program
+
+0:04:23.600,0:04:32.160
+working as we intended
+
+0:04:29.440,0:04:32.960
+running the program will enter y and
+
+0:04:32.160,0:04:35.040
+this time we'll
+
+0:04:32.960,0:04:36.580
+expect that the program will output
+
+0:04:35.040,0:04:37.919
+something
+
+0:04:36.580,0:04:41.040
+[Music]
+
+0:04:37.919,0:04:42.080
+and it does so that's great let's run
+
+0:04:41.040,0:04:46.090
+our program again
+
+0:04:42.080,0:04:49.120
+and input something other than y
+
+0:04:46.090,0:04:52.800
+[Music]
+
+0:04:49.120,0:04:54.720
+nothing is printed now you'll see that
+
+0:04:52.800,0:04:56.639
+our prompt seems to indicate that the
+
+0:04:54.720,0:04:59.280
+program will only accept a y
+
+0:04:56.639,0:05:01.280
+or an n but we haven't actually
+
+0:04:59.280,0:05:03.360
+implemented that functionality in this
+
+0:05:01.280,0:05:05.600
+solution
+
+0:05:03.360,0:05:07.199
+so our program should run no matter what
+
+0:05:05.600,0:05:11.350
+the input is
+
+0:05:07.199,0:05:15.549
+but only output something if we input y
+
+0:05:11.350,0:05:15.549
+[Music]
+
+0:05:16.080,0:05:19.840
+and that's the behavior that we're
+
+0:05:17.520,0:05:19.840
+seeing
+
+0:05:20.400,0:05:24.479
+now you'll notice in our code that we
+
+0:05:22.560,0:05:26.880
+only check if choice is equal to a
+
+0:05:24.479,0:05:28.880
+lowercase y
+
+0:05:26.880,0:05:30.600
+so what do you think would happen if we
+
+0:05:28.880,0:05:34.080
+input an uppercase y
+
+0:05:30.600,0:05:36.800
+[Music]
+
+0:05:34.080,0:05:39.280
+our program will not output something
+
+0:05:36.800,0:05:42.320
+and that's because
+
+0:05:39.280,0:05:43.280
+our comparison doesn't include the upper
+
+0:05:42.320,0:05:45.360
+case y
+
+0:05:43.280,0:05:47.600
+typically when you're asking for user
+
+0:05:45.360,0:05:48.960
+input you will want it to be case
+
+0:05:47.600,0:05:50.960
+insensitive
+
+0:05:48.960,0:05:53.120
+so if you're asking the user to input
+
+0:05:50.960,0:05:54.560
+yes or no you would want to recognize
+
+0:05:53.120,0:05:57.199
+that yes or no
+
+0:05:54.560,0:05:58.000
+whether the user input it with uppercase
+
+0:05:57.199,0:06:01.680
+letters or
+
+0:05:58.000,0:06:02.479
+lowercase characters so one way we could
+
+0:06:01.680,0:06:06.080
+handle this
+
+0:06:02.479,0:06:09.120
+is to use the logical or operator
+
+0:06:06.080,0:06:12.080
+if choice is equal to a lowercase
+
+0:06:09.120,0:06:13.039
+y or if choice is equal to an uppercase
+
+0:06:12.080,0:06:16.400
+y
+
+0:06:13.039,0:06:16.400
+then output something
+
+0:06:16.639,0:06:21.840
+and this will work just fine
+
+0:06:22.080,0:06:26.960
+you can see now our uppercase y is
+
+0:06:24.639,0:06:30.160
+recognized in the same manner as when we
+
+0:06:26.960,0:06:30.160
+input a lowercase y
+
+0:06:30.540,0:06:34.400
+[Music]
+
+0:06:32.080,0:06:35.919
+so in that way our program is now case
+
+0:06:34.400,0:06:38.639
+insensitive
+
+0:06:35.919,0:06:39.919
+another way that we could handle this is
+
+0:06:38.639,0:06:42.639
+to call the string
+
+0:06:39.919,0:06:45.039
+down case method on our input when it's
+
+0:06:42.639,0:06:46.960
+received
+
+0:06:45.039,0:06:48.880
+and again i'll just comment out this if
+
+0:06:46.960,0:06:50.480
+statement for a moment so we can see
+
+0:06:48.880,0:06:52.639
+what our input looks like now
+
+0:06:50.480,0:06:55.120
+[Music]
+
+0:06:52.639,0:06:55.840
+if i run the program and input an
+
+0:06:55.120,0:06:58.080
+uppercase
+
+0:06:55.840,0:06:58.080
+y
+
+0:06:58.880,0:07:02.000
+now the program prints the choicelocal
+
+0:07:01.039,0:07:06.800
+variable back to
+
+0:07:02.000,0:07:06.800
+me and you can see that it's lowercase
+
+0:07:08.000,0:07:12.160
+so one way to make your user input case
+
+0:07:11.120,0:07:15.120
+insensitive
+
+0:07:12.160,0:07:18.000
+is to call down case on that input when
+
+0:07:15.120,0:07:20.240
+you store it into a local variable
+
+0:07:18.000,0:07:22.639
+and then in the rest of your program as
+
+0:07:20.240,0:07:23.360
+you are comparing or manipulating this
+
+0:07:22.639,0:07:25.199
+value
+
+0:07:23.360,0:07:26.800
+you're always working with a lowercase
+
+0:07:25.199,0:07:28.560
+letter
+
+0:07:26.800,0:07:30.400
+so now that we've made that change let's
+
+0:07:28.560,0:07:32.470
+just run the program one more time
+
+0:07:30.400,0:07:36.880
+to see it in action
+
+0:07:32.470,0:07:38.560
+[Music]
+
+0:07:36.880,0:07:45.840
+and you can see our program will still
+
+0:07:38.560,0:07:45.840
+work as expected
+
+0:07:46.479,0:07:48.560
+you
+

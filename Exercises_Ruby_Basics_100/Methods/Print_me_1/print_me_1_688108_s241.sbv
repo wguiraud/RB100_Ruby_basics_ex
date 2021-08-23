@@ -1,0 +1,30 @@
+in this problem we've been given a method invocation as seen on line 3 and we need to write the method printme that will print the string i'm printing within the method when invoked 
+
+so the method invocation is going to stay as is we are not going to pass this method invocation to the put s method 
+we want the method printme to print the string from within the method
+
+let's begin to work on our method definition TYPING def ... end 
+and the string given to us is i'm printing within the method
+
+now if we run our code as it's written you see that nothing is output
+currently we're not calling the put s method from within printme or when we invoke the method on line five
+
+so there is no output because this problem requires us to print the string from within the method and not alter the method invocation on line five we're going to place a call to put s on line 4 TYPING and now when we run our code we should see the proper output 
+
+and we do      we print the string i'm printing within the method
+what may not be as obvious is that when we place this call to put s on line two we changed the return value of the printme method 
+remember that the return value of a method is the evaluated result of the last line executed in that method
+
+the last and only line executed within the printme method is line 4 
+
+on line 4 when we have this call to put s that affects the return value of the method 
+
+put s will print the string passed to it as an argument but it always returns nil 
+so in this case the return value of the printme method also becomes nil and we can see IRB that by hopping into irb when we call put s and pass a string to it you can see that the output is on the first line here hello world and on the second line the return value is nil
+
+WRITING HELLO WORLD without the call to put s the return value is the string and that's what we see happening in our print me method
+
+without this call to put s ERASING the return value of the method would be the string and that's why if we called put s on line 7 we would be printing the return value of the print me method which would be this string i'm printing within the method
+
+now this problem requires us to print the string from within the method but it's important to be aware that when we do so we may be altering the return value of our method in this case our method returns nil
+

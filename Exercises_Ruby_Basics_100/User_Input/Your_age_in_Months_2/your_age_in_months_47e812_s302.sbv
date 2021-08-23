@@ -1,0 +1,312 @@
+0:00:04.240,0:00:08.559
+this problem
+
+0:00:05.120,0:00:11.040
+asks us to write a program that asks the
+
+0:00:08.559,0:00:14.080
+user for their age in years
+
+0:00:11.040,0:00:17.920
+and then converts that age to months and
+
+0:00:14.080,0:00:17.920
+outputs a message to the user
+
+0:00:18.000,0:00:21.600
+so we'll start by displaying a prompt to
+
+0:00:20.560,0:00:30.160
+the user with
+
+0:00:21.600,0:00:32.640
+put s
+
+0:00:30.160,0:00:36.239
+and our prompt displays appropriately so
+
+0:00:32.640,0:00:36.239
+we can move on to the next step
+
+0:00:36.800,0:00:42.559
+now we need our program to pause and get
+
+0:00:39.520,0:00:46.079
+some input from the user
+
+0:00:42.559,0:00:48.719
+we'll do that using get s
+
+0:00:46.079,0:00:50.879
+now we want to store the user input in a
+
+0:00:48.719,0:00:52.879
+variable so that we can use it later in
+
+0:00:50.879,0:00:55.280
+our program
+
+0:00:52.879,0:00:56.719
+and we'll give this variable a nice
+
+0:00:55.280,0:00:59.160
+descriptive name
+
+0:00:56.719,0:01:01.039
+and call it age in years
+
+0:00:59.160,0:01:04.399
+[Music]
+
+0:01:01.039,0:01:04.399
+and for now let's just
+
+0:01:04.799,0:01:13.280
+display the agent years back to the user
+
+0:01:07.520,0:01:15.600
+after they input it
+
+0:01:13.280,0:01:17.840
+so the program prompts us for our age
+
+0:01:15.600,0:01:23.040
+and i'll input 35
+
+0:01:17.840,0:01:25.119
+[Music]
+
+0:01:23.040,0:01:27.040
+the next step of our problem is to
+
+0:01:25.119,0:01:30.320
+convert that age in years
+
+0:01:27.040,0:01:30.320
+into age and months
+
+0:01:31.600,0:01:37.840
+and we can do that by multiplying the
+
+0:01:34.079,0:01:40.640
+age in years by 12.
+
+0:01:37.840,0:01:42.399
+let's initialize a local variable age in
+
+0:01:40.640,0:01:45.520
+months
+
+0:01:42.399,0:01:48.560
+and we can set it equal to 12
+
+0:01:45.520,0:01:50.240
+times the age in years
+
+0:01:48.560,0:01:54.170
+let's see what happens when we run our
+
+0:01:50.240,0:01:58.240
+program now
+
+0:01:54.170,0:02:00.320
+[Music]
+
+0:01:58.240,0:02:01.680
+you can see that an exception has been
+
+0:02:00.320,0:02:04.479
+raised
+
+0:02:01.680,0:02:05.119
+this is a type error and it's because we
+
+0:02:04.479,0:02:08.669
+try to
+
+0:02:05.119,0:02:11.280
+multiply a string by an integer
+
+0:02:08.669,0:02:13.440
+[Music]
+
+0:02:11.280,0:02:15.760
+what's interesting about this here is
+
+0:02:13.440,0:02:22.800
+that if we put the string
+
+0:02:15.760,0:02:26.400
+on the left side of the operator
+
+0:02:22.800,0:02:26.400
+and output the result
+
+0:02:27.760,0:02:32.879
+you'll see that age in months is
+
+0:02:30.160,0:02:37.840
+actually the string 35
+
+0:02:32.879,0:02:37.840
+12 times
+
+0:02:38.160,0:02:42.600
+so neither one of these possibilities is
+
+0:02:40.480,0:02:46.800
+what we want
+
+0:02:42.600,0:02:49.120
+[Music]
+
+0:02:46.800,0:02:50.160
+our original type error was caused
+
+0:02:49.120,0:02:53.519
+because
+
+0:02:50.160,0:02:56.640
+user input always comes in in a string
+
+0:02:53.519,0:02:59.599
+and what we needed to do was multiply 12
+
+0:02:56.640,0:03:01.360
+by the integer representation of our age
+
+0:02:59.599,0:03:03.760
+in years
+
+0:03:01.360,0:03:05.599
+so to solve that problem we can call the
+
+0:03:03.760,0:03:08.879
+string2i method
+
+0:03:05.599,0:03:09.519
+on the user input so now let's run our
+
+0:03:08.879,0:03:11.680
+program
+
+0:03:09.519,0:03:19.840
+and see if the multiplication is being
+
+0:03:11.680,0:03:19.840
+performed appropriately
+
+0:03:20.000,0:03:23.360
+and finally it is
+
+0:03:25.040,0:03:28.480
+so now that we have the correct product
+
+0:03:27.360,0:03:31.760
+being assigned to
+
+0:03:28.480,0:03:32.000
+our age and months local variable all we
+
+0:03:31.760,0:03:35.200
+need
+
+0:03:32.000,0:03:38.100
+to do is output the age in months as
+
+0:03:35.200,0:03:41.360
+part of a display message to the user
+
+0:03:38.100,0:03:45.200
+[Music]
+
+0:03:41.360,0:03:48.560
+we can do that with string interpolation
+
+0:03:45.200,0:03:51.360
+age and months is now an integer but
+
+0:03:48.560,0:03:54.159
+when we place it within the curly braces
+
+0:03:51.360,0:03:57.360
+while performing string interpolation
+
+0:03:54.159,0:03:58.879
+ruby calls 2s on that value and converts
+
+0:03:57.360,0:04:00.640
+it back into a string
+
+0:03:58.879,0:04:04.560
+so we're able to use string
+
+0:04:00.640,0:04:05.790
+interpolation pretty seamlessly here
+
+0:04:04.560,0:04:12.480
+let's run our code
+
+0:04:05.790,0:04:14.640
+[Music]
+
+0:04:12.480,0:04:17.599
+now we're seeing the expected behavior
+
+0:04:14.640,0:04:17.599
+from our program
+
+0:04:17.709,0:04:23.680
+[Music]
+
+0:04:20.079,0:04:24.240
+we called 2i on our agent years on line
+
+0:04:23.680,0:04:27.280
+3
+
+0:04:24.240,0:04:29.680
+which is fine but if we were going to
+
+0:04:27.280,0:04:31.440
+continually use this value in our
+
+0:04:29.680,0:04:34.080
+program as an integer
+
+0:04:31.440,0:04:35.520
+and maybe perform more arithmetic
+
+0:04:34.080,0:04:37.919
+operations with it
+
+0:04:35.520,0:04:39.919
+we may want to just call 2i on that
+
+0:04:37.919,0:04:41.840
+input when we store it in the agent
+
+0:04:39.919,0:04:43.919
+years variable
+
+0:04:41.840,0:04:44.880
+then we can use it throughout our code
+
+0:04:43.919,0:04:47.360
+as an integer
+
+0:04:44.880,0:04:49.120
+and not have to repeatedly call 2i on
+
+0:04:47.360,0:04:51.759
+that variable
+
+0:04:49.120,0:04:52.320
+in this case our program is very small
+
+0:04:51.759,0:04:57.840
+and
+
+0:04:52.320,0:04:57.840
+it's okay to call 2i on line 3.
+

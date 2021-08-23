@@ -1,0 +1,33 @@
+this problem requires us to determine the output of the code we've been given
+
+you can see that on line 12 we output the value of the local variable a 
+
+a was initialized on line 4 and set to reference the integer seven
+
+on line 11 we invoke the my value method and pass a in as an argument. 
+so the question here is whether or not the my value method mutates the value of the local variable a
+
+within the myvalue method we see some syntax that might look a little bit tricky if you're not familiar with it 
+
+this is shorthand syntax which is equivalent WRITE to b equals b plus 10.
+
+so when we pass a in as an argument to my value on line 11 the method parameter b  which is a variable local 
+
+to this method   will then point to the same object as our local variable a    which is the integer 7.
+
+however on line 7 we reassign b to a new value WRITING in this case that value is 17 and we can demonstrate that by invoking our method and outputting b from within our method WRITING COMMENTING LINE 12 
+
+so we can see that we've reassigned b to 17.
+
+b now points at an entirely different object than the local variable a that we initialized on line 4
+
+so within the method all we did was reassign a variable local to the method to a new value 
+
+we did not alter the value of a 
+
+so when we output a on line 12 we expect to still see seven
+
+now one important thing to note in this exercise is that in ruby numbers are immutable
+
+so there really is no way that we could have mutated the object that a references from inside the my value method
+

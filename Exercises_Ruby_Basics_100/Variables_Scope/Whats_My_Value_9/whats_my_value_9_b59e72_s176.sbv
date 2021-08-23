@@ -1,0 +1,32 @@
+to determine the output of this code we need to have a strong understanding
+of what is happening when we invoke the array each method
+
+as we iterate through the array and pass each element of the array as an argument to the block   the block parameter a which is a variable local to this block will be assigned to the current array element
+
+now on line 8 it looks like we are performing reassignment TYPING remember that this shorthand syntax is equivalent to a equals a plus one 
+
+the question here is are we reassigning the local block variable a or the local
+variable a that we see initialized in the outer scope on line 4
+
+the answer here is that within this block ruby can only see this local block variable a
+
+that is because of a concept called variable shadowing
+
+when ruby goes looking for a variable a it first looks within this block and because it
+finds a variable a it will stop looking 
+
+it will never see this variable a that we've initialized in an outer scope so because we know that our outer local variable a goes untouched we can expect it to output the same value it was initialized to on line 4
+
+so we can run our code and see that
+
+now in order to avoid variable shadowing we need to use unique names  TYPING
+
+as an example if we called our block parameter b we actually could access and reassign the local variable a and just to demonstrate we can print our code and look at that
+so the output is 4 which would be the result of reassigning a to the last element of the array plus 1. 
+
+now another TYPING important thing to note here about this code is that while we're not reassigning the local variable a that we initialized in the outer scope we're also not reassigning the elements of the array and that's because each does not use the return value of its block it simply returns the original array that it was called on
+
+so while it may look as though we are incrementing the elements of our array in reality this code is not being used at all TYPING and if we want to take a look at what our array looks like after we've iterated through it
+
+we can output the array and see that it remains unchanged
+

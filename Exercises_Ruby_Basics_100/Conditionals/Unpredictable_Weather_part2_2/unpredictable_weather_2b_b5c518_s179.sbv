@@ -1,0 +1,189 @@
+0:00:06.000,0:00:10.400
+in part two of this problem
+
+0:00:07.839,0:00:13.200
+we want our code to output the string
+
+0:00:10.400,0:00:16.320
+the clouds are blocking the sun
+
+0:00:13.200,0:00:16.880
+if our local variable sun references the
+
+0:00:16.320,0:00:21.520
+string
+
+0:00:16.880,0:00:22.480
+hidden now one way that we could solve
+
+0:00:21.520,0:00:25.599
+this problem
+
+0:00:22.480,0:00:30.880
+is to change the condition we provided
+
+0:00:25.599,0:00:33.200
+to our if statement in part one
+
+0:00:30.880,0:00:33.620
+compare the value of sun to the string
+
+0:00:33.200,0:00:34.719
+hidden
+
+0:00:33.620,0:00:38.399
+[Music]
+
+0:00:34.719,0:00:42.480
+and change our output string
+
+0:00:38.399,0:00:42.480
+to the clouds are blocking the sun
+
+0:00:43.120,0:00:48.800
+this would achieve the desired behavior
+
+0:00:46.239,0:00:51.360
+and we can see that if we output the
+
+0:00:48.800,0:00:55.120
+value of sun
+
+0:00:51.360,0:00:55.120
+run our program a few times
+
+0:00:57.520,0:01:02.399
+only when the sun is hidden do we output
+
+0:01:00.480,0:01:03.880
+the string the clouds are blocking the
+
+0:01:02.399,0:01:06.479
+sun
+
+0:01:03.880,0:01:08.240
+[Music]
+
+0:01:06.479,0:01:10.640
+however our problem description
+
+0:01:08.240,0:01:13.840
+specifies that we should use an unless
+
+0:01:10.640,0:01:13.840
+statement here
+
+0:01:16.880,0:01:22.479
+so if we replace if within less now we
+
+0:01:20.159,0:01:24.240
+have an unless statement
+
+0:01:22.479,0:01:27.520
+our code is not going to behave as we
+
+0:01:24.240,0:01:30.159
+would expect
+
+0:01:27.520,0:01:32.079
+now you can see that when sun is visible
+
+0:01:30.159,0:01:35.040
+we've output the string the clouds are
+
+0:01:32.079,0:01:35.040
+blocking the sun
+
+0:01:36.000,0:01:40.479
+and when the sun is hidden we don't
+
+0:01:38.720,0:01:42.640
+output anything
+
+0:01:40.479,0:01:45.119
+so this is the opposite of the behavior
+
+0:01:42.640,0:01:47.040
+that we want
+
+0:01:45.119,0:01:48.479
+and that's because when the sun is
+
+0:01:47.040,0:01:50.320
+hidden
+
+0:01:48.479,0:01:52.399
+this condition we've provided to our
+
+0:01:50.320,0:01:55.920
+unless statement evaluates
+
+0:01:52.399,0:01:57.280
+as true an unless statement will only
+
+0:01:55.920,0:02:00.479
+execute the body
+
+0:01:57.280,0:02:02.880
+line 5 when its condition evaluates as
+
+0:02:00.479,0:02:02.880
+false
+
+0:02:03.840,0:02:08.000
+so we want to print the string the
+
+0:02:05.920,0:02:11.440
+clouds are blocking the sun
+
+0:02:08.000,0:02:13.440
+unless sun is equal to visible
+
+0:02:11.440,0:02:14.640
+when the value referenced by the local
+
+0:02:13.440,0:02:17.200
+variable sun
+
+0:02:14.640,0:02:22.800
+is equal to the string visible we don't
+
+0:02:17.200,0:02:25.840
+want to output anything
+
+0:02:22.800,0:02:26.879
+so let's run our code again and now you
+
+0:02:25.840,0:02:29.760
+can see that
+
+0:02:26.879,0:02:31.040
+when the sun is visible we don't output
+
+0:02:29.760,0:02:34.000
+anything
+
+0:02:31.040,0:02:37.840
+and when the sun is hidden we output the
+
+0:02:34.000,0:02:37.840
+correct string
+
+0:02:39.180,0:02:42.330
+[Music]
+
+0:02:42.720,0:02:46.400
+so unless statements can be very useful
+
+0:02:45.599,0:02:48.800
+remember that
+
+0:02:46.400,0:02:50.160
+the code within an unless statement will
+
+0:02:48.800,0:03:01.200
+only be executed
+
+0:02:50.160,0:03:01.200
+if its condition evaluates as false
+

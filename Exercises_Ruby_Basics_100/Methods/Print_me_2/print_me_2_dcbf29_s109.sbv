@@ -1,0 +1,20 @@
+this exercise gives us a method invocation of the print me method and we're passing that method invocation to the put s method 
+
+this is going to output the return value of printme
+
+the problem description tells us that the printme method should return the string
+i'm printing the return value       so the return value of printme needs to be a string
+and our call to put s will output that return value
+
+WRITING so in order for our string to be the return value of the method we simply need this string to be on the last line executed and in this case it's the only line executed
+it will be line 4
+
+now when we invoke the printme method on line 7 it will return the string that we see on line 4 and the put s method call on line 7 will print that string to the screen
+
+so let's run our code and see that 
+
+and our code is working correctly the important thing here is to always be aware
+of what your method is returning 
+
+a method always returns something even if that return value is nil so it's very important to pay attention to what a method returns and be aware that output and return value are two very different things
+

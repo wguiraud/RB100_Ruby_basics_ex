@@ -1,0 +1,213 @@
+0:00:04.080,0:00:08.960
+the code we've been given
+
+0:00:05.759,0:00:13.040
+will randomly assign either true or
+
+0:00:08.960,0:00:15.519
+false to the local variable boolean
+
+0:00:13.040,0:00:18.400
+and we can see that by outputting the
+
+0:00:15.519,0:00:18.400
+value of boolean
+
+0:00:29.760,0:00:32.800
+now this problem asks us to print the
+
+0:00:32.239,0:00:36.399
+string
+
+0:00:32.800,0:00:38.559
+i'm true if boolean is equal to true
+
+0:00:36.399,0:00:42.079
+and print the string i'm false if
+
+0:00:38.559,0:00:42.079
+boolean is equal to false
+
+0:00:42.800,0:00:46.879
+we can do this using an if statement
+
+0:00:49.039,0:00:58.960
+and we can provide boolean
+
+0:00:52.239,0:01:01.600
+as the condition to our if statement
+
+0:00:58.960,0:01:03.120
+if boolean is equal to true this first
+
+0:01:01.600,0:01:04.320
+branch of our if statement will be
+
+0:01:03.120,0:01:08.240
+executed
+
+0:01:04.320,0:01:08.240
+and we will output i'm true
+
+0:01:08.400,0:01:13.439
+otherwise if boolean is equal to false
+
+0:01:11.600,0:01:14.799
+the else branch of our if statement will
+
+0:01:13.439,0:01:18.960
+be executed
+
+0:01:14.799,0:01:18.960
+and we'll output the string i'm false
+
+0:01:20.720,0:01:27.840
+so let's run our code
+
+0:01:34.960,0:01:38.640
+and you can see our program is behaving
+
+0:01:37.200,0:01:41.520
+as expected
+
+0:01:38.640,0:01:42.799
+when the variable boolean evaluates as
+
+0:01:41.520,0:01:46.000
+true
+
+0:01:42.799,0:01:47.360
+we output the string i'm true and when
+
+0:01:46.000,0:01:54.399
+boolean references
+
+0:01:47.360,0:01:57.200
+false we output the string i'm false
+
+0:01:54.399,0:01:59.200
+so we're achieving the expected output
+
+0:01:57.200,0:02:02.079
+here using an if statement
+
+0:01:59.200,0:02:02.799
+however this problem asks us to write a
+
+0:02:02.079,0:02:06.079
+ternary
+
+0:02:02.799,0:02:06.719
+operator to achieve this output this
+
+0:02:06.079,0:02:09.679
+problem
+
+0:02:06.719,0:02:11.039
+is appropriate for a ternary operator
+
+0:02:09.679,0:02:23.840
+because there are only
+
+0:02:11.039,0:02:23.840
+two possible outcomes
+
+0:02:28.400,0:02:32.080
+the syntax of a ternary operator is seen
+
+0:02:31.519,0:02:35.840
+on line
+
+0:02:32.080,0:02:37.680
+four we provide a condition to our
+
+0:02:35.840,0:02:40.959
+ternary operator
+
+0:02:37.680,0:02:42.800
+and if that condition evaluates as true
+
+0:02:40.959,0:02:45.280
+the code on the left side of the colon
+
+0:02:42.800,0:02:48.400
+will be executed
+
+0:02:45.280,0:02:50.080
+if the condition evaluates as false
+
+0:02:48.400,0:02:53.040
+the code on the right side of the colon
+
+0:02:50.080,0:02:55.200
+will be executed
+
+0:02:53.040,0:02:58.480
+so let's think about how we can write a
+
+0:02:55.200,0:03:01.120
+ternary operator for this problem
+
+0:02:58.480,0:03:01.760
+again we can provide the local variable
+
+0:03:01.120,0:03:05.280
+boolean
+
+0:03:01.760,0:03:07.920
+as the condition to our ternary operator
+
+0:03:05.280,0:03:09.519
+boolean will evaluate to either true or
+
+0:03:07.920,0:03:13.680
+false
+
+0:03:09.519,0:03:13.680
+if boolean evaluates as true
+
+0:03:14.640,0:03:23.280
+we want to output the string i'm true
+
+0:03:19.120,0:03:26.000
+otherwise i'll put the string
+
+0:03:23.280,0:03:26.000
+i'm false
+
+0:03:31.440,0:03:35.840
+so let's run our code as it is now with
+
+0:03:33.840,0:03:38.239
+the ternary operator
+
+0:03:35.840,0:03:42.560
+and see if our program exhibits the same
+
+0:03:38.239,0:03:42.560
+behavior as it did when we used an if
+
+0:03:44.840,0:03:47.840
+statement
+
+0:03:56.400,0:04:03.599
+and it does
+
+0:04:00.799,0:04:05.040
+so a ternary operator is just another
+
+0:04:03.599,0:04:07.360
+type of conditional
+
+0:04:05.040,0:04:08.239
+that can be very useful when there are
+
+0:04:07.360,0:04:15.840
+only two
+
+0:04:08.239,0:04:15.840
+possible outcomes
+
+0:04:16.959,0:04:19.040
+you
+

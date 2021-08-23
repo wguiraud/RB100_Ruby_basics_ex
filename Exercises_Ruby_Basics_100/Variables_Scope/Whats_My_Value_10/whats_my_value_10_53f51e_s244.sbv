@@ -1,0 +1,64 @@
+this requires us to determine what the output of the code we've been given would be
+
+and there's a lot going on here 
+so we're going to break it down a little bit 
+and use our knowledge about the different variable scoping rules 
+to understand what's really happening
+
+on line 13 we invoke the my value method and pass in the local variable array 
+which references an array of integers 
+
+let's take a closer look at what's happening within the my value method
+
+we invoke the array each method on the array argument 
+and as each element of the array is passed into the block 
+it will be assigned to the block local variable b
+
+now within this block 
+it appears that we are reassigning a 
+a is a local variable that was initialized on line 4 and references the integer 7. 
+
+after the myvalue method is done executing 
+we attempt to output the value of a on line 14.
+
+if you look closely at this code and carefully consider the variable scoping rules for both blocks and methods 
+you will have determined that this code will raise an exception
+
+so let's run our code and take a look at the exception
+as you can see on line 9 in the block in the method myvalue 
+we've got an undefined method for nil 
+and BACK TO CODE this is because on line 9 ruby is unable to recognize a 
+as a local variable that has been initialized and assigned a value
+
+you may be thinking that because blocks are able to access local variables initialized in an outer scope 
+we should be able to access a here on line 9.
+however this block is executed within a method 
+and recall that methods are entirely self-contained 
+so the only way to access a local variable initialized outside of the method 
+is to pass it in as an argument
+
+if we'd like to be able to access the local variable a within our method 
+we can define our method to accept a second argument WRITING
+and pass a in on line 13 when we invoke the method             
+as you can see this code no longer raises an exception
+
+however you may find the output of this code odd now   
+the output is 7 which is what we initially assigned to the local variable a on line 4. you may be thinking that the code on line 9 of the myvalue method 
+should have reassigned the value of a 
+so let's examine a little bit more closely what's actually happening
+
+on line 13 we pass the value of the local variable a which is 7 
+in as an argument to the my value method 
+looking at the method definition 
+we can see that 7 will be assigned to the method parameter a which is a variable local to this method
+so at this point the parameter a and the local variable a initialize in the outer scope are two different variables pointing at the same object which is the integer seven
+
+on line 9 when we reassign a we are actually reassigning the variable a local to this method and pointing it at a new object        
+so the variable a initialized on line 4 continues to point at the same object 7 
+while the variable local to this method points at a completely different object    
+
+remember that in ruby numbers are immutable 
+it's not possible for us to mutate the value of a from within this method
+
+so this explains why when we output a on line 14 it still references the integer seven
+

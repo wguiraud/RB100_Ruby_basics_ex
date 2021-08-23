@@ -1,0 +1,36 @@
+this problem asks us what will be output to the screen and why on line 12 we're 
+
+outputting the value of a 
+
+initially a is referencing the integer seven so we need to decide if passing a as an
+
+argument to the my value method on line 10 will alter or mutate the value of this
+
+local variable a 
+
+and actually on line 10 the argument TYPING to our my value method is a plus five which 
+
+evaluates to twelve
+
+so let's look at what happens in our my value method
+
+you can see that on line 7 we set a variable a equal to the value of the parameter b
+
+which is 12. 
+
+however it's important to note that because ruby methods are entirely self-contained
+
+we're not able to reassign the value of the local variable a initialized on line 4 from 
+
+within this method on line 7. 
+
+what line 7 does is initializes a new local variable local to the my value method
+
+it's inaccessible outside of the myvalue method
+
+so when we output a on line 11 we expect it to still be seven
+
+and you can see that it is and if we'd like TYPING to see what the value of the variable 
+
+a local to the myvalue method is we can print that as well and see that it is 12.
+

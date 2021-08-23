@@ -1,0 +1,18 @@
+this problem asks us to figure out what this code would output prior to actually running the code 
+
+on line 11 we invoke the my value method and pass in the local variable a as an argument and then on line 12 we output a 
+
+so originally on line 4 we initialize a and it references a string object 
+
+when we pass a in as an argument to myvalue b which is a variable local to the myvalue method is then pointed to the same string object and we can demonstrate that TYPING by outputting the value of b in the first line of our method
+
+however on line 7 we reassign b and point it at a new string object 
+
+the local variable a and b are no longer pointing at the same object at all 
+
+and we can actually output TYPING the new value of b and see how different it is from our original string object
+
+so because we simply pointed b to a new object with reassignment when we output a 
+
+UNCOMMENTING it will be the same as the original value assigned to the local variable a on line 1.
+

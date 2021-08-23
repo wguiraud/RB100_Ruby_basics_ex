@@ -1,0 +1,39 @@
+in this problem we invoke the method myvalue on line 10 and pass the local variable a in as an argument
+on line 11 we output the value of a 
+
+let's look a little bit more closely at what we're doing within the my value method
+we've named parameter b which is a variable local to this method
+and on line 7 we're reassigning b to the value of a plus a 
+now this doesn't look quite right
+remember that in ruby methods are entirely self-contained
+
+methods have their own scope so ruby is not able to see this local variable a that was
+initialized outside of the method 
+
+now the value of a 7 was bound to this parameter b when we passed a in as an argument 
+
+but the method only knows this value by the variable name b 
+
+there is no variable named a visible to this method 
+
+let's run our code and see what we get and you can see that we get an error message 
+if you read the error message carefully it's pretty descriptive about what problem we've run into here
+
+you can see that within the my value method there's an undefined local variable or
+method a 
+
+and our code that's caused this exception to be raised is on line 10
+
+so let's look at our code again 
+
+line 10 is where we invoked the my value method   
+when we go to execute the method no local variable or method a is able to be found
+
+we actually never got to execute line 11 and output the value of a because when our call to myvalue raised an exception the program exited 
+
+now since b points to the same value as a the integer 7 TYPING we could actually achieve the same result here by reassigning b to b plus b
+
+if we do this we'll be able to run our code without error and output a as we had intended on line 11.
+
+and you can see that the value of a remains seven
+

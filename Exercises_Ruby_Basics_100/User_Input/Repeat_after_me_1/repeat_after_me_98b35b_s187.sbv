@@ -1,0 +1,219 @@
+0:00:04.080,0:00:10.480
+the first task of this problem
+
+0:00:06.399,0:00:13.200
+is to prompt the user for some input
+
+0:00:10.480,0:00:14.080
+we can print this prompt to the screen
+
+0:00:13.200,0:00:16.520
+calling the
+
+0:00:14.080,0:00:20.720
+put s method
+
+0:00:16.520,0:00:22.880
+[Music]
+
+0:00:20.720,0:00:24.000
+so we've got our prompt type anything
+
+0:00:22.880,0:00:26.240
+you want
+
+0:00:24.000,0:00:28.320
+and we're passing it as an argument to
+
+0:00:26.240,0:00:30.640
+the put s method
+
+0:00:28.320,0:00:32.160
+you won't usually see parentheses used
+
+0:00:30.640,0:00:34.079
+with put s
+
+0:00:32.160,0:00:35.520
+but we could put our argument in
+
+0:00:34.079,0:00:38.000
+parentheses and
+
+0:00:35.520,0:00:40.480
+the code would work just the same
+
+0:00:38.000,0:00:45.840
+[Music]
+
+0:00:40.480,0:00:45.840
+so let's print our prompt to the screen
+
+0:00:48.320,0:00:52.239
+and it's printing appropriately so now
+
+0:00:50.640,0:00:54.160
+we can look at the next step of our
+
+0:00:52.239,0:00:56.559
+problem
+
+0:00:54.160,0:00:59.440
+we need to allow for the user to give
+
+0:00:56.559,0:01:01.440
+some input to our program
+
+0:00:59.440,0:01:03.600
+now you'll notice that if we just run
+
+0:01:01.440,0:01:06.400
+our program as it is
+
+0:01:03.600,0:01:07.520
+it prints out the prompt and completes
+
+0:01:06.400,0:01:09.439
+execution
+
+0:01:07.520,0:01:12.080
+the program is not going to wait for the
+
+0:01:09.439,0:01:13.360
+user to input anything
+
+0:01:12.080,0:01:16.080
+[Music]
+
+0:01:13.360,0:01:16.720
+in order to change that we can use the
+
+0:01:16.080,0:01:20.320
+get s
+
+0:01:16.720,0:01:21.759
+method you can think of that as get
+
+0:01:20.320,0:01:24.240
+string
+
+0:01:21.759,0:01:24.880
+and this will cause program execution to
+
+0:01:24.240,0:01:28.240
+pause
+
+0:01:24.880,0:01:31.680
+and wait for user input
+
+0:01:28.240,0:01:31.680
+so let's see what that looks like
+
+0:01:33.920,0:01:37.280
+so we've been prompted to type anything
+
+0:01:36.159,0:01:41.360
+we want
+
+0:01:37.280,0:01:44.399
+and now the program is waiting
+
+0:01:41.360,0:01:46.720
+i'll input hello and when i press
+
+0:01:44.399,0:01:48.740
+enter or return our program will
+
+0:01:46.720,0:01:50.560
+continue executing
+
+0:01:48.740,0:01:52.640
+[Music]
+
+0:01:50.560,0:01:55.040
+and in this instance our program doesn't
+
+0:01:52.640,0:01:59.119
+do anything else so it ends
+
+0:01:55.040,0:02:01.600
+[Music]
+
+0:01:59.119,0:02:04.000
+so now that we are waiting for and
+
+0:02:01.600,0:02:06.719
+obtaining that user input
+
+0:02:04.000,0:02:09.920
+we need to find a way to display that
+
+0:02:06.719,0:02:12.080
+input back to the user
+
+0:02:09.920,0:02:14.720
+when getting input from a user it's a
+
+0:02:12.080,0:02:15.520
+good idea to store that user input in a
+
+0:02:14.720,0:02:18.239
+variable
+
+0:02:15.520,0:02:20.560
+so that you can pass it around or use it
+
+0:02:18.239,0:02:22.319
+later
+
+0:02:20.560,0:02:24.000
+in this case we can use the local
+
+0:02:22.319,0:02:27.040
+variable text
+
+0:02:24.000,0:02:29.599
+to store the user input
+
+0:02:27.040,0:02:31.680
+just like we called put s and pass the
+
+0:02:29.599,0:02:34.879
+string in as an argument
+
+0:02:31.680,0:02:36.640
+we can also pass our local variable text
+
+0:02:34.879,0:02:39.200
+in as an argument
+
+0:02:36.640,0:02:42.239
+and our program will output the value of
+
+0:02:39.200,0:02:44.730
+text as a string
+
+0:02:42.239,0:02:47.280
+so let's run our program again
+
+0:02:44.730,0:02:50.000
+[Music]
+
+0:02:47.280,0:02:53.760
+we've been prompted for our input and
+
+0:02:50.000,0:02:53.760
+again i'm going to input hello
+
+0:02:53.920,0:02:58.400
+when i press enter hello is printed
+
+0:02:57.840,0:03:05.840
+right back
+
+0:02:58.400,0:03:05.840
+out to me and the program ends
+
+0:03:07.519,0:03:09.599
+you
+

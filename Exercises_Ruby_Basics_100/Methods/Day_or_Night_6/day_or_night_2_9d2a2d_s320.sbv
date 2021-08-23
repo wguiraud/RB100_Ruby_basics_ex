@@ -1,0 +1,41 @@
+we've been given some code that will randomly assign either the boolean true or the boolean false to a local variable called daylight the array sample method will randomly return an element from the array that it's called on
+in this case it will be either true or false
+
+so let's output the value of daylight WRITING and run our code a few times to see that random assignment
+so you can see that daylight will be randomly assigned to either true or false
+
+now the problem description tells us that we need to write a method named time of day that will take this boolean as an argument 
+if the argument is true our method will output its daytime 
+if the argument is false the method will output its nighttime 
+
+WRITING so let's begin writing our method definition we'll call our method time of day and we'll name our method parameter daylight
+so within our method we can use an if statement to output the appropriate string
+you may think that we need to compare daylight to true
+however ruby will evaluate the condition provided to our if statement 
+for truthiness             the work will be done for us 
+if daylight is the boolean true the first branch of our if statement will be executed and in that case we want to output the string it's daytime
+if daylight does not evaluate as true we want to output the string it's nighttime
+
+so i'll leave our call to put s where we output the value of daylight on line 10
+and on line 11 invoke our time of day method and pass the local variable daylight in
+as an argument
+
+i'd like to see the value of the local variable daylight next to the output of our time of day method to make sure that we are outputting the appropriate string when daylight is equal to true or false 
+
+so we run our code once and daylight was equal to the boolean false and our time of day method output the string it's night time
+so that's the correct behavior and we'll run our code just a few more times 
+
+now the local variable daylight was equal to the boolean true and the time of day method outputs its daytime
+so our method is working as we expect and WRITING we can remove this call to put us on line 10.
+
+now one important thing to note is that we named our method parameter daylight and the local variable that we initialize on line 9 is also named daylight 
+however we could name our method parameter which is a variable local to this time of day method anything we wanted these don't need to have the same name
+for instance we could name our method parameter daytime instead of daylight
+
+now our local variable initialized on line 9 is named daylight and we pass daylight in as an argument to the time of day method on line 10.
+
+within the time of day method our method parameter which will reference the value passed in as an argument either true or false      is named daytime and just to demonstrate that our code works just the same with a different method parameter name
+
+let's run the code again and you can see that our code still runs just fine 
+so it isn't necessary for our method parameter to have the same name as the argument passed into the method when we invoke it
+

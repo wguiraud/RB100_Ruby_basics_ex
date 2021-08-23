@@ -1,0 +1,30 @@
+this problem asks us to write two methods one that returns the string hello and one that returns the string world then we'll print both strings using put s combining them into one sentence and we've been given some expected output to model our output after 
+
+this problem has a couple of steps so we'll just start with the first one and write a method that returns the string hello
+
+WRITING we can call the method hello and because hello doesn't need to accept any arguments we won't define any parameters
+now you may think that because we ultimately want to output the string hello that we could call put s on line 6 and pass the string hello to it
+
+on line 9 we'll invoke our method hello and then we'll run the code 
+so as the code is written it does output the string hello however if we examine the problem requirements carefully we can see that our method is expected to return the string hello 
+right now the method outputs the string hello but does it return hello
+
+recall that in ruby methods return the evaluated result of the last line that is
+executed so in this method the last line that is executed and the only line executed is line 6 which contains a call to put s and we've passed the string hello to that method
+
+let's hop over in irb and examine what's happening there a little bit more closely
+if i type in the string hello you can see that it returns the string hello if i make a call to put s and pass the string hello to that method hello is output but the return value is nil so this is very important 
+put s always returns nil and that will affect the return value of a method if you have a call to put s on the last line executed
+
+so let's exit irb and go back to our code this method is returning nil despite the fact that it outputs hello. in order to follow the problem requirements the method must return the string hello and we can call put s when we invoke the method
+
+this will output the return value of the method which in this case is the string hello
+and that's what we see here when we run our code
+
+so now we need to create an additional method that returns the string world and we can model this similarly to our hello method 
+we'll call the method world and simply return the string world
+we can invoke this method and pass it to put s on line 14. now we are printing the strings hello and world 
+examining the problem description more closely we should be printing hello and world together in the same sentence 
+this doesn't match the example output we were given so we can use one call to put s to do this and we could achieve the desired output with either concatenation or string interpolation let's use interpolation and now we'll run our code again and see if the output matches what's expected and it does
+
+

@@ -1,0 +1,42 @@
+this exercise asks us what the code we've been given will print and why
+
+we've set the local variable a to reference a string 
+
+and on line 10 we pass this string into the method my value 
+
+on line 11 we output the string 
+
+so the question here is when we output a on line 11 will it have been mutated within the my value method ?
+
+so let's take a closer look at what actually happens within the myvalue method
+
+we pass in the local variable a as an argument which binds the parameter b
+to our string 
+
+now on line 7 we are actually calling a string method and this may not be 100% clear 
+from the syntax but TYPING we're calling a string method here that actually mutates the string that it's called on this is a destructive method
+
+so we'll break down the syntax a little bit here 
+b is pointing to the same string as our local variable a is still
+
+and this syntax is accessing the character at index 2 of the string b 
+which originally is going to be this first lowercase z 
+
+however we set it now equal to a new character TYPING so we can actually take a closer look at what happens here by outputting the character at index two of the string before and after we call this string method
+
+so you can see that originally index two holds the character z and we've altered it 
+after the code on line 8 is executed
+
+so because we have mutated this string with a destructive method DELETE
+
+we can expect that the value of a will have changed we have mutated this string 
+
+all along ERASING throughout the execution of our my value method 
+the local variable b within the method and the local variable a outside of the
+method have both been pointing at the same string 
+
+so when we mutate that string it affects both variables UNCOMMENTING 
+
+so let's output the value of a and you can see that it has changed from its
+original value as a result of being mutated within the my value method
+

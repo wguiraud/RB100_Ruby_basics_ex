@@ -1,0 +1,28 @@
+we've been given some code invoking a method called car with two strings passed as arguments and for this problem we want to go ahead and write the method car and define it so that it outputs a string containing the values of both of these arguments
+
+so we'll define a car method WRITING and if we run our code as is right now an exception will be raised 
+this is because we've defined our method to take zero arguments but when we invoked the method we passed two arguments to the method
+in this case we'll define two parameters make and model
+and now when we run the code you can see there's no error because the number of parameters defined in the method definition matches the number of arguments we pass to the method when we invoke it
+
+so according to the problem instructions we want our method to output the make and model in a sentence WRITING
+as the code is currently written the car method returns a sentence including the make and model but it doesn't output it 
+if we wanted this to be output we could call put s on line 8 when we invoke the method
+
+however the problem instructions here specifically state that we want our car method to print the string 
+so we can place this call to put s on line 5 and include it in our method
+now when we invoke our method on line 8 the car method outputs the make and model
+
+as the car method is currently written we're using it for its output
+the return value of this method will be nil
+Because the last line executed in our method includes this call to put us
+
+if we copy this method and hop over to irb when we call the car method let's pass in a nissan sentra
+you can see very clearly that although the method outputs nissan sentra the return value of the method is nil
+
+if we want the car method to actually return the string we can remove the call to put us on line 5 and call put us when we invoke the method instead
+
+now we'll see the same output when we run the code however the return value of the car method is entirely different so i'll paste this method into irb again without the call to put us
+and when i invoke the car method you can see that the string is now the return value of the method
+
+so it's always very important to be aware of what the return value of your method is and be very purposeful there

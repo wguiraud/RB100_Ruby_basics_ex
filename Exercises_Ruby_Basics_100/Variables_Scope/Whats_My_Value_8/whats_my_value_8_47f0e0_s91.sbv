@@ -1,0 +1,19 @@
+this problem asks us to determine what the code we're given will output and why
+
+on line 10 we're attempting to output the value of a   now a is initialized on line
+7 within a block and that block creates an inner scope 
+
+because of this the variable a will actually be local to this block and unable to be accessed in outer scopes    so we'll expect that this code will raise an exception
+
+let's run our code to see this and we can read our error message here and it tells us exactly what the problem is 
+
+our code on line 10 caused the problem in the main scope    there is no local variable or method a defined 
+
+so you can see that ruby cannot see this variable a that we've defined within the inner scope
+
+now if we wanted to alter our code a little bit so that it wouldn't raise an exception
+
+we could initialize a in the outer scope and then reassign it in the inner scope of our block this makes the variable a available to be output on what is now line 12
+
+we can now print the value of a successfully
+

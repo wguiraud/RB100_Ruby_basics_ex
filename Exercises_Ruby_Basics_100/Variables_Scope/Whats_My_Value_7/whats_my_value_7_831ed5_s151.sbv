@@ -1,0 +1,35 @@
+this problem asks us to figure out what line 12 of our code will output 
+so you can see that on line 12 we're attempting to output the value of the local variable
+a       we initialized a on line 4 and set it to reference to integer seven
+
+we also have a local variable array pointing to an array of integers
+
+so on line 7 we invoke the array each method on our array and each takes a block argument    as we pass each element of the array to the block we will be assigning it to the block local variable element
+
+now on line 8 it looks like what we're trying to do is reassign our local variable a
+to the value of element 
+
+so the question here is can we do this can we access the local variable a from
+within this block
+
+now the block does create a new inner scope
+when we access a within this block  we're no longer in the same scope in which a was initialized  
+because blocks have different local variable scoping rules than methods we actually are able to access a from within this inner scope 
+block variable scoping rules allow you to access local variables that were initialized in an outer scope 
+
+so we should be able to access a within this block and reassign it as we iterate through the elements of this array and assign a to those elements TYPING
+
+we can output a and see what's happening so let's run our code and you can see
+that we've output each element of the array so our reassignment of a to the value of
+these elements is working
+
+now that we know that     it shouldn't be too difficult to understand UNCOMMENTING what line eight of our code will output
+
+the most recent reassignment of a will be to the last element of our array which is the integer three
+
+so we can expect that our code will output three and let's run our code to make sure
+we're right
+
+okay so we got the output that we expected and this exercise has been a demonstration
+in understanding the local variable scoping rules of blocks
+

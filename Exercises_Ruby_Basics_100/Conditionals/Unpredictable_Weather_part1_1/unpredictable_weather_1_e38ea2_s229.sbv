@@ -1,0 +1,29 @@
+the code we've been given for this problem will randomly assign either visible or hidden
+to the local variable sun and if we output sun on line three and run our code a few times we can see that the task we've been given in this problem is to write an if statement that prints the sun is so bright if sun is equal to visible
+
+so let's try testing whether sun is equal to visible and outputting the return value of that comparison
+
+so first we'll output the value of sun and then we'll output the return value of comparing send to visible
+
+running our code a few times you can see that the return value of our comparison is false when sun is hidden and the return value of our comparison is true when sun is equal to visible
+
+so when we write our if statement we know we need to provide a condition to the if statement and if that condition evaluates as true then the body of this if statement will be executed
+
+in this case we'll want to output the sun is so bright because the comparison that we performed on line 4 will return either true or false 
+
+it's the perfect condition to provide to our if statement on line six if this condition we've provided returns true
+
+then line 7 will be executed and the sun is so bright will be output if the return value of this comparison is false
+
+line 7 will never be executed and nothing will be output
+
+so for now we'll leave in the code outputting the value of sun and run it again 
+
+this time we should see the value of sun and the string the sun is so bright should only be printed when the value of sun is visible
+
+and that's the behavior we see
+
+so we'll remove that extra code and run our final program and you can see that the sun is so bright is only being printed sometimes when the value of sun is visible
+
+so it's very important to be aware of the return value of the condition you provide your if statement and understand that the if statement pays attention to the truthiness of that condition
+

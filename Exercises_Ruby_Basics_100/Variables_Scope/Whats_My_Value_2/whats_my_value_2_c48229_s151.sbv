@@ -1,0 +1,34 @@
+we're asked in this problem what the code we're given will print and why
+
+so let's think about what we're seeing here on line 16 we have a local variable a referencing the integer seven
+
+on lines 18 through 21 we have the method my value
+
+on line 23 we invoke my value and pass in a as an argument 
+
+and on line 24 we output the value of a
+
+so what's most interesting in this problem is that the parameter defined in the my value method is also named a 
+
+so on line 19 within the myvalue method when we reassign a 
+
+and remember that this syntax is reassignment TYPING
+
+are we mutating or changing the value of the local variable a that we initialized on line 16?
+
+remember that local variables inside of the method definition, which is what this parameter a is, are not visible outside of the method definition
+
+and methods are entirely self-contained
+
+so local variables outside of the method are also not visible inside of the method definition
+
+so when we pass the value of a into the myvalue method on line 23, we bind 7, to the parameter a, which is a variable local to this method
+
+when we reassign the variable a local to the method
+
+it doesn't affect the local variable a that was initialized outside of the method
+
+it's easy to be confused because they are both called a but these are not the same variable and when we reassign a on line 19 it's now pointing at a different object
+
+so if we output a TYPING/UNCOMMENTING on line 20 we can see that within the method a points to the number 17  and when we execute line 24 we'll see that the local variable a initialized outside of the method still points to the number 7.
+

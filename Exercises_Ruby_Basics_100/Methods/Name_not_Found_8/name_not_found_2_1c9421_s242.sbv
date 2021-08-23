@@ -1,0 +1,246 @@
+0:00:06.240,0:00:10.960
+in this problem
+
+0:00:07.359,0:00:13.200
+we need to write a method a sign name
+
+0:00:10.960,0:00:15.040
+that will result in both of the test
+
+0:00:13.200,0:00:18.960
+cases we've been given
+
+0:00:15.040,0:00:20.080
+outputting true in our test cases on
+
+0:00:18.960,0:00:23.359
+lines 1 and
+
+0:00:20.080,0:00:25.119
+2 we compare the return value of the
+
+0:00:23.359,0:00:28.320
+assign name method
+
+0:00:25.119,0:00:32.640
+to the strings kevin and bob
+
+0:00:28.320,0:00:32.640
+and output the result of that comparison
+
+0:00:33.040,0:00:39.200
+so when we run our code we want to see
+
+0:00:35.360,0:00:41.360
+an output of true for both test cases
+
+0:00:39.200,0:00:45.840
+and first let's begin by just working
+
+0:00:41.360,0:00:45.840
+with our first test case
+
+0:00:48.800,0:00:54.800
+our method should be called assign name
+
+0:00:52.719,0:00:57.280
+and on line three you can see that we
+
+0:00:54.800,0:00:57.520
+pass the string kevin to our method as
+
+0:00:57.280,0:01:00.960
+an
+
+0:00:57.520,0:01:04.879
+argument so we'll give our method
+
+0:01:00.960,0:01:04.879
+a parameter called name
+
+0:01:08.720,0:01:13.360
+and the problem description tells us
+
+0:01:10.799,0:01:16.799
+that the methods return value should be
+
+0:01:13.360,0:01:16.799
+the value of the argument
+
+0:01:17.840,0:01:22.000
+so we'll simply return name from our
+
+0:01:20.240,0:01:23.840
+method
+
+0:01:22.000,0:01:26.240
+let's run our code with our first test
+
+0:01:23.840,0:01:28.720
+case and see whether or not the output
+
+0:01:26.240,0:01:28.720
+is true
+
+0:01:31.759,0:01:34.400
+and it is
+
+0:01:37.040,0:01:40.079
+so we're seeing the expected behavior
+
+0:01:39.280,0:01:44.320
+here
+
+0:01:40.079,0:01:44.320
+for our first test case on line five
+
+0:01:45.520,0:01:49.360
+now let's run our code with our second
+
+0:01:47.920,0:01:55.840
+test case as well
+
+0:01:49.360,0:01:55.840
+and see if we output true again
+
+0:01:58.799,0:02:03.040
+you can see that although we still
+
+0:02:00.799,0:02:04.560
+output true when we run our first test
+
+0:02:03.040,0:02:07.840
+case
+
+0:02:04.560,0:02:11.039
+our second test case raises an exception
+
+0:02:07.840,0:02:11.840
+an argument error we passed zero
+
+0:02:11.039,0:02:14.480
+arguments
+
+0:02:11.840,0:02:16.480
+to the method assign name however the
+
+0:02:14.480,0:02:18.959
+method was expecting us to pass one
+
+0:02:16.480,0:02:18.959
+argument
+
+0:02:20.000,0:02:26.560
+so let's go back and look at our code
+
+0:02:23.680,0:02:28.160
+you can see on line six we didn't pass
+
+0:02:26.560,0:02:32.319
+any arguments to assign
+
+0:02:28.160,0:02:33.519
+name however we are expecting a return
+
+0:02:32.319,0:02:36.239
+value of bob
+
+0:02:33.519,0:02:37.760
+from our method now the problem
+
+0:02:36.239,0:02:41.280
+description tells us that
+
+0:02:37.760,0:02:43.360
+our method should accept one argument
+
+0:02:41.280,0:02:44.959
+as it does in our first test case on
+
+0:02:43.360,0:02:47.920
+line 5
+
+0:02:44.959,0:02:49.519
+but doesn't require it the parameter
+
+0:02:47.920,0:02:53.120
+should default to the string
+
+0:02:49.519,0:02:55.599
+bob if no argument is given
+
+0:02:53.120,0:02:57.120
+so what we need to do here is define a
+
+0:02:55.599,0:03:00.560
+default parameter for
+
+0:02:57.120,0:03:01.120
+our method our problem description tells
+
+0:03:00.560,0:03:02.959
+us that
+
+0:03:01.120,0:03:06.239
+in this case the default parameter
+
+0:03:02.959,0:03:06.239
+should be the string bob
+
+0:03:07.200,0:03:13.599
+so on line one we will define a default
+
+0:03:10.319,0:03:13.599
+parameter for our method
+
+0:03:13.920,0:03:19.040
+next to the parameter name we'll place
+
+0:03:16.080,0:03:20.640
+an equal sign
+
+0:03:19.040,0:03:22.480
+and then the value of the default
+
+0:03:20.640,0:03:25.200
+parameter
+
+0:03:22.480,0:03:26.480
+now if we fail to pass in an argument
+
+0:03:25.200,0:03:30.159
+our method will return
+
+0:03:26.480,0:03:32.480
+bob otherwise our method will use the
+
+0:03:30.159,0:03:35.760
+argument that we passed in such as
+
+0:03:32.480,0:03:38.000
+kevin on line five
+
+0:03:35.760,0:03:39.840
+so let's run our code again and see if
+
+0:03:38.000,0:03:42.319
+we're outputting true for both test
+
+0:03:39.840,0:03:42.319
+cases
+
+0:03:43.920,0:03:47.840
+and we are
+
+0:03:48.959,0:03:53.040
+so it's possible to define a default
+
+0:03:51.440,0:04:01.840
+parameter for your method
+
+0:03:53.040,0:04:03.920
+if you need that flexibility
+
+0:04:01.840,0:04:03.920
+you
+

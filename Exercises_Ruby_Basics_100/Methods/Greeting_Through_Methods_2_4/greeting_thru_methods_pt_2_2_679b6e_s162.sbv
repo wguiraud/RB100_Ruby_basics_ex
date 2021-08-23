@@ -1,0 +1,20 @@
+this problem asks us to write a method named greet that invokes the hello and world methods
+we want to invoke greet and pass it to put s in order to output the string hello world
+and we've been given some example output to model our output after
+
+so we'll begin by defining the method greet
+and in order to solve this problem we need to invoke a method within a method
+let's try invoking the hello method within our greet method and i'll pass our invocation of greed to a call to put us
+and we've output hello which is the return value of the method hello that we called on line 12 within our method greet
+
+so we've got part of our desired output but we also want to output world 
+because hello returns a string and world returns a string we can concatenate those returned strings as the return value of our greet method
+
+look at our output now
+we're outputting these strings returned from both our hello and world methods but our output doesn't look quite right we need a space between these two words and in order to do that we can simply add a space to our concatenation
+
+now when we run our code we see the expected output in this problem we chose to use concatenation however we also could use string interpolation to achieve the expected output
+
+i've replaced the concatenation with interpolation
+and now running our code you can see that the output is the same
+

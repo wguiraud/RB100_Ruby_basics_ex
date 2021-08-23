@@ -1,0 +1,588 @@
+0:00:04.960,0:00:09.519
+in our previous solution
+
+0:00:07.200,0:00:11.759
+the prompt we display to our user
+
+0:00:09.519,0:00:15.440
+suggests that we are expecting them to
+
+0:00:11.759,0:00:17.760
+input either y or n however we don't
+
+0:00:15.440,0:00:18.480
+actually ensure that the user inputs
+
+0:00:17.760,0:00:21.840
+either y
+
+0:00:18.480,0:00:24.240
+or n we only verify whether or not the
+
+0:00:21.840,0:00:26.880
+user input is equal to y
+
+0:00:24.240,0:00:28.400
+now we want to actually require the user
+
+0:00:26.880,0:00:31.439
+to input either y
+
+0:00:28.400,0:00:33.440
+or n and if they don't we'll issue an
+
+0:00:31.439,0:00:35.440
+error message to the user and prompt
+
+0:00:33.440,0:00:44.310
+them again
+
+0:00:35.440,0:00:48.160
+let's put our existing code into a loop
+
+0:00:44.310,0:00:50.320
+[Music]
+
+0:00:48.160,0:00:51.520
+now we don't want to run our code yet
+
+0:00:50.320,0:00:54.640
+because right now we have an
+
+0:00:51.520,0:00:58.719
+infinite loop so we want to think about
+
+0:00:54.640,0:01:00.559
+when we want to break out of this loop
+
+0:00:58.719,0:01:02.800
+from the problem description we know
+
+0:01:00.559,0:01:04.400
+that we want to continue prompting the
+
+0:01:02.800,0:01:07.439
+user for their input
+
+0:01:04.400,0:01:09.280
+if their input is not y or n
+
+0:01:07.439,0:01:13.840
+and we're going to represent that with
+
+0:01:09.280,0:01:13.840
+our loop
+
+0:01:14.000,0:01:17.520
+so let's think about the condition in
+
+0:01:15.920,0:01:19.840
+which we would want to break out of our
+
+0:01:17.520,0:01:19.840
+loop
+
+0:01:22.159,0:01:27.690
+we can create an array of what we would
+
+0:01:25.119,0:01:29.119
+consider acceptable characters
+
+0:01:27.690,0:01:32.240
+[Music]
+
+0:01:29.119,0:01:34.640
+so in this case we'll use y and n and
+
+0:01:32.240,0:01:35.360
+then we can call the array include
+
+0:01:34.640,0:01:38.479
+method
+
+0:01:35.360,0:01:40.720
+on this array of characters and this
+
+0:01:38.479,0:01:42.720
+method returns a boolean
+
+0:01:40.720,0:01:45.119
+based on whether or not the calling
+
+0:01:42.720,0:01:48.079
+array includes
+
+0:01:45.119,0:01:49.280
+the argument so we'll pass our choice
+
+0:01:48.079,0:01:51.040
+local variable
+
+0:01:49.280,0:01:54.560
+which holds a reference to the user
+
+0:01:51.040,0:01:57.840
+input to the include method
+
+0:01:54.560,0:02:02.079
+and ruby will check whether or not the
+
+0:01:57.840,0:02:02.079
+calling array includes our argument
+
+0:02:02.399,0:02:10.239
+if it does we'll break out of our loop
+
+0:02:08.399,0:02:12.480
+so for now i'm going to comment out the
+
+0:02:10.239,0:02:15.140
+rest of this code and let's just see how
+
+0:02:12.480,0:02:18.480
+our break condition is working
+
+0:02:15.140,0:02:22.959
+[Music]
+
+0:02:18.480,0:02:25.200
+if i input something other than y or n
+
+0:02:22.959,0:02:28.480
+you can see that our loop continues to
+
+0:02:25.200,0:02:28.480
+run we're prompted again
+
+0:02:28.560,0:02:32.160
+however if i input a y
+
+0:02:32.400,0:02:35.760
+we've broken out of our loop and our
+
+0:02:34.480,0:02:38.400
+program has completed
+
+0:02:35.760,0:02:38.400
+execution
+
+0:02:39.200,0:02:42.879
+now we know that we want to display an
+
+0:02:41.280,0:02:45.200
+error message to the user
+
+0:02:42.879,0:02:47.280
+if their input is anything other than y
+
+0:02:45.200,0:02:49.680
+or n
+
+0:02:47.280,0:02:50.720
+and we want to place the output of this
+
+0:02:49.680,0:02:54.560
+error message
+
+0:02:50.720,0:02:57.200
+after the break condition in other words
+
+0:02:54.560,0:02:59.200
+if we don't break out of our loop then
+
+0:02:57.200,0:03:00.000
+we want to display the error message to
+
+0:02:59.200,0:03:02.840
+the user
+
+0:03:00.000,0:03:05.840
+because that means their input was not
+
+0:03:02.840,0:03:05.840
+valid
+
+0:03:07.120,0:03:10.560
+let's run the program again
+
+0:03:11.200,0:03:14.319
+this time when we input something other
+
+0:03:13.440,0:03:19.840
+than y or
+
+0:03:14.319,0:03:19.840
+n we'll expect to see an error message
+
+0:03:20.319,0:03:24.560
+and you can see the error message is
+
+0:03:22.239,0:03:26.319
+displayed and we've been prompted again
+
+0:03:24.560,0:03:28.879
+so that's exactly what we want to see at
+
+0:03:26.319,0:03:32.879
+this point
+
+0:03:28.879,0:03:36.140
+if i input n
+
+0:03:32.879,0:03:38.799
+we've broken out of the loop
+
+0:03:36.140,0:03:40.799
+[Music]
+
+0:03:38.799,0:03:42.000
+so now we need to think about where we
+
+0:03:40.799,0:03:44.560
+want to put this
+
+0:03:42.000,0:03:46.000
+if statement that will print something
+
+0:03:44.560,0:03:48.239
+if our user input was
+
+0:03:46.000,0:03:48.239
+y
+
+0:03:48.390,0:03:51.519
+[Music]
+
+0:03:49.760,0:03:52.799
+if we leave this if statement where it
+
+0:03:51.519,0:03:55.920
+is currently
+
+0:03:52.799,0:03:58.480
+line 9 will never be executed
+
+0:03:55.920,0:03:59.360
+and that's because on line 5 we break
+
+0:03:58.480,0:04:02.640
+out of our loop
+
+0:03:59.360,0:04:05.120
+if the user input was y or n so there
+
+0:04:02.640,0:04:07.920
+will never be a situation where we reach
+
+0:04:05.120,0:04:10.799
+line 8 still within our loop and choice
+
+0:04:07.920,0:04:13.360
+is equal to y
+
+0:04:10.799,0:04:15.820
+so the solution here is to move this if
+
+0:04:13.360,0:04:19.199
+statement outside of our loop
+
+0:04:15.820,0:04:22.400
+[Music]
+
+0:04:19.199,0:04:23.440
+if choice is equal to y or n we'll break
+
+0:04:22.400,0:04:25.280
+out of our loop
+
+0:04:23.440,0:04:27.040
+and then we can check whether choice is
+
+0:04:25.280,0:04:30.080
+equal to y and print
+
+0:04:27.040,0:04:30.080
+something if it is
+
+0:04:30.560,0:04:34.520
+so let's run the code now and see if
+
+0:04:32.400,0:04:38.639
+we're getting the expected behavior
+
+0:04:34.520,0:04:41.199
+[Music]
+
+0:04:38.639,0:04:42.000
+first i'll input something other than y
+
+0:04:41.199,0:04:46.560
+or n like a
+
+0:04:42.000,0:04:48.000
+g and i've received the message that the
+
+0:04:46.560,0:04:50.880
+input was invalid
+
+0:04:48.000,0:04:52.639
+and i'm prompted again this time i'll
+
+0:04:50.880,0:04:54.479
+input y
+
+0:04:52.639,0:04:56.880
+and you can see that an exception has
+
+0:04:54.479,0:04:59.520
+been raised ruby has identified
+
+0:04:56.880,0:05:00.160
+an undefined local variable or method
+
+0:04:59.520,0:05:01.730
+choice
+
+0:05:00.160,0:05:03.440
+on line 9.
+
+0:05:01.730,0:05:06.479
+[Music]
+
+0:05:03.440,0:05:06.479
+let's look at our code
+
+0:05:08.240,0:05:15.440
+the problem is choice on line nine
+
+0:05:12.720,0:05:16.720
+we initialize the local variable choice
+
+0:05:15.440,0:05:19.680
+within the block
+
+0:05:16.720,0:05:20.080
+passed to our loop this block creates an
+
+0:05:19.680,0:05:23.039
+inner
+
+0:05:20.080,0:05:24.400
+scope and because choice was initialized
+
+0:05:23.039,0:05:26.639
+in an inner scope
+
+0:05:24.400,0:05:29.600
+ruby cannot see it from this outer scope
+
+0:05:26.639,0:05:29.600
+here on line 9.
+
+0:05:29.919,0:05:33.759
+a simple way to solve this problem is to
+
+0:05:32.880,0:05:37.680
+initialize
+
+0:05:33.759,0:05:40.720
+choice in the outer scope
+
+0:05:37.680,0:05:43.919
+and initially just set it to nil and
+
+0:05:40.720,0:05:45.919
+then we'll reassign it within the loop
+
+0:05:43.919,0:05:48.479
+now let's run our code again and see if
+
+0:05:45.919,0:05:48.479
+it's working
+
+0:05:49.039,0:05:53.990
+we'll enter y again this is where we
+
+0:05:51.520,0:05:55.360
+received the exception last time
+
+0:05:53.990,0:05:57.120
+[Music]
+
+0:05:55.360,0:05:59.840
+and you can see that our code is running
+
+0:05:57.120,0:05:59.840
+appropriately
+
+0:06:01.770,0:06:05.520
+[Music]
+
+0:06:02.960,0:06:07.280
+let's input an n and make sure it runs
+
+0:06:05.520,0:06:08.060
+appropriately with an input of n
+
+0:06:07.280,0:06:10.560
+as well
+
+0:06:08.060,0:06:12.450
+[Music]
+
+0:06:10.560,0:06:14.479
+and it does
+
+0:06:12.450,0:06:16.560
+[Music]
+
+0:06:14.479,0:06:18.160
+currently we've completed a good chunk
+
+0:06:16.560,0:06:18.840
+of the problem but there is one
+
+0:06:18.160,0:06:23.120
+remaining
+
+0:06:18.840,0:06:26.960
+issue if we run our program
+
+0:06:23.120,0:06:28.880
+and we input an uppercase y
+
+0:06:26.960,0:06:30.960
+you can see that our program thinks this
+
+0:06:28.880,0:06:32.400
+is invalid input
+
+0:06:30.960,0:06:34.560
+[Music]
+
+0:06:32.400,0:06:35.840
+and we'll see the same behavior if we
+
+0:06:34.560,0:06:40.560
+input in uppercase
+
+0:06:35.840,0:06:43.280
+n our program only responds to
+
+0:06:40.560,0:06:44.560
+lowercase characters y and n
+
+0:06:43.280,0:06:46.560
+[Music]
+
+0:06:44.560,0:06:48.080
+and typically when you're asking for
+
+0:06:46.560,0:06:50.960
+user input like this
+
+0:06:48.080,0:06:53.120
+you would want it to be case insensitive
+
+0:06:50.960,0:06:57.440
+so we want to recognize a y
+
+0:06:53.120,0:07:00.240
+whether it's uppercase or lowercase
+
+0:06:57.440,0:07:02.720
+calling the string down case method on
+
+0:07:00.240,0:07:03.680
+the user input when we store it in the
+
+0:07:02.720,0:07:07.039
+local variable
+
+0:07:03.680,0:07:09.759
+choice will cause all user input to be
+
+0:07:07.039,0:07:11.840
+in lowercase characters this makes it a
+
+0:07:09.759,0:07:14.479
+little bit easier for us to work with
+
+0:07:11.840,0:07:16.960
+[Music]
+
+0:07:14.479,0:07:18.639
+now if i run the program and input in
+
+0:07:16.960,0:07:20.400
+uppercase y
+
+0:07:18.639,0:07:21.919
+we're still going to see the same
+
+0:07:20.400,0:07:25.210
+behavior so
+
+0:07:21.919,0:07:28.400
+now our program is case insensitive
+
+0:07:25.210,0:07:30.880
+[Music]
+
+0:07:28.400,0:07:32.000
+now just to note there are a few ways
+
+0:07:30.880,0:07:35.199
+that you could
+
+0:07:32.000,0:07:37.759
+write this logic on line seven
+
+0:07:35.199,0:07:40.880
+there is a shortcut syntax in ruby to
+
+0:07:37.759,0:07:44.879
+write an array of strings
+
+0:07:40.880,0:07:47.199
+and i'll demonstrate that here on line 7
+
+0:07:44.879,0:07:49.120
+this syntax will be identified by ruby
+
+0:07:47.199,0:07:51.120
+as an array of strings
+
+0:07:49.120,0:07:53.360
+if you didn't happen to know the include
+
+0:07:51.120,0:07:57.360
+method
+
+0:07:53.360,0:07:57.360
+you could also write out your own logic
+
+0:07:57.599,0:08:01.360
+if choice is equal to y or choice is
+
+0:08:00.479,0:08:12.830
+equal
+
+0:08:01.360,0:08:15.039
+to n and this would work as well
+
+0:08:12.830,0:08:17.520
+[Music]
+
+0:08:15.039,0:08:19.599
+remember this simple loop structure when
+
+0:08:17.520,0:08:27.840
+you need to do some input validation in
+
+0:08:19.599,0:08:27.840
+your small programs
+
+0:08:28.400,0:08:30.479
+you
+
