@@ -1,0 +1,234 @@
+0:00:03.840,0:00:08.720
+this problem requires us to
+
+0:00:05.920,0:00:09.360
+modify the given code so that the string
+
+0:00:08.720,0:00:12.960
+hello
+
+0:00:09.360,0:00:14.240
+is printed five times first let's
+
+0:00:12.960,0:00:17.440
+examine the code
+
+0:00:14.240,0:00:20.800
+that we've been given on line one we've
+
+0:00:17.440,0:00:24.240
+initialized a local variable say hello
+
+0:00:20.800,0:00:26.320
+referencing the boolean value true
+
+0:00:24.240,0:00:27.920
+on lines three through six we have a
+
+0:00:26.320,0:00:30.080
+while loop
+
+0:00:27.920,0:00:33.200
+and the condition provided to this while
+
+0:00:30.080,0:00:36.000
+loop is the variable say hello
+
+0:00:33.200,0:00:38.079
+the way that this works is while the
+
+0:00:36.000,0:00:41.760
+value of the variable say hello
+
+0:00:38.079,0:00:44.640
+is truthy the loop will execute
+
+0:00:41.760,0:00:45.680
+if the value of the sayhello variable is
+
+0:00:44.640,0:00:49.360
+falsy
+
+0:00:45.680,0:00:52.000
+iteration will stop so initially
+
+0:00:49.360,0:00:54.800
+sayhello references the boolean true
+
+0:00:52.000,0:00:56.399
+which is truthy so the loop begins to
+
+0:00:54.800,0:01:00.160
+execute
+
+0:00:56.399,0:01:03.520
+on line four it outputs the string hello
+
+0:01:00.160,0:01:07.200
+on line five say hello is reassigned
+
+0:01:03.520,0:01:09.600
+to false and of course false is falsy
+
+0:01:07.200,0:01:11.439
+so now when ruby reaches the top of the
+
+0:01:09.600,0:01:14.640
+loop again on line three
+
+0:01:11.439,0:01:18.560
+because the value of say hello is falsey
+
+0:01:14.640,0:01:19.920
+the loop stops executing as this code is
+
+0:01:18.560,0:01:22.159
+currently written
+
+0:01:19.920,0:01:23.040
+the loop will only iterate and output
+
+0:01:22.159,0:01:26.080
+hello one
+
+0:01:23.040,0:01:28.720
+time and to see this in action i'm going
+
+0:01:26.080,0:01:31.200
+to run the code
+
+0:01:28.720,0:01:32.960
+the desired result here is actually to
+
+0:01:31.200,0:01:35.759
+output the string hello
+
+0:01:32.960,0:01:37.840
+five times knowing that we can determine
+
+0:01:35.759,0:01:40.960
+that we do not want to reassign
+
+0:01:37.840,0:01:42.240
+say hello to false every time this loop
+
+0:01:40.960,0:01:44.479
+runs
+
+0:01:42.240,0:01:46.799
+in order to control when we do want to
+
+0:01:44.479,0:01:50.240
+reassign the sayhello variable
+
+0:01:46.799,0:01:50.240
+we can use an if statement
+
+0:01:51.040,0:01:54.799
+now we need to use a condition for our
+
+0:01:53.360,0:01:57.119
+if statement
+
+0:01:54.799,0:02:00.560
+and one simple way to do this would be
+
+0:01:57.119,0:02:03.119
+to have a variable count
+
+0:02:00.560,0:02:05.520
+and when the value of count is equal to
+
+0:02:03.119,0:02:05.520
+5
+
+0:02:06.000,0:02:12.480
+reassign the variable say hello to false
+
+0:02:10.319,0:02:14.959
+now we need to initialize our local
+
+0:02:12.480,0:02:17.440
+variable count
+
+0:02:14.959,0:02:19.570
+and it needs to be initialized outside
+
+0:02:17.440,0:02:21.440
+of this loop
+
+0:02:19.570,0:02:23.599
+[Music]
+
+0:02:21.440,0:02:24.720
+if we were to initialize our account
+
+0:02:23.599,0:02:27.440
+variable
+
+0:02:24.720,0:02:29.040
+inside of our while loop it would be
+
+0:02:27.440,0:02:31.040
+reassigned to zero
+
+0:02:29.040,0:02:33.599
+each time we looped through and the loop
+
+0:02:31.040,0:02:36.640
+would become infinite
+
+0:02:33.599,0:02:38.160
+instead what we need to do is initialize
+
+0:02:36.640,0:02:41.440
+count in the outer scope
+
+0:02:38.160,0:02:42.000
+and increment it by one each time that
+
+0:02:41.440,0:02:45.200
+we
+
+0:02:42.000,0:02:47.440
+iterate through our loop so we'll
+
+0:02:45.200,0:02:52.000
+reassign count on line six
+
+0:02:47.440,0:02:54.000
+to the current value of count plus one
+
+0:02:52.000,0:02:55.200
+now looking at our code on lines eight
+
+0:02:54.000,0:02:57.280
+through ten
+
+0:02:55.200,0:03:05.840
+we can actually write our if condition
+
+0:02:57.280,0:03:05.840
+in shorthand syntax
+
+0:03:06.460,0:03:11.280
+[Music]
+
+0:03:08.879,0:03:13.740
+and now i'm going to run the code and
+
+0:03:11.280,0:03:17.120
+see if i'm getting the expected behavior
+
+0:03:13.740,0:03:19.280
+[Music]
+
+0:03:17.120,0:03:21.519
+and the string hello was output to the
+
+0:03:19.280,0:03:31.360
+screen five times which is exactly what
+
+0:03:21.519,0:03:31.360
+we wanted
+

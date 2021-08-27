@@ -20,7 +20,7 @@
 
 
 
-def dog(name) 
+def dog(name)
 	return name 
 end
 
@@ -30,6 +30,4 @@ end
 
 puts "The dog's name is #{dog('Spot')}."
 puts "The cat's name is #{cat('Ginger')}."
-
-
 
