@@ -1,0 +1,282 @@
+0:00:04.960,0:00:08.320
+we need to modify the code we've been
+
+0:00:06.879,0:00:13.280
+given in this problem
+
+0:00:08.320,0:00:13.280
+so that it counts up from 1 to 10.
+
+0:00:13.440,0:00:19.520
+running the code as we've been given it
+
+0:00:15.599,0:00:19.520
+counts down from 10 to 1.
+
+0:00:20.160,0:00:24.560
+you can see on line 1 we have a local
+
+0:00:22.240,0:00:28.160
+variable count initialized to
+
+0:00:24.560,0:00:30.240
+10 and on lines 3 through 6 we have an
+
+0:00:28.160,0:00:32.960
+until loop
+
+0:00:30.240,0:00:33.680
+now an until loop will continue to
+
+0:00:32.960,0:00:36.399
+iterate
+
+0:00:33.680,0:00:37.120
+until its condition which you can see to
+
+0:00:36.399,0:00:41.120
+the right
+
+0:00:37.120,0:00:44.719
+of until here on line three evaluates to
+
+0:00:41.120,0:00:46.320
+true this works kind of in the opposite
+
+0:00:44.719,0:00:48.559
+of a while loop which
+
+0:00:46.320,0:00:50.960
+iterates until its condition evaluates
+
+0:00:48.559,0:00:54.239
+as false
+
+0:00:50.960,0:00:56.960
+so in this code until the local variable
+
+0:00:54.239,0:00:59.920
+count references 0
+
+0:00:56.960,0:01:02.960
+the program outputs count and then
+
+0:00:59.920,0:01:05.040
+decreases the value of count by one
+
+0:01:02.960,0:01:07.280
+so this code successfully counts down
+
+0:01:05.040,0:01:09.600
+from ten to one
+
+0:01:07.280,0:01:11.360
+what we want to do is count from one to
+
+0:01:09.600,0:01:14.240
+ten
+
+0:01:11.360,0:01:16.080
+so the first step here is to change our
+
+0:01:14.240,0:01:19.840
+initial value of count
+
+0:01:16.080,0:01:20.400
+to one and we know that as we iterate
+
+0:01:19.840,0:01:23.439
+through this
+
+0:01:20.400,0:01:26.560
+loop we want to increment count
+
+0:01:23.439,0:01:28.720
+by one now we need to think hard about
+
+0:01:26.560,0:01:29.210
+what the condition for our until loop
+
+0:01:28.720,0:01:31.280
+should be
+
+0:01:29.210,0:01:33.360
+[Music]
+
+0:01:31.280,0:01:36.240
+let's first just set it to 10 and see
+
+0:01:33.360,0:01:38.560
+what the output is
+
+0:01:36.240,0:01:39.840
+our program only outputs numbers 1
+
+0:01:38.560,0:01:42.240
+through
+
+0:01:39.840,0:01:43.119
+and we want 10 to be included in our
+
+0:01:42.240,0:01:45.280
+output
+
+0:01:43.119,0:01:46.799
+looking closely at the code you can see
+
+0:01:45.280,0:01:50.000
+that because we
+
+0:01:46.799,0:01:53.119
+output the value of count on line 4
+
+0:01:50.000,0:01:55.840
+prior to incrementing count by 1
+
+0:01:53.119,0:01:57.600
+when this loop begins its 10th iteration
+
+0:01:55.840,0:02:00.640
+it will stop
+
+0:01:57.600,0:02:02.880
+because count will be equal to 10 prior
+
+0:02:00.640,0:02:06.079
+to ever reaching the code on line 4
+
+0:02:02.880,0:02:07.360
+and outputting 10. so what we can do to
+
+0:02:06.079,0:02:10.160
+fix this problem
+
+0:02:07.360,0:02:12.480
+is continue to iterate into account is
+
+0:02:10.160,0:02:14.160
+greater than 10.
+
+0:02:12.480,0:02:15.920
+[Music]
+
+0:02:14.160,0:02:19.200
+and running in our code you can see that
+
+0:02:15.920,0:02:21.440
+this will give us the expected output
+
+0:02:19.200,0:02:23.440
+remember that when you're looping and
+
+0:02:21.440,0:02:26.640
+keeping track of a count
+
+0:02:23.440,0:02:28.800
+it's very important to be aware of when
+
+0:02:26.640,0:02:31.040
+you're performing the desired action
+
+0:02:28.800,0:02:33.280
+versus when your loop is going to stop
+
+0:02:31.040,0:02:36.400
+iterating
+
+0:02:33.280,0:02:37.200
+if we wanted to end our iteration when
+
+0:02:36.400,0:02:40.480
+count was
+
+0:02:37.200,0:02:42.319
+equal to exactly 10 we would need to
+
+0:02:40.480,0:02:46.239
+move our code around a little bit so
+
+0:02:42.319,0:02:46.239
+that it would still work as we wanted to
+
+0:02:46.720,0:02:52.160
+so we could increment count prior to
+
+0:02:48.959,0:02:52.160
+outputting its value
+
+0:02:54.239,0:03:00.560
+however then our count starts at two
+
+0:02:58.400,0:03:01.840
+so if we move that code around we have
+
+0:03:00.560,0:03:05.200
+to remember to also
+
+0:03:01.840,0:03:07.599
+initialize count to zero
+
+0:03:05.200,0:03:09.599
+and now again we'll see the expected
+
+0:03:07.599,0:03:11.840
+output this way
+
+0:03:09.599,0:03:14.800
+so there's more than one way to write
+
+0:03:11.840,0:03:17.040
+your code to achieve the expected result
+
+0:03:14.800,0:03:18.800
+but the important thing is to be very
+
+0:03:17.040,0:03:21.040
+conscious of
+
+0:03:18.800,0:03:22.800
+when exactly you make changes to the
+
+0:03:21.040,0:03:24.720
+values of your variables
+
+0:03:22.800,0:03:27.599
+and how that's going to affect the
+
+0:03:24.720,0:03:29.760
+execution of your loop
+
+0:03:27.599,0:03:31.519
+and here again we know that there are
+
+0:03:29.760,0:03:33.360
+some ruby methods that
+
+0:03:31.519,0:03:34.959
+could achieve the same thing that we've
+
+0:03:33.360,0:03:37.280
+done here with this code
+
+0:03:34.959,0:03:39.200
+but it's very important to be able to
+
+0:03:37.280,0:03:42.080
+write this logic out yourself
+
+0:03:39.200,0:03:44.000
+as there's not always going to be the
+
+0:03:42.080,0:03:45.200
+perfect method available for what you
+
+0:03:44.000,0:03:47.040
+want to do
+
+0:03:45.200,0:03:58.159
+and you may not always have each and
+
+0:03:47.040,0:03:58.159
+every method memorized at that time
+
