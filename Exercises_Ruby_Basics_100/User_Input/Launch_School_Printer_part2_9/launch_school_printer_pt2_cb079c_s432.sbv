@@ -1,0 +1,513 @@
+0:00:04.799,0:00:09.840
+we want to take this existing code
+
+0:00:07.120,0:00:10.320
+and repeat its functionality until the
+
+0:00:09.840,0:00:14.400
+user
+
+0:00:10.320,0:00:14.400
+presses q to quit the program
+
+0:00:15.360,0:00:21.680
+so running our code as it is
+
+0:00:18.480,0:00:24.400
+the user is prompted to input how many
+
+0:00:21.680,0:00:26.240
+lines they want the program to output
+
+0:00:24.400,0:00:28.080
+and this number must be greater than or
+
+0:00:26.240,0:00:31.119
+equal to three
+
+0:00:28.080,0:00:33.280
+so we'll input five
+
+0:00:31.119,0:00:36.480
+the string is printed five times and
+
+0:00:33.280,0:00:39.280
+then the program ends
+
+0:00:36.480,0:00:41.040
+what we want the program to do now is
+
+0:00:39.280,0:00:43.840
+after printing the lines
+
+0:00:41.040,0:00:45.120
+to again prompt the user how many output
+
+0:00:43.840,0:00:48.000
+lines do you want
+
+0:00:45.120,0:00:50.000
+and just repeat this process when the
+
+0:00:48.000,0:00:54.239
+user enters q
+
+0:00:50.000,0:00:54.239
+then we want the process to end
+
+0:00:54.399,0:00:58.480
+and we can achieve this by nesting these
+
+0:00:57.039,0:01:01.680
+existing loops
+
+0:00:58.480,0:01:01.680
+in an outer loop
+
+0:01:02.079,0:01:09.040
+so we'll take the existing code and
+
+0:01:05.920,0:01:11.360
+place it in a loop now
+
+0:01:09.040,0:01:26.320
+with our prompt we need to tell the user
+
+0:01:11.360,0:01:28.320
+that they can press q to quit
+
+0:01:26.320,0:01:31.119
+so we're still requiring the number to
+
+0:01:28.320,0:01:34.159
+be greater than or equal to three
+
+0:01:31.119,0:01:37.920
+and in parentheses we'll display q
+
+0:01:34.159,0:01:40.240
+to quit currently we're storing the user
+
+0:01:37.920,0:01:41.759
+input in a local variable called number
+
+0:01:40.240,0:01:43.920
+of lines
+
+0:01:41.759,0:01:46.000
+so how should we handle this when we're
+
+0:01:43.920,0:01:48.960
+not sure whether the user input
+
+0:01:46.000,0:01:51.600
+is the number of lines or a queue and
+
+0:01:48.960,0:01:53.759
+the user wants to quit
+
+0:01:51.600,0:01:57.680
+before we do anything let's first
+
+0:01:53.759,0:02:00.240
+examine whether the user input queue
+
+0:01:57.680,0:02:00.960
+so we can initialize a second local
+
+0:02:00.240,0:02:05.600
+variable
+
+0:02:00.960,0:02:07.360
+here input string
+
+0:02:05.600,0:02:10.720
+and this is where we'll capture the
+
+0:02:07.360,0:02:10.720
+user's initial input
+
+0:02:11.599,0:02:15.360
+in this case we'll call the down case
+
+0:02:13.440,0:02:16.959
+method on the user input so that we
+
+0:02:15.360,0:02:17.760
+don't have to guess whether the user
+
+0:02:16.959,0:02:22.239
+would input
+
+0:02:17.760,0:02:25.280
+an uppercase or lowercase q
+
+0:02:22.239,0:02:29.360
+now we want to break out of our loop if
+
+0:02:25.280,0:02:31.599
+that input string is equal to q
+
+0:02:29.360,0:02:32.640
+and again we're just comparing it to the
+
+0:02:31.599,0:02:34.720
+lowercase q
+
+0:02:32.640,0:02:35.680
+because we've called down case on that
+
+0:02:34.720,0:02:38.160
+input
+
+0:02:35.680,0:02:40.720
+so let's run our code as it is just
+
+0:02:38.160,0:02:43.040
+examining its behavior if we input a
+
+0:02:40.720,0:02:45.200
+queue
+
+0:02:43.040,0:02:46.080
+so i'm going to actually comment out the
+
+0:02:45.200,0:02:48.239
+code right now
+
+0:02:46.080,0:02:49.440
+dealing with the number of lines local
+
+0:02:48.239,0:02:52.160
+variable
+
+0:02:49.440,0:02:52.720
+we just have our two loops and we're
+
+0:02:52.160,0:02:54.800
+checking
+
+0:02:52.720,0:02:55.720
+on how our program will react if we
+
+0:02:54.800,0:02:59.120
+input a queue
+
+0:02:55.720,0:03:01.440
+[Music]
+
+0:02:59.120,0:03:04.959
+so we see the appropriate prompt and
+
+0:03:01.440,0:03:05.760
+i'll enter a queue this output might be
+
+0:03:04.959,0:03:08.239
+confusing
+
+0:03:05.760,0:03:09.440
+because in our code we said we wanted to
+
+0:03:08.239,0:03:12.640
+break out of the loop
+
+0:03:09.440,0:03:13.680
+if our input string was equal to q what
+
+0:03:12.640,0:03:16.319
+we have right now
+
+0:03:13.680,0:03:18.000
+is actually an infinite loop so i'll hit
+
+0:03:16.319,0:03:21.519
+ctrl c to break out of that
+
+0:03:18.000,0:03:24.640
+loop and let's look at our code again
+
+0:03:21.519,0:03:27.040
+we do have a break statement on line 8
+
+0:03:24.640,0:03:30.319
+telling our program to break out of this
+
+0:03:27.040,0:03:33.040
+loop if our input string is equal to q
+
+0:03:30.319,0:03:33.599
+however this loop is within an outer
+
+0:03:33.040,0:03:36.400
+loop
+
+0:03:33.599,0:03:38.400
+and when we use break it only breaks out
+
+0:03:36.400,0:03:40.159
+of that current inner loop
+
+0:03:38.400,0:03:43.120
+it's not going to break out of that
+
+0:03:40.159,0:03:43.120
+outer loop as well
+
+0:03:44.480,0:03:50.720
+so for this simple problem we're
+
+0:03:46.159,0:03:50.720
+actually going to duplicate this code
+
+0:03:52.080,0:03:55.280
+we're going to also break out of our
+
+0:03:54.239,0:03:57.920
+outer loop if
+
+0:03:55.280,0:03:58.720
+the input string is equal to q we
+
+0:03:57.920,0:04:01.840
+initialize
+
+0:03:58.720,0:04:03.840
+input string on line 7 so before we can
+
+0:04:01.840,0:04:05.599
+run this code without error
+
+0:04:03.840,0:04:07.439
+we need to look at the scope in which
+
+0:04:05.599,0:04:10.000
+that was initialized
+
+0:04:07.439,0:04:11.120
+the block associated with our inner loop
+
+0:04:10.000,0:04:13.760
+is nested
+
+0:04:11.120,0:04:15.040
+inside of the block associated with our
+
+0:04:13.760,0:04:17.919
+outer loop
+
+0:04:15.040,0:04:18.400
+line 15 is actually an outer scope from
+
+0:04:17.919,0:04:21.600
+where
+
+0:04:18.400,0:04:22.400
+input string was initialized so in order
+
+0:04:21.600,0:04:25.199
+to access
+
+0:04:22.400,0:04:25.199
+input string
+
+0:04:26.800,0:04:29.919
+we'll initialize it at the top of our
+
+0:04:28.639,0:04:32.400
+outer loop and
+
+0:04:29.919,0:04:34.800
+now we can access it within our outer
+
+0:04:32.400,0:04:37.280
+loop and our inner loop
+
+0:04:34.800,0:04:38.320
+on line 9 will reassign input string
+
+0:04:37.280,0:04:41.600
+from nil
+
+0:04:38.320,0:04:41.600
+to the user input
+
+0:04:41.759,0:04:46.639
+finally let's run our code and see if
+
+0:04:44.160,0:04:48.250
+it's behaving as we expect when we input
+
+0:04:46.639,0:04:49.840
+a queue
+
+0:04:48.250,0:04:52.780
+[Music]
+
+0:04:49.840,0:04:54.639
+this time i'll input an uppercase q
+
+0:04:52.780,0:04:56.479
+[Music]
+
+0:04:54.639,0:04:58.080
+and you can see that we're not prompted
+
+0:04:56.479,0:05:00.639
+again we successfully
+
+0:04:58.080,0:05:03.039
+exited out of both loops and our program
+
+0:05:00.639,0:05:03.039
+ended
+
+0:05:04.479,0:05:11.840
+now let's see if we can get the rest of
+
+0:05:06.080,0:05:11.840
+our code going
+
+0:05:12.000,0:05:16.560
+we need to change what we assign number
+
+0:05:14.479,0:05:18.800
+of lines to on line 12.
+
+0:05:16.560,0:05:20.880
+initially we stored our user input in
+
+0:05:18.800,0:05:22.880
+number of lines right away
+
+0:05:20.880,0:05:24.960
+however now we're storing that user
+
+0:05:22.880,0:05:27.600
+input in the local variable
+
+0:05:24.960,0:05:29.680
+input string we can actually set number
+
+0:05:27.600,0:05:32.720
+of lines to reference
+
+0:05:29.680,0:05:35.120
+input string converted to an integer
+
+0:05:32.720,0:05:36.479
+so we'll call the string2i method on
+
+0:05:35.120,0:05:38.880
+that input string
+
+0:05:36.479,0:05:40.880
+if we reach line 12 of this inner loop
+
+0:05:38.880,0:05:42.639
+then we already know that the input
+
+0:05:40.880,0:05:44.320
+string was not equal to q
+
+0:05:42.639,0:05:46.220
+so we're going to move ahead with
+
+0:05:44.320,0:05:47.600
+printing out the number of lines
+
+0:05:46.220,0:05:49.919
+[Music]
+
+0:05:47.600,0:05:52.479
+again if the number of lines is not
+
+0:05:49.919,0:05:54.320
+greater than or equal to 3
+
+0:05:52.479,0:05:57.360
+will display an error message to the
+
+0:05:54.320,0:05:59.280
+user and repeat this loop
+
+0:05:57.360,0:06:02.880
+at that point they can enter a different
+
+0:05:59.280,0:06:02.880
+number or they can choose to quit
+
+0:06:04.400,0:06:09.600
+if the number of lines is valid we'll
+
+0:06:06.240,0:06:09.600
+break out of this inner loop
+
+0:06:12.800,0:06:16.960
+and we want to print the string launch
+
+0:06:15.280,0:06:20.000
+school is the best
+
+0:06:16.960,0:06:22.000
+number of lines times so at this
+
+0:06:20.000,0:06:23.600
+point we expect our code to have all the
+
+0:06:22.000,0:06:27.919
+functionality that we see
+
+0:06:23.600,0:06:27.919
+in the example run shown in this problem
+
+0:06:29.280,0:06:32.479
+i'll enter a number of lines i want the
+
+0:06:31.280,0:06:34.319
+program to print
+
+0:06:32.479,0:06:36.319
+and we see it prints the appropriate
+
+0:06:34.319,0:06:37.680
+number of lines and then prompts me
+
+0:06:36.319,0:06:40.639
+again
+
+0:06:37.680,0:06:41.360
+so that's what i want to see this time
+
+0:06:40.639,0:06:43.820
+i'll enter
+
+0:06:41.360,0:06:45.360
+an invalid number less than three
+
+0:06:43.820,0:06:47.440
+[Music]
+
+0:06:45.360,0:06:51.360
+and i see the error message that's not
+
+0:06:47.440,0:06:51.360
+enough lines and i'm prompted again
+
+0:06:51.510,0:06:54.649
+[Music]
+
+0:06:54.960,0:06:59.039
+and this loop just continues so finally
+
+0:06:57.520,0:07:02.800
+let me input a queue
+
+0:06:59.039,0:07:05.680
+to quit the program
+
+0:07:02.800,0:07:14.000
+and we break out of our loop and we have
+
+0:07:05.680,0:07:14.000
+exited the program
+

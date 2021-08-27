@@ -1,0 +1,252 @@
+0:00:04.640,0:00:08.559
+in this problem
+
+0:00:05.680,0:00:10.880
+we've been given some code on line one
+
+0:00:08.559,0:00:12.960
+we have a local variable number
+
+0:00:10.880,0:00:13.920
+that's assigned to a random number
+
+0:00:12.960,0:00:17.119
+between zero
+
+0:00:13.920,0:00:19.520
+and nine 9 we want to use our
+
+0:00:17.119,0:00:22.160
+if statement to check whether the number
+
+0:00:19.520,0:00:24.880
+is equal to the integer 5
+
+0:00:22.160,0:00:26.720
+and if it is output the string 5 is a
+
+0:00:24.880,0:00:29.199
+cool number
+
+0:00:26.720,0:00:30.000
+otherwise we want to execute the else
+
+0:00:29.199,0:00:32.719
+clause of our if
+
+0:00:30.000,0:00:34.399
+statement and output other numbers are
+
+0:00:32.719,0:00:36.559
+cool too
+
+0:00:34.399,0:00:38.399
+now the problem description tells us
+
+0:00:36.559,0:00:40.879
+that currently
+
+0:00:38.399,0:00:43.360
+5 is a cool number is being printed
+
+0:00:40.879,0:00:46.160
+every time the program is run
+
+0:00:43.360,0:00:47.680
+so we need to figure out why and fix our
+
+0:00:46.160,0:00:50.399
+code
+
+0:00:47.680,0:00:51.440
+we know that line four of our code in
+
+0:00:50.399,0:00:54.079
+our if statement
+
+0:00:51.440,0:00:55.840
+will execute every time the condition we
+
+0:00:54.079,0:00:59.600
+provided on line three
+
+0:00:55.840,0:01:03.760
+evaluates as true
+
+0:00:59.600,0:01:03.760
+so for now let's comment out our if
+
+0:01:10.840,0:01:16.000
+statement
+
+0:01:12.159,0:01:16.000
+we'll print the return value of that
+
+0:01:24.840,0:01:28.479
+code
+
+0:01:26.640,0:01:30.159
+you can see that the return value of
+
+0:01:28.479,0:01:33.040
+that code is 5
+
+0:01:30.159,0:01:35.200
+every time even though the local
+
+0:01:33.040,0:01:37.920
+variable number in our code
+
+0:01:35.200,0:01:40.240
+is supposed to be randomly assigned to a
+
+0:01:37.920,0:01:42.790
+different number between 0 and 9
+
+0:01:40.240,0:01:45.829
+every time the code is run
+
+0:01:42.790,0:01:45.829
+[Music]
+
+0:01:48.560,0:01:53.840
+going back to our code you may notice
+
+0:01:50.799,0:01:56.399
+that what we're doing on line 3
+
+0:01:53.840,0:01:58.960
+and therefore what we're providing as a
+
+0:01:56.399,0:02:01.280
+condition to our if statement
+
+0:01:58.960,0:02:02.560
+is actually not comparing the local
+
+0:02:01.280,0:02:06.640
+variable number
+
+0:02:02.560,0:02:08.720
+for equality to the integer five
+
+0:02:06.640,0:02:10.319
+what we're doing is reassigning the
+
+0:02:08.720,0:02:13.680
+local variable number
+
+0:02:10.319,0:02:15.760
+to the integer five assignment will
+
+0:02:13.680,0:02:18.319
+always return the assigned value
+
+0:02:15.760,0:02:23.200
+so in this case we're returning five
+
+0:02:18.319,0:02:25.680
+every time this code is run
+
+0:02:23.200,0:02:27.280
+remember that every expression except
+
+0:02:25.680,0:02:30.319
+for false and nil
+
+0:02:27.280,0:02:32.640
+evaluates as true in ruby
+
+0:02:30.319,0:02:33.599
+because we provided variable assignment
+
+0:02:32.640,0:02:36.720
+as a condition
+
+0:02:33.599,0:02:37.680
+to our if statement on line 5 that
+
+0:02:36.720,0:02:39.840
+condition will
+
+0:02:37.680,0:02:43.840
+always return the integer 5 and
+
+0:02:39.840,0:02:45.840
+therefore always evaluate as true
+
+0:02:43.840,0:02:50.879
+and that's why each time we run this
+
+0:02:45.840,0:02:53.040
+code it outputs 5 as a cool number
+
+0:02:50.879,0:02:57.120
+what we want to be doing is comparing
+
+0:02:53.040,0:02:57.120
+the local variable number to 5
+
+0:02:57.360,0:03:01.680
+and if number is equal to 5
+
+0:03:01.760,0:03:08.159
+output 5 is a cool number if number is
+
+0:03:05.280,0:03:12.319
+any other number between 0 and 9
+
+0:03:08.159,0:03:12.319
+we'll output other numbers are cool too
+
+0:03:15.440,0:03:20.720
+let's run the code outputting the value
+
+0:03:18.400,0:03:23.280
+of our local variable number
+
+0:03:20.720,0:03:33.840
+and then outputting the return value of
+
+0:03:23.280,0:03:33.840
+comparing number to 5.
+
+0:03:33.920,0:03:39.120
+so now we're performing the comparison
+
+0:03:36.159,0:03:39.120
+that we expect
+
+0:03:43.040,0:03:46.879
+now that we've altered the condition
+
+0:03:44.879,0:03:50.000
+provided to our if statement
+
+0:03:46.879,0:03:50.480
+to reflect our intentions let's run our
+
+0:03:50.000,0:04:01.840
+code
+
+0:03:50.480,0:04:01.840
+and see if it's behaving as we expect
+
+0:04:02.720,0:04:05.439
+and it is
+
+0:04:10.159,0:04:13.519
+so make sure not to use variable
+
+0:04:12.560,0:04:16.479
+assignment
+
+0:04:13.519,0:04:17.759
+as a condition for your if statement
+
+0:04:16.479,0:04:28.240
+it's confusing
+
+0:04:17.759,0:04:28.240
+and it's likely not what you want
+

@@ -1,0 +1,96 @@
+0:00:04.640,0:00:08.240
+this problem
+
+0:00:05.600,0:00:10.240
+asks us to convert the case statement
+
+0:00:08.240,0:00:16.160
+that we wrote for part one
+
+0:00:10.240,0:00:18.160
+to an if statement
+
+0:00:16.160,0:00:20.240
+i'm going to comment out our case
+
+0:00:18.160,0:00:23.199
+statement
+
+0:00:20.240,0:00:23.199
+move it down a little
+
+0:00:23.359,0:00:30.880
+and write my if statement based off of
+
+0:00:25.680,0:00:33.280
+the existing code
+
+0:00:30.880,0:00:35.880
+we can see that if our local variable
+
+0:00:33.280,0:00:37.840
+stoplight references the string green
+
+0:00:35.880,0:00:41.280
+[Music]
+
+0:00:37.840,0:00:41.280
+we want to output go
+
+0:00:42.800,0:00:48.800
+if the value referenced by stoplight
+
+0:00:46.000,0:00:52.000
+is equal to the string yellow we'll
+
+0:00:48.800,0:00:55.760
+output slow down
+
+0:00:52.000,0:00:56.960
+and otherwise if stoplight is not equal
+
+0:00:55.760,0:00:59.280
+to green or yellow
+
+0:00:56.960,0:01:00.399
+we know it's equal to red and we want to
+
+0:00:59.280,0:01:05.119
+output the string
+
+0:01:00.399,0:01:08.400
+stop this code is very similar to the
+
+0:01:05.119,0:01:10.880
+case statement that we wrote previously
+
+0:01:08.400,0:01:12.560
+however you can see that even for this
+
+0:01:10.880,0:01:15.119
+very small problem
+
+0:01:12.560,0:01:17.600
+when using an if statement we've had to
+
+0:01:15.119,0:01:21.680
+explicitly compare stoplight
+
+0:01:17.600,0:01:23.920
+multiple times just to demonstrate that
+
+0:01:21.680,0:01:24.479
+this code works just the same with an if
+
+0:01:23.920,0:01:27.280
+statement
+
+0:01:24.479,0:01:41.840
+as it does in a case statement we'll run
+
+0:01:27.280,0:01:41.840
+the code
+
+0:01:50.000,0:01:52.079
+you
+

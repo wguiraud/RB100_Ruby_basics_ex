@@ -1,0 +1,156 @@
+0:00:05.120,0:00:09.280
+this problem asks us to
+
+0:00:07.120,0:00:10.240
+reformat the case statement that we've
+
+0:00:09.280,0:00:14.480
+been given
+
+0:00:10.240,0:00:16.800
+so that it only takes up five lines
+
+0:00:14.480,0:00:18.160
+again we can take advantage of ruby's
+
+0:00:16.800,0:00:21.279
+expressiveness here
+
+0:00:18.160,0:00:22.400
+to place each condition of our case
+
+0:00:21.279,0:00:26.320
+statement
+
+0:00:22.400,0:00:28.840
+and its operation on a single line
+
+0:00:26.320,0:00:31.840
+we can do this using the reserved word
+
+0:00:28.840,0:00:31.840
+then
+
+0:00:34.800,0:00:41.280
+so i'll move these onto one line
+
+0:00:38.399,0:00:42.719
+now we don't need to use then with else
+
+0:00:41.280,0:00:46.160
+because we don't provide
+
+0:00:42.719,0:00:46.800
+any specific condition to else our code
+
+0:00:46.160,0:00:49.200
+right now
+
+0:00:46.800,0:00:59.840
+looks a little bit messy so let's clean
+
+0:00:49.200,0:00:59.840
+it up by formatting our code properly
+
+0:01:00.079,0:01:04.720
+we want to properly align the operation
+
+0:01:02.640,0:01:06.799
+associated with each condition
+
+0:01:04.720,0:01:08.479
+so that our code remains clear and
+
+0:01:06.799,0:01:10.640
+readable
+
+0:01:08.479,0:01:12.560
+previously our case statement took up
+
+0:01:10.640,0:01:14.720
+eight lines
+
+0:01:12.560,0:01:16.560
+reformatting our case statement using
+
+0:01:14.720,0:01:19.920
+the reserved word then
+
+0:01:16.560,0:01:23.119
+led to our code being only five lines
+
+0:01:19.920,0:01:25.520
+and yet the code is still very readable
+
+0:01:23.119,0:01:26.240
+this code retains the same functionality
+
+0:01:25.520,0:01:28.560
+that our
+
+0:01:26.240,0:01:30.960
+original case statement provided
+
+0:01:28.560,0:01:33.520
+reformatting our case statement this way
+
+0:01:30.960,0:01:34.400
+works well because we only have one
+
+0:01:33.520,0:01:36.799
+operation
+
+0:01:34.400,0:01:37.520
+in each clause of our case statement
+
+0:01:36.799,0:01:40.400
+which is
+
+0:01:37.520,0:01:42.240
+invoking put us and outputting a string
+
+0:01:40.400,0:01:44.320
+if we needed to perform multiple
+
+0:01:42.240,0:01:45.840
+operations within the clauses of our
+
+0:01:44.320,0:01:48.399
+when statement
+
+0:01:45.840,0:01:49.360
+such as calculate a value and then
+
+0:01:48.399,0:01:51.600
+output it
+
+0:01:49.360,0:01:52.560
+then we wouldn't want to use the shorter
+
+0:01:51.600,0:01:54.880
+syntax
+
+0:01:52.560,0:01:57.200
+it wouldn't be readable we would want to
+
+0:01:54.880,0:02:00.640
+put each operation in our clauses
+
+0:01:57.200,0:02:01.040
+on its own line however in a case like
+
+0:02:00.640,0:02:03.439
+this
+
+0:02:01.040,0:02:04.079
+where we only perform one action in each
+
+0:02:03.439,0:02:09.840
+clause
+
+0:02:04.079,0:02:09.840
+it works well
+
+0:02:11.440,0:02:13.520
+you
+

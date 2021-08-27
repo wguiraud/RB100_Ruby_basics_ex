@@ -1,0 +1,231 @@
+0:00:06.080,0:00:10.480
+on line one
+
+0:00:07.200,0:00:13.280
+we initialize a local variable status
+
+0:00:10.480,0:00:13.920
+and it's randomly assigned to the string
+
+0:00:13.280,0:00:17.119
+awake
+
+0:00:13.920,0:00:19.760
+or the string tired
+
+0:00:17.119,0:00:20.960
+this problem asks us to write an if
+
+0:00:19.760,0:00:23.920
+statement
+
+0:00:20.960,0:00:25.279
+that returns the string be productive if
+
+0:00:23.920,0:00:28.840
+status is equal to
+
+0:00:25.279,0:00:31.840
+awake and returns the string go to sleep
+
+0:00:28.840,0:00:31.840
+otherwise
+
+0:00:31.860,0:00:34.990
+[Music]
+
+0:00:35.520,0:00:42.800
+so we'll compare status
+
+0:00:39.040,0:00:44.000
+to the string awake and if the value
+
+0:00:42.800,0:00:46.879
+referenced by status
+
+0:00:44.000,0:00:47.520
+is equal to awake this comparison will
+
+0:00:46.879,0:00:49.920
+return
+
+0:00:47.520,0:00:49.920
+true
+
+0:00:50.640,0:00:54.879
+a truthy condition means that this first
+
+0:00:53.120,0:00:56.719
+branch of our if statement will be
+
+0:00:54.879,0:00:58.640
+executed
+
+0:00:56.719,0:01:01.359
+and we need to return the string be
+
+0:00:58.640,0:01:01.359
+productive
+
+0:01:02.239,0:01:08.159
+otherwise we want to return the string
+
+0:01:05.360,0:01:08.159
+go to sleep
+
+0:01:09.680,0:01:14.640
+if our comparison of status to the
+
+0:01:12.320,0:01:18.479
+string awake returns true
+
+0:01:14.640,0:01:22.000
+line 4 will be executed otherwise
+
+0:01:18.479,0:01:22.000
+line 6 will be executed
+
+0:01:23.360,0:01:27.200
+moving forward in the problem
+
+0:01:24.799,0:01:29.439
+description we're told that we need to
+
+0:01:27.200,0:01:30.240
+assign the return value of the if
+
+0:01:29.439,0:01:34.640
+statement
+
+0:01:30.240,0:01:34.640
+to a variable and print that variable
+
+0:01:35.119,0:01:41.840
+so we can call our variable alert
+
+0:01:44.799,0:01:49.360
+and if line four of our code is executed
+
+0:01:47.439,0:01:50.640
+alert will be assigned to the string be
+
+0:01:49.360,0:01:52.799
+productive
+
+0:01:50.640,0:01:55.840
+otherwise alert will be assigned to the
+
+0:01:52.799,0:01:55.840
+string go to sleep
+
+0:01:57.119,0:02:03.119
+so let's output alert
+
+0:02:00.399,0:02:03.680
+and we'll also temporarily output the
+
+0:02:03.119,0:02:06.079
+value
+
+0:02:03.680,0:02:07.119
+of the variable status so that we can
+
+0:02:06.079,0:02:09.520
+ensure we are
+
+0:02:07.119,0:02:12.800
+outputting the correct alert depending
+
+0:02:09.520,0:02:12.800
+on the value of status
+
+0:02:17.760,0:02:24.319
+okay it looks like our code is behaving
+
+0:02:21.599,0:02:24.319
+appropriately
+
+0:02:26.480,0:02:29.599
+but if you look more closely at our if
+
+0:02:28.879,0:02:31.519
+statement
+
+0:02:29.599,0:02:34.080
+you can see that we have some needless
+
+0:02:31.519,0:02:37.040
+repetition
+
+0:02:34.080,0:02:38.160
+we want the local variable alert to be
+
+0:02:37.040,0:02:40.319
+assigned to
+
+0:02:38.160,0:02:42.959
+whatever the return value of this if
+
+0:02:40.319,0:02:45.200
+statement is
+
+0:02:42.959,0:02:46.640
+and in order to achieve that we don't
+
+0:02:45.200,0:02:49.280
+have to repeat this
+
+0:02:46.640,0:02:50.000
+variable assignment syntax in every
+
+0:02:49.280,0:02:52.640
+branch of our
+
+0:02:50.000,0:02:52.640
+if statement
+
+0:02:57.840,0:03:02.000
+we can assign alert to the return value
+
+0:03:00.560,0:03:05.840
+of our if statement
+
+0:03:02.000,0:03:05.840
+using this syntax
+
+0:03:10.239,0:03:13.440
+now whichever string is returned from
+
+0:03:12.319,0:03:16.840
+the if statement
+
+0:03:13.440,0:03:19.840
+will be assigned to the local variable
+
+0:03:16.840,0:03:19.840
+alert
+
+0:03:26.560,0:03:30.879
+and our code is still working as
+
+0:03:28.239,0:03:30.879
+expected
+
+0:03:31.599,0:03:35.120
+writing our code like this allows us to
+
+0:03:33.920,0:03:38.720
+leverage the return
+
+0:03:35.120,0:03:41.200
+value of our if statement we always want
+
+0:03:38.720,0:03:47.840
+to avoid needlessly repeating ourselves
+
+0:03:41.200,0:03:47.840
+when possible
+
+0:03:49.040,0:03:51.120
+you
+

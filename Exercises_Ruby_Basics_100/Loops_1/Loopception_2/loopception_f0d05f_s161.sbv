@@ -1,0 +1,204 @@
+0:00:03.600,0:00:05.839
+the code we've been given in this
+
+0:00:05.279,0:00:09.120
+problem
+
+0:00:05.839,0:00:11.120
+contains nested loops we have an outer
+
+0:00:09.120,0:00:14.240
+loop defined on lines one through
+
+0:00:11.120,0:00:14.920
+seven and an inner loop on lines four
+
+0:00:14.240,0:00:18.240
+through
+
+0:00:14.920,0:00:20.960
+six you can see that currently
+
+0:00:18.240,0:00:22.960
+both of these loops are infinite loops
+
+0:00:20.960,0:00:25.199
+there is no reserved word break
+
+0:00:22.960,0:00:31.760
+in either of these loops and they will
+
+0:00:25.199,0:00:33.680
+just continue to iterate infinitely
+
+0:00:31.760,0:00:35.520
+as you can see if we just run the code
+
+0:00:33.680,0:00:37.520
+as it is we'll be stuck in the inner
+
+0:00:35.520,0:00:39.520
+loop
+
+0:00:37.520,0:00:40.559
+so the first thing that we can do here
+
+0:00:39.520,0:00:42.160
+is to
+
+0:00:40.559,0:00:44.399
+break out of the inner loop at the
+
+0:00:42.160,0:00:47.600
+appropriate time
+
+0:00:44.399,0:00:50.079
+we want to output the string this
+
+0:00:47.600,0:00:53.120
+is the inner loop one time prior to
+
+0:00:50.079,0:00:53.120
+exiting the block
+
+0:00:53.760,0:00:59.440
+so we can place break on line
+
+0:00:56.879,0:01:00.480
+six after we output the appropriate
+
+0:00:59.440,0:01:04.800
+string
+
+0:01:00.480,0:01:04.800
+and expect to exit this inner loop
+
+0:01:08.000,0:01:12.320
+the infinite loop we're currently stuck
+
+0:01:09.920,0:01:14.320
+in is the outer loop you can see that
+
+0:01:12.320,0:01:15.680
+this is the inner loop we'll print only
+
+0:01:14.320,0:01:17.680
+one time
+
+0:01:15.680,0:01:18.880
+the problem here is that the outer loop
+
+0:01:17.680,0:01:20.960
+continues to
+
+0:01:18.880,0:01:21.920
+iterate which puts us back into the
+
+0:01:20.960,0:01:24.240
+inner loop
+
+0:01:21.920,0:01:26.240
+so now we need to figure out when is the
+
+0:01:24.240,0:01:30.079
+appropriate time to break out of this
+
+0:01:26.240,0:01:31.759
+outer loop if we place our break
+
+0:01:30.079,0:01:35.840
+statement in the outer loop
+
+0:01:31.759,0:01:38.240
+after we output this is the outer loop
+
+0:01:35.840,0:01:40.079
+our code's not going to run as expected
+
+0:01:38.240,0:01:41.480
+you can see that we skipped the inner
+
+0:01:40.079,0:01:42.640
+loop completely
+
+0:01:41.480,0:01:45.119
+[Music]
+
+0:01:42.640,0:01:47.200
+because these are nested loops we have
+
+0:01:45.119,0:01:48.000
+to be conscious not to break out of the
+
+0:01:47.200,0:01:50.079
+outer loop
+
+0:01:48.000,0:01:52.250
+prior to actually entering the inner
+
+0:01:50.079,0:01:53.360
+loop
+
+0:01:52.250,0:01:55.600
+[Music]
+
+0:01:53.360,0:01:56.560
+so we can move our break statement for
+
+0:01:55.600,0:02:00.399
+the outer loop
+
+0:01:56.560,0:02:02.399
+down to line nine now we will only be
+
+0:02:00.399,0:02:04.960
+breaking out of the outer loop after
+
+0:02:02.399,0:02:07.840
+we've iterated through the inner loop
+
+0:02:04.960,0:02:08.800
+at this point we expect ruby to enter
+
+0:02:07.840,0:02:10.879
+the outer loop
+
+0:02:08.800,0:02:12.080
+and output the string this is the outer
+
+0:02:10.879,0:02:13.920
+loop
+
+0:02:12.080,0:02:16.800
+i'll put the string this is the inner
+
+0:02:13.920,0:02:18.800
+loop break out of the inner loop
+
+0:02:16.800,0:02:21.280
+and finally break out of the outer loop
+
+0:02:18.800,0:02:23.760
+on line nine
+
+0:02:21.280,0:02:25.440
+after exiting the outer loop ruby will
+
+0:02:23.760,0:02:27.840
+continue down to line 12
+
+0:02:25.440,0:02:29.840
+and output the string this is outside
+
+0:02:27.840,0:02:32.480
+all loops
+
+0:02:29.840,0:02:37.840
+so let's run our code and we're seeing
+
+0:02:32.480,0:02:37.840
+the expected output
+
+0:02:40.720,0:02:42.800
+you
+

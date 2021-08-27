@@ -1,0 +1,234 @@
+0:00:06.399,0:00:09.840
+this problem
+
+0:00:07.200,0:00:10.960
+asks us to write a case statement that
+
+0:00:09.840,0:00:13.440
+prints go
+
+0:00:10.960,0:00:15.200
+if our local variable stoplight equals
+
+0:00:13.440,0:00:17.199
+green
+
+0:00:15.200,0:00:19.279
+slow down if our local variable
+
+0:00:17.199,0:00:22.880
+stoplight equals yellow
+
+0:00:19.279,0:00:25.840
+and stop if stoplight equals red
+
+0:00:22.880,0:00:28.320
+so in this case we're comparing multiple
+
+0:00:25.840,0:00:30.880
+values to the value referenced by our
+
+0:00:28.320,0:00:33.120
+variable stoplight
+
+0:00:30.880,0:00:36.480
+and this is an example of when a case
+
+0:00:33.120,0:00:36.480
+statement comes in handy
+
+0:00:36.960,0:00:40.800
+the case that we are comparing to all
+
+0:00:39.680,0:00:44.399
+the conditions
+
+0:00:40.800,0:00:47.120
+is stoplight
+
+0:00:44.399,0:00:48.719
+will be equal to either green yellow or
+
+0:00:47.120,0:00:50.800
+red
+
+0:00:48.719,0:00:54.480
+the value of stoplight will be assigned
+
+0:00:50.800,0:00:56.640
+randomly as we can see on line one
+
+0:00:54.480,0:00:58.070
+within a case statement we use the
+
+0:00:56.640,0:01:00.079
+reserved word when
+
+0:00:58.070,0:01:02.480
+[Music]
+
+0:01:00.079,0:01:04.479
+and then provide our condition each
+
+0:01:02.480,0:01:07.360
+condition that we provide to
+
+0:01:04.479,0:01:10.080
+when will be compared to the value of
+
+0:01:07.360,0:01:10.080
+stoplight
+
+0:01:10.479,0:01:14.159
+so following along with our problem
+
+0:01:12.240,0:01:14.720
+description we'll first compare the
+
+0:01:14.159,0:01:18.479
+string
+
+0:01:14.720,0:01:23.520
+green to the value of stoplight
+
+0:01:18.479,0:01:23.520
+we also want to compare yellow
+
+0:01:23.759,0:01:27.840
+and finally red
+
+0:01:28.960,0:01:33.920
+the case statement will execute the code
+
+0:01:32.000,0:01:35.840
+in whichever branch the condition
+
+0:01:33.920,0:01:38.720
+evaluates to true
+
+0:01:35.840,0:01:42.159
+we want to print the string go if
+
+0:01:38.720,0:01:42.159
+stoplight is equal to green
+
+0:01:43.680,0:01:48.720
+print slow down if stop light is equal
+
+0:01:46.159,0:01:48.720
+to yellow
+
+0:01:49.200,0:01:55.840
+and print stop when stop light is equal
+
+0:01:52.000,0:01:55.840
+to red
+
+0:01:55.920,0:01:59.920
+i'm going to output the value of
+
+0:01:57.520,0:02:01.680
+stoplight on line 3 so that we can
+
+0:01:59.920,0:02:08.560
+see what it is and compare it to the
+
+0:02:01.680,0:02:11.039
+output that we get
+
+0:02:08.560,0:02:13.840
+so stoplight was red and we output the
+
+0:02:11.039,0:02:17.840
+string stop
+
+0:02:13.840,0:02:17.840
+yellow and we output slow down
+
+0:02:20.879,0:02:24.560
+green and we output go
+
+0:02:27.440,0:02:32.800
+so that's perfect on line 10
+
+0:02:30.480,0:02:35.760
+we don't actually need to compare
+
+0:02:32.800,0:02:38.319
+stoplight to the string red
+
+0:02:35.760,0:02:39.519
+stoplight in this case only has three
+
+0:02:38.319,0:02:42.959
+possible values
+
+0:02:39.519,0:02:44.480
+green yellow and red if we've reached
+
+0:02:42.959,0:02:47.360
+line 10 of our code
+
+0:02:44.480,0:02:47.920
+and stoplight wasn't equal to green or
+
+0:02:47.360,0:02:50.959
+yellow
+
+0:02:47.920,0:02:52.800
+then we know it must be red
+
+0:02:50.959,0:02:54.560
+so just like an if statement we can
+
+0:02:52.800,0:02:58.080
+place an else branch
+
+0:02:54.560,0:02:58.480
+in our case statement this tells ruby
+
+0:02:58.080,0:03:00.640
+that
+
+0:02:58.480,0:03:02.959
+if none of the prior branches in our
+
+0:03:00.640,0:03:05.200
+case statement were executed
+
+0:03:02.959,0:03:06.959
+then execute the code within this else
+
+0:03:05.200,0:03:09.440
+branch
+
+0:03:06.959,0:03:11.680
+in this case we know that the stop light
+
+0:03:09.440,0:03:19.840
+is red if we've reached line 10
+
+0:03:11.680,0:03:19.840
+and we want to output the string stop
+
+0:03:23.920,0:03:27.760
+and you can see that it's working as we
+
+0:03:30.840,0:03:35.680
+expect
+
+0:03:32.879,0:03:36.799
+case statements work similarly to if
+
+0:03:35.680,0:03:39.200
+statements
+
+0:03:36.799,0:03:47.840
+but they're a nice concise way to
+
+0:03:39.200,0:03:47.840
+compare multiple values to a single case
+
+0:03:50.799,0:03:52.879
+you
+
