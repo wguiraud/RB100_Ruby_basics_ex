@@ -1,246 +1,70 @@
-0:00:04.160,0:00:07.279
-this
-
-0:00:04.480,0:00:08.080
-exercise requires us to write two
-
-0:00:07.279,0:00:10.800
-methods
-
-0:00:08.080,0:00:13.759
+this exercise requires us to write two methods
 so that the test cases we've been given
-
-0:00:10.800,0:00:16.480
 will output true
+so looking at the test cases 
+we can see that we have an add method and a multiply method
+so we know those are the two methods we need to write
+and we can see that each of these methods accepts two arguments
 
-0:00:13.759,0:00:17.520
-so looking at the test cases we can see
-
-0:00:16.480,0:00:20.960
-that we have an
-
-0:00:17.520,0:00:22.960
-add method and a multiply method
-
-0:00:20.960,0:00:24.480
-so we know those are the two methods we
-
-0:00:22.960,0:00:26.480
-need to write
-
-0:00:24.480,0:00:29.599
-and we can see that each of these
-
-0:00:26.480,0:00:32.640
-methods accepts two arguments
-
-0:00:29.599,0:00:34.480
 i'm going to comment out line three
+where we have a test case for our multiply method 
+and just begin working with our add method for now
 
-0:00:32.640,0:00:36.559
-where we have a test case for our
+we can see that the arguments passed to our add method will be integers 
+so we'll name our parameters num1 and num2
 
-0:00:34.480,0:00:40.239
-multiply method and just begin
-
-0:00:36.559,0:00:40.239
-working with our add method for now
-
-0:00:41.760,0:00:45.120
-we can see that the arguments passed to
-
-0:00:43.760,0:00:48.239
-our add method will be
-
-0:00:45.120,0:00:52.079
-integers so we'll name our parameters
-
-0:00:48.239,0:00:52.079
-num1 and num2
-
-0:00:52.879,0:00:56.800
-again looking at the test cases on lines
-
-0:00:55.360,0:00:59.840
-5 and 6
-
-0:00:56.800,0:01:00.800
-we can see that the return value of our
-
-0:00:59.840,0:01:03.039
-add method
-
-0:01:00.800,0:01:05.519
-should just be the sum of our two
-
-0:01:03.039,0:01:07.760
-arguments
-
-0:01:05.519,0:01:09.600
-and in order to return the sum we just
-
-0:01:07.760,0:01:13.040
-need to perform that addition
-
-0:01:09.600,0:01:15.280
+again looking at the test cases on lines 5 and 6
+we can see that the return value of our add method
+should just be the sum of our two arguments
+and in order to return the sum 
+we just need to perform that addition
 on the last line executed in the method
 
-0:01:13.040,0:01:16.240
-in this case we'll just have one line in
+in this case we'll just have one line in our method
+where we add num1 and num2 
 
-0:01:15.280,0:01:19.439
-our method
+so now we can run our code
+and see if these test cases are outputting true
+and they are 
 
-0:01:16.240,0:01:20.400
-where we add num1 and num2 so now we can
+now we can go back and take a look at defining the multiply method
 
-0:01:19.439,0:01:22.240
-run our code
-
-0:01:20.400,0:01:26.320
-and see if these test cases are
-
-0:01:22.240,0:01:29.520
-outputting true
-
-0:01:26.320,0:01:34.079
-and they are now we can go back
-
-0:01:29.520,0:01:34.079
-and take a look at defining the multiply
-
-0:01:38.840,0:01:41.840
-method
-
-0:01:43.439,0:01:46.960
-i'm going to uncomment the test case for
-
-0:01:45.680,0:01:48.720
-our multiply method
-
-0:01:46.960,0:01:52.159
-and we'll take a closer look at the
-
-0:01:48.720,0:01:55.439
-arguments passed to this method
-
-0:01:52.159,0:01:57.759
+i'm going to uncomment the test case for our multiply method
+and we'll take a closer look at the arguments passed to this method
 we have method calls to the add method
+passed in as arguments to the multiply method
 
-0:01:55.439,0:01:59.360
-passed in as arguments to the multiply
+this may seem confusing 
+but what this does
+is passes the return value of invoking this add method 
+as an argument to multiply 
 
-0:01:57.759,0:02:02.479
-method
-
-0:01:59.360,0:02:03.119
-this may seem confusing but what this
-
-0:02:02.479,0:02:06.159
-does
-
-0:02:03.119,0:02:08.239
-is passes the return value of invoking
-
-0:02:06.159,0:02:11.760
-this add method as an
-
-0:02:08.239,0:02:14.400
-argument to multiply so as our first
-
-0:02:11.760,0:02:16.800
-argument passed to the multiply method
-
-0:02:14.400,0:02:19.840
+so as our first argument passed to the multiply method
 we're invoking the add method
+and passing the integers 2 and 2 as arguments 
+as we can see above on line 9 in our test case for the add method
 
-0:02:16.800,0:02:23.040
-and passing the integers 2 and 2
+this will return 4. 
+the second argument we passed to the multiply method 
+is again a call to the add method
 
-0:02:19.840,0:02:25.599
-as arguments as we can see above
+however this time we're passing in arguments five and four
+and as seen on line ten 
+this will return the integer nine WRITING COMMENT #multiply(4, 9)
 
-0:02:23.040,0:02:26.720
-on line 9 in our test case for the add
-
-0:02:25.599,0:02:30.239
-method
-
-0:02:26.720,0:02:30.800
-this will return 4. the second argument
-
-0:02:30.239,0:02:33.200
-we passed
-
-0:02:30.800,0:02:34.640
-to the multiply method is again a call
-
-0:02:33.200,0:02:36.640
-to the add method
-
-0:02:34.640,0:02:38.959
-however this time we're passing in
-
-0:02:36.640,0:02:41.680
-arguments five and four
-
-0:02:38.959,0:02:44.720
-and as seen on line ten this will return
-
-0:02:41.680,0:02:44.720
-the integer nine
-
-0:02:46.959,0:02:52.959
 so when we invoke the multiply method
+it will use the integer 4 and the integer 9 as its arguments
 
-0:02:50.879,0:02:53.920
-it will use the integer 4 and the
+so again we'll call these two integers num1 and num2 
+on line six 
+we'll multiply num1 by num2 
+and that product will be returned from the method
 
-0:02:52.959,0:02:56.959
-integer 9
-
-0:02:53.920,0:02:56.959
-as its arguments
-
-0:02:57.840,0:03:01.040
-so again we'll call these two integers
-
-0:03:00.319,0:03:05.680
-num1
-
-0:03:01.040,0:03:08.879
-and num2 on line six
-
-0:03:05.680,0:03:12.879
-we'll multiply num1 by num2 and that
-
-0:03:08.879,0:03:15.120
-product will be returned from the method
-
-0:03:12.879,0:03:18.000
-i'm going to run the code again now with
-
-0:03:15.120,0:03:20.239
-the test case for our multiply method
-
-0:03:18.000,0:03:22.480
-and see that that will output true as
-
-0:03:20.239,0:03:22.480
-well
-
-0:03:22.800,0:03:25.519
+i'm going to run the code again 
+now with the test case for our multiply method
+and see that   that will output true as well
 and it does
 
-0:03:26.879,0:03:31.120
-so we're successfully returning true for
-
-0:03:29.360,0:03:34.640
-all of the test cases
-
-0:03:31.120,0:03:34.640
-and our code is functioning
-
-0:03:39.319,0:03:42.319
-appropriately
+so we're successfully returning true for all of the test cases
+and our code is functioning appropriately
 
