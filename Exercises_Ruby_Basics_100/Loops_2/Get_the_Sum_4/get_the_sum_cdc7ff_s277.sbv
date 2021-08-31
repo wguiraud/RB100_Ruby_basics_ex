@@ -1,0 +1,306 @@
+0:00:04.720,0:00:08.800
+this problem deals with handling user
+
+0:00:07.279,0:00:11.440
+input
+
+0:00:08.800,0:00:13.759
+whenever we receive user input we want
+
+0:00:11.440,0:00:14.880
+to store it into a variable so that
+
+0:00:13.759,0:00:18.720
+we're able to
+
+0:00:14.880,0:00:21.840
+compare or use its value later on
+
+0:00:18.720,0:00:22.400
+in this example we want the user to
+
+0:00:21.840,0:00:25.439
+input
+
+0:00:22.400,0:00:27.279
+4 and if they don't input 4 then we want
+
+0:00:25.439,0:00:29.439
+to continue our loop of
+
+0:00:27.279,0:00:30.880
+asking them this question what does 2
+
+0:00:29.439,0:00:32.880
+plus 2 equal
+
+0:00:30.880,0:00:35.680
+so we want to just continue asking them
+
+0:00:32.880,0:00:37.760
+until they input the correct answer
+
+0:00:35.680,0:00:39.360
+the code we've been given is already set
+
+0:00:37.760,0:00:42.879
+up to prompt the user
+
+0:00:39.360,0:00:45.920
+and store their input in a variable
+
+0:00:42.879,0:00:48.239
+and we can demonstrate that by just
+
+0:00:45.920,0:00:51.360
+disregarding this loop for a moment
+
+0:00:48.239,0:00:53.520
+and will prompt the user
+
+0:00:51.360,0:00:55.120
+and then spit their input back out at
+
+0:00:53.520,0:00:57.760
+them
+
+0:00:55.120,0:00:59.520
+so let's run the program and if i input
+
+0:00:57.760,0:01:03.280
+5
+
+0:00:59.520,0:01:07.840
+the program spits 5 back out at me
+
+0:01:03.280,0:01:09.920
+if i input 4 it prints 4.
+
+0:01:07.840,0:01:11.520
+so you can see how we've stored the user
+
+0:01:09.920,0:01:15.280
+input here
+
+0:01:11.520,0:01:15.280
+in the local variable answer
+
+0:01:17.119,0:01:21.759
+also of note here is that user input
+
+0:01:19.759,0:01:24.000
+will always be a string
+
+0:01:21.759,0:01:27.200
+so you can see that on line 3 we've
+
+0:01:24.000,0:01:30.240
+called the 2i method on that string
+
+0:01:27.200,0:01:33.280
+in order to convert the user's input
+
+0:01:30.240,0:01:36.079
+into an integer so let's go back to our
+
+0:01:33.280,0:01:36.079
+loop structure
+
+0:01:37.600,0:01:41.200
+the problem requirements tell us to
+
+0:01:40.079,0:01:43.360
+output the string
+
+0:01:41.200,0:01:44.399
+that's correct and then break out of
+
+0:01:43.360,0:01:48.000
+this loop
+
+0:01:44.399,0:01:50.079
+if the user input is four
+
+0:01:48.000,0:01:51.840
+otherwise we want to output a string
+
+0:01:50.079,0:01:55.840
+telling them that they're wrong
+
+0:01:51.840,0:01:55.840
+and the loop will keep running
+
+0:01:57.759,0:02:03.520
+so we can use an if statement to check
+
+0:02:00.079,0:02:06.840
+the value of user input
+
+0:02:03.520,0:02:09.759
+now we only care whether it's equal to
+
+0:02:06.840,0:02:13.040
+4.
+
+0:02:09.759,0:02:14.960
+and if it is we want to tell the user
+
+0:02:13.040,0:02:16.319
+they're correct
+
+0:02:14.960,0:02:18.170
+[Music]
+
+0:02:16.319,0:02:19.840
+and break out of our loop
+
+0:02:18.170,0:02:22.540
+[Music]
+
+0:02:19.840,0:02:25.630
+so let's run the code as is
+
+0:02:22.540,0:02:25.630
+[Music]
+
+0:02:25.760,0:02:30.560
+okay and you can see when we input four
+
+0:02:28.560,0:02:31.840
+we're told we're correct and our program
+
+0:02:30.560,0:02:34.480
+exited
+
+0:02:31.840,0:02:35.440
+now let's run it one more time and input
+
+0:02:34.480,0:02:39.120
+something other than
+
+0:02:35.440,0:02:40.879
+4 and you can see that the program will
+
+0:02:39.120,0:02:43.440
+just keep prompting us
+
+0:02:40.879,0:02:51.599
+because the loop is still running we
+
+0:02:43.440,0:02:53.519
+must input 4 to break out of that loop
+
+0:02:51.599,0:02:55.040
+so we're just missing one piece to our
+
+0:02:53.519,0:02:57.519
+problem here and that's
+
+0:02:55.040,0:03:00.720
+outputting a message to the user when
+
+0:02:57.519,0:03:00.720
+they don't input four
+
+0:03:01.360,0:03:06.319
+so we want to tell them they're wrong
+
+0:03:03.200,0:03:06.319
+and to try again
+
+0:03:06.450,0:03:12.879
+[Music]
+
+0:03:10.800,0:03:16.840
+and now we can see that message output
+
+0:03:12.879,0:03:18.319
+to us when we input anything that's not
+
+0:03:16.840,0:03:21.680
+four
+
+0:03:18.319,0:03:22.170
+and finally we'll input 4 and exit our
+
+0:03:21.680,0:03:24.400
+loop
+
+0:03:22.170,0:03:26.560
+[Music]
+
+0:03:24.400,0:03:27.440
+if we had not converted the user input
+
+0:03:26.560,0:03:32.640
+to an integer
+
+0:03:27.440,0:03:35.599
+using the 2i method
+
+0:03:32.640,0:03:38.000
+then this comparison on line 5 comparing
+
+0:03:35.599,0:03:41.840
+answer to the integer 4
+
+0:03:38.000,0:03:41.840
+would always evaluate to false
+
+0:03:42.550,0:03:47.040
+[Music]
+
+0:03:44.080,0:03:48.239
+as you can see if i input 4 now
+
+0:03:47.040,0:03:51.120
+[Music]
+
+0:03:48.239,0:03:52.640
+i'll be told i'm wrong this comparison
+
+0:03:51.120,0:03:55.840
+will never equal true
+
+0:03:52.640,0:04:01.840
+because we are comparing the string 4
+
+0:03:55.840,0:04:01.840
+to the integer 4.
+
+0:04:02.959,0:04:07.439
+if i changed my comparison on line 4 to
+
+0:04:05.680,0:04:08.820
+compare the answer variable
+
+0:04:07.439,0:04:13.599
+to the string 4
+
+0:04:08.820,0:04:16.160
+[Music]
+
+0:04:13.599,0:04:18.260
+then those two values would be evaluated
+
+0:04:16.160,0:04:20.160
+as equal
+
+0:04:18.260,0:04:22.960
+[Music]
+
+0:04:20.160,0:04:23.440
+so it's important to always be conscious
+
+0:04:22.960,0:04:25.680
+of
+
+0:04:23.440,0:04:26.560
+what data type you're working with and
+
+0:04:25.680,0:04:39.600
+remember that
+
+0:04:26.560,0:04:39.600
+user input always comes in as a string
+
