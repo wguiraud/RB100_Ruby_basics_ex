@@ -16,10 +16,10 @@ loop do
 	
 	loop do 
 		puts "This is the inner loop."
-		break
+	break	
 	end
 
-  break
+  break 
 end
 puts "This is outside the loop."
 
