@@ -56,25 +56,53 @@ one_pos_one_neg_vv? helper method
 	    - return an error message "sorry..."
   -return an error message "Invalid ..."
 =end
-def onepos_oneneg(a, b)
-	if a > 0 and b < 0
-		true
-	elsif a < 0 and b > 0
-		true
-	else
-		false
+
+# first try
+#def onepos_oneneg(a, b)
+#	if a > 0 and b < 0
+#		true
+#	elsif a < 0 and b > 0
+#		true
+#	else
+#		false
+#	end
+#end
+#
+#puts "Please enter a positive or negative integer:"
+#int1 = gets.chomp
+#puts "Please enter a positive or negative integer:"
+#int2 = gets.chomp
+#
+#if valid_number(int1) and valid_number(int2)
+#  onepos_oneneg(int1.to_i, int2.to_i)
+#	sum = int.to_i + int.to_i
+#else
+#	puts "Sorry. One integer must be positive, one must be negative."
+
+# second try
+loop do
+	user_input1 = nil
+	user_input2 = nil
+
+  loop do	
+		puts ">> Please Enter a positive or negative integer:"
+		user_input1 = gets.chomp
+		puts ">> Please Enter a positive or negative integer:"
+		user_input2 = gets.chomp
+
+		break if valid_number?(user_input1) == true && valid_number?(user_input2) == true
+    puts " Invalid input. Only non-zero integers are allowed."
 	end
+	
+	if user_input1.to_i * user_input2.to_i < 0
+		sum = user_input1.to_i + user_input2.to_i 
+		puts "#{user_input1} / #{user_input2} = #{sum}"
+		break
+	else
+		puts "Sorry. One integer must be positive, one must be negative"
+  end
+
 end
 
-puts "Please enter a positive or negative integer:"
-int1 = gets.chomp
-puts "Please enter a positive or negative integer:"
-int2 = gets.chomp
-
-if valid_number(int1) and valid_number(int2)
-  onepos_oneneg(int1.to_i, int2.to_i)
-	sum = int.to_i + int.to_i
-else
-	puts "Sorry. One integer must be positive, one must be negative."
 
 
