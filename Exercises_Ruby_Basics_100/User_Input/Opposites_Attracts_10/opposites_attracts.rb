@@ -79,10 +79,8 @@ one_pos_one_neg_vv? helper method
 #else
 #	puts "Sorry. One integer must be positive, one must be negative."
 
-# second try
+# second try is successful using nested loops 
 loop do
-	user_input1 = nil
-	user_input2 = nil
 
   loop do	
 		puts ">> Please Enter a positive or negative integer:"
@@ -94,6 +92,9 @@ loop do
     puts " Invalid input. Only non-zero integers are allowed."
 	end
 	
+	user_input1 = nil
+	user_input2 = nil
+
 	if user_input1.to_i * user_input2.to_i < 0
 		sum = user_input1.to_i + user_input2.to_i 
 		puts "#{user_input1} / #{user_input2} = #{sum}"
@@ -103,6 +104,67 @@ loop do
   end
 
 end
+
+# third try usding a method to obtain both input integers!
+
+#def obtain_input
+#	loop do
+#	puts "Please enter a positive or negative  integer:"
+#	int1 = gets.chomp
+#  return int1 if valid_number?(int1)
+#	puts "Invalid input. Only non-zero integers are allowed."
+#	end
+#end
+#
+#p obtain_input()
+#
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

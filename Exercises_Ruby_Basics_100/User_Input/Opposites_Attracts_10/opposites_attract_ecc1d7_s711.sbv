@@ -1,0 +1,789 @@
+0:00:05.440,0:00:09.440
+in this problem
+
+0:00:06.399,0:00:12.799
+we must write a program that requests
+
+0:00:09.440,0:00:14.920
+two integers from the user and
+
+0:00:12.799,0:00:17.920
+adds them together and displays that
+
+0:00:14.920,0:00:17.920
+result
+
+0:00:18.240,0:00:21.520
+in this particular program we are going
+
+0:00:20.400,0:00:24.320
+to require that
+
+0:00:21.520,0:00:26.240
+one of the integers is positive and one
+
+0:00:24.320,0:00:28.240
+is negative
+
+0:00:26.240,0:00:30.000
+we're not going to direct the user when
+
+0:00:28.240,0:00:32.880
+we initially prompt them
+
+0:00:30.000,0:00:35.280
+to enter specifically a positive and
+
+0:00:32.880,0:00:37.360
+then specifically a negative integer
+
+0:00:35.280,0:00:38.399
+however once they have given both
+
+0:00:37.360,0:00:40.640
+integers
+
+0:00:38.399,0:00:43.520
+we want to check that one is positive
+
+0:00:40.640,0:00:46.160
+and one is negative
+
+0:00:43.520,0:00:49.280
+if not then we'll issue an error message
+
+0:00:46.160,0:00:51.840
+and prompt them again
+
+0:00:49.280,0:00:53.120
+we've been given a method called valid
+
+0:00:51.840,0:00:55.840
+number
+
+0:00:53.120,0:00:57.440
+and it will return a boolean if the
+
+0:00:55.840,0:01:00.800
+number is valid and
+
+0:00:57.440,0:01:04.479
+not equal to zero so if the user
+
+0:01:00.800,0:01:06.720
+inputs an invalid number then we will
+
+0:01:04.479,0:01:08.960
+display an error message and prompt them
+
+0:01:06.720,0:01:10.799
+again immediately
+
+0:01:08.960,0:01:12.080
+it's later that we'll check whether one
+
+0:01:10.799,0:01:15.200
+integer was positive
+
+0:01:12.080,0:01:17.600
+and one was negative
+
+0:01:15.200,0:01:19.759
+let's take this initial logic of
+
+0:01:17.600,0:01:21.759
+prompting the user for an integer
+
+0:01:19.759,0:01:26.240
+and checking whether it's valid and
+
+0:01:21.759,0:01:29.540
+extract it to a method
+
+0:01:26.240,0:01:34.089
+we can call this method read number
+
+0:01:29.540,0:01:34.089
+[Music]
+
+0:01:34.159,0:01:37.439
+and the first step is simply to prompt
+
+0:01:36.079,0:01:39.840
+the user
+
+0:01:37.439,0:01:42.320
+please enter a positive or negative
+
+0:01:39.840,0:01:42.320
+integer
+
+0:01:43.680,0:01:48.230
+we'll store the user input in a local
+
+0:01:45.840,0:01:52.079
+variable number
+
+0:01:48.230,0:01:54.880
+[Music]
+
+0:01:52.079,0:01:55.420
+let's pass number to our valid number
+
+0:01:54.880,0:01:58.000
+method
+
+0:01:55.420,0:02:02.399
+[Music]
+
+0:01:58.000,0:02:02.399
+and for now just output the return value
+
+0:02:04.640,0:02:08.910
+we need to invoke read number on line 11
+
+0:02:07.360,0:02:11.520
+of our program
+
+0:02:08.910,0:02:13.840
+[Music]
+
+0:02:11.520,0:02:16.720
+so we're prompted for a positive or
+
+0:02:13.840,0:02:19.840
+negative integer
+
+0:02:16.720,0:02:21.280
+if i input a valid integer that's not
+
+0:02:19.840,0:02:25.360
+zero
+
+0:02:21.280,0:02:29.120
+our valid number method returns true
+
+0:02:25.360,0:02:31.440
+if i enter 0 our valid number method
+
+0:02:29.120,0:02:34.840
+returns false
+
+0:02:31.440,0:02:37.840
+and the same if i enter let's say the g
+
+0:02:34.840,0:02:37.840
+character
+
+0:02:38.879,0:02:43.680
+so we should have a clear idea now of
+
+0:02:41.920,0:02:47.280
+how the valid number method is
+
+0:02:43.680,0:02:47.280
+validating that user input
+
+0:02:48.319,0:02:51.519
+now what we want to do if the user input
+
+0:02:50.560,0:02:54.080
+is invalid
+
+0:02:51.519,0:02:56.640
+is issue an error message and prompt
+
+0:02:54.080,0:02:56.640
+them again
+
+0:02:58.959,0:03:03.280
+if valid number returns true then we
+
+0:03:01.920,0:03:06.319
+want to go ahead
+
+0:03:03.280,0:03:08.800
+and return that number
+
+0:03:06.319,0:03:11.599
+will return an integer representation of
+
+0:03:08.800,0:03:14.640
+it so we'll go ahead and call string2i
+
+0:03:11.599,0:03:17.280
+on the user input now and
+
+0:03:14.640,0:03:19.840
+return that number as an integer from
+
+0:03:17.280,0:03:19.840
+this method
+
+0:03:20.800,0:03:24.239
+if valid number returns false when we
+
+0:03:23.440,0:03:27.200
+pass the
+
+0:03:24.239,0:03:29.680
+number variable to it then we want to
+
+0:03:27.200,0:03:29.680
+output
+
+0:03:29.920,0:03:33.519
+an error message and we'll let the user
+
+0:03:33.040,0:03:35.760
+know
+
+0:03:33.519,0:03:38.319
+that they can only input non-zero
+
+0:03:35.760,0:03:38.319
+integers
+
+0:03:38.680,0:03:41.729
+[Music]
+
+0:03:43.360,0:03:47.870
+and let's run the program one more time
+
+0:03:45.280,0:03:52.000
+just invoking this read number method
+
+0:03:47.870,0:03:56.159
+[Music]
+
+0:03:52.000,0:03:56.159
+so if i input a valid integer
+
+0:03:56.319,0:04:05.120
+no error message is issued
+
+0:04:01.360,0:04:06.080
+this time i'll enter zero and i see the
+
+0:04:05.120,0:04:09.439
+error message
+
+0:04:06.080,0:04:11.760
+invalid input that's great
+
+0:04:09.439,0:04:14.480
+however i want the program to prompt the
+
+0:04:11.760,0:04:16.560
+user again
+
+0:04:14.480,0:04:18.560
+so we want to issue the error message
+
+0:04:16.560,0:04:20.880
+and then prompt the user for their input
+
+0:04:18.560,0:04:20.880
+again
+
+0:04:23.120,0:04:30.560
+so we'll put this code in a loop
+
+0:04:28.020,0:04:33.360
+[Music]
+
+0:04:30.560,0:04:35.440
+and with this loop inside of a method we
+
+0:04:33.360,0:04:36.080
+don't need to use the reserve word break
+
+0:04:35.440,0:04:38.320
+here
+
+0:04:36.080,0:04:39.840
+because we have an explicit return on
+
+0:04:38.320,0:04:42.320
+line 9.
+
+0:04:39.840,0:04:44.320
+so if our number is valid we will
+
+0:04:42.320,0:04:46.160
+explicitly return out of the method
+
+0:04:44.320,0:04:48.000
+early
+
+0:04:46.160,0:04:49.759
+if it's not our loop will continue to
+
+0:04:48.000,0:04:53.120
+iterate
+
+0:04:49.759,0:04:56.240
+so just to see this in action
+
+0:04:53.120,0:04:58.479
+if i enter an invalid input
+
+0:04:56.240,0:05:00.400
+i see the error message and i'm prompted
+
+0:04:58.479,0:05:01.680
+again so we know that our loop continued
+
+0:05:00.400,0:05:04.240
+to iterate
+
+0:05:01.680,0:05:05.759
+this time i'll enter a valid integer and
+
+0:05:04.240,0:05:11.680
+you can see that we
+
+0:05:05.759,0:05:13.759
+return from the method
+
+0:05:11.680,0:05:15.520
+so this is a good start we are
+
+0:05:13.759,0:05:19.039
+validating whether the input
+
+0:05:15.520,0:05:21.680
+is a valid number now we need to
+
+0:05:19.039,0:05:22.880
+prompt the user like this twice and
+
+0:05:21.680,0:05:25.440
+verify whether
+
+0:05:22.880,0:05:27.919
+one input was positive and the other was
+
+0:05:25.440,0:05:27.919
+negative
+
+0:05:28.960,0:05:32.639
+so we can create a local variable first
+
+0:05:31.600,0:05:35.680
+number
+
+0:05:32.639,0:05:39.840
+and set it equal to the return value of
+
+0:05:35.680,0:05:39.840
+invoking our read number method
+
+0:05:40.160,0:05:43.600
+remember that our read number method
+
+0:05:42.160,0:05:46.720
+explicitly returns
+
+0:05:43.600,0:05:48.160
+the user input which will be a valid
+
+0:05:46.720,0:05:51.199
+number
+
+0:05:48.160,0:05:52.720
+converted to an integer so we'll
+
+0:05:51.199,0:05:55.919
+initialize first number
+
+0:05:52.720,0:05:57.759
+and second number and they will
+
+0:05:55.919,0:06:01.360
+reference the return value of
+
+0:05:57.759,0:06:02.240
+invoking read number the next thing to
+
+0:06:01.360,0:06:04.960
+think about
+
+0:06:02.240,0:06:06.560
+is how we can verify whether one of
+
+0:06:04.960,0:06:08.800
+these numbers is
+
+0:06:06.560,0:06:10.080
+greater than zero and one is less than
+
+0:06:08.800,0:06:11.680
+zero
+
+0:06:10.080,0:06:13.520
+and it doesn't matter which one is
+
+0:06:11.680,0:06:16.800
+positive and which one is negative
+
+0:06:13.520,0:06:18.880
+just that we have one of each
+
+0:06:16.800,0:06:20.160
+you could write this logic in several
+
+0:06:18.880,0:06:23.199
+different ways
+
+0:06:20.160,0:06:24.319
+but one easy way is to multiply these
+
+0:06:23.199,0:06:25.270
+numbers
+
+0:06:24.319,0:06:29.280
+by each other
+
+0:06:25.270,0:06:32.080
+[Music]
+
+0:06:29.280,0:06:34.080
+and if the product is less than zero you
+
+0:06:32.080,0:06:37.039
+know that you had one positive and one
+
+0:06:34.080,0:06:39.199
+negative integer
+
+0:06:37.039,0:06:40.240
+so if the first number multiplied by the
+
+0:06:39.199,0:06:43.600
+second number
+
+0:06:40.240,0:06:44.479
+is greater than zero we know that we
+
+0:06:43.600,0:06:47.600
+don't have
+
+0:06:44.479,0:06:48.000
+one positive and one negative integer so
+
+0:06:47.600,0:06:50.380
+we can
+
+0:06:48.000,0:06:53.519
+leverage this as part of an if statement
+
+0:06:50.380,0:06:53.519
+[Music]
+
+0:06:53.520,0:06:56.880
+if the product of the first number
+
+0:06:55.199,0:06:58.880
+multiplied by the second number is
+
+0:06:56.880,0:07:02.560
+greater than zero we want to issue an
+
+0:06:58.880,0:07:05.599
+error message
+
+0:07:02.560,0:07:10.319
+we'll tell the user sorry
+
+0:07:05.599,0:07:12.380
+one integer must be positive and one
+
+0:07:10.319,0:07:15.199
+must be negative
+
+0:07:12.380,0:07:17.850
+[Music]
+
+0:07:15.199,0:07:21.199
+now when i run my code if i enter
+
+0:07:17.850,0:07:23.919
+[Music]
+
+0:07:21.199,0:07:26.560
+two negative numbers you'll see that i
+
+0:07:23.919,0:07:28.960
+get an error message
+
+0:07:26.560,0:07:30.920
+so this is correct however we want our
+
+0:07:28.960,0:07:34.160
+program to prompt us again
+
+0:07:30.920,0:07:36.400
+[Music]
+
+0:07:34.160,0:07:45.840
+this is another situation where we can
+
+0:07:36.400,0:07:45.840
+use a loop
+
+0:07:46.050,0:07:49.919
+[Music]
+
+0:07:47.680,0:07:51.440
+if we don't have one positive and one
+
+0:07:49.919,0:07:54.319
+negative integer
+
+0:07:51.440,0:07:56.319
+we will display the error message and
+
+0:07:54.319,0:07:58.400
+start over we will invoke the read
+
+0:07:56.319,0:08:00.639
+number method two more times
+
+0:07:58.400,0:08:03.039
+and reassign first number and second
+
+0:08:00.639,0:08:03.039
+number
+
+0:08:05.039,0:08:10.080
+will tell the user please start over
+
+0:08:10.160,0:08:14.080
+now currently we have an infinite loop
+
+0:08:12.240,0:08:14.479
+we don't have a break anywhere in this
+
+0:08:14.080,0:08:16.960
+loop
+
+0:08:14.479,0:08:18.090
+so rather than use an if statement in
+
+0:08:16.960,0:08:21.039
+this manner
+
+0:08:18.090,0:08:23.360
+[Music]
+
+0:08:21.039,0:08:24.720
+we can tell our program to break out of
+
+0:08:23.360,0:08:26.960
+our loop
+
+0:08:24.720,0:08:27.759
+if the first number multiplied by the
+
+0:08:26.960,0:08:30.879
+second number
+
+0:08:27.759,0:08:30.879
+is less than zero
+
+0:08:31.360,0:08:40.159
+and otherwise we'll output the error
+
+0:08:33.200,0:08:44.480
+message and continue looping
+
+0:08:40.159,0:08:48.000
+running our code again i'll input
+
+0:08:44.480,0:08:48.720
+two positive integers i see the error
+
+0:08:48.000,0:08:51.839
+message
+
+0:08:48.720,0:08:51.839
+and i'm prompted again
+
+0:08:52.399,0:08:57.040
+this time i'll enter a negative integer
+
+0:08:54.880,0:08:58.800
+and then a positive integer
+
+0:08:57.040,0:09:00.590
+and our program exits the loop
+
+0:08:58.800,0:09:05.120
+appropriately
+
+0:09:00.590,0:09:06.640
+[Music]
+
+0:09:05.120,0:09:08.800
+now there's one last step to this
+
+0:09:06.640,0:09:11.760
+problem which is to display the sum of
+
+0:09:08.800,0:09:11.760
+these two numbers
+
+0:09:12.890,0:09:17.440
+[Music]
+
+0:09:14.880,0:09:22.480
+i'll initialize a local variable sum on
+
+0:09:17.440,0:09:24.620
+line 22.
+
+0:09:22.480,0:09:27.120
+and add our two numbers together
+
+0:09:24.620,0:09:29.360
+[Music]
+
+0:09:27.120,0:09:30.160
+as you can see first number and second
+
+0:09:29.360,0:09:33.600
+number were
+
+0:09:30.160,0:09:36.480
+initialized on lines 15 and 16.
+
+0:09:33.600,0:09:39.200
+within the inner scope of the block
+
+0:09:36.480,0:09:41.760
+passed to this loop
+
+0:09:39.200,0:09:45.040
+so in order to be able to access first
+
+0:09:41.760,0:09:45.040
+number and second number
+
+0:09:46.880,0:09:51.120
+i need to initialize them in this outer
+
+0:09:49.360,0:09:53.920
+scope
+
+0:09:51.120,0:09:57.600
+i'll initialize them to nil initially
+
+0:09:53.920,0:10:00.160
+[Music]
+
+0:09:57.600,0:10:01.600
+and when our code executes lines 18 and
+
+0:10:00.160,0:10:03.839
+19
+
+0:10:01.600,0:10:05.839
+we'll reassign first number and second
+
+0:10:03.839,0:10:08.640
+number to the return value of our read
+
+0:10:05.839,0:10:08.640
+number method
+
+0:10:10.959,0:10:14.320
+so now we should be able to calculate
+
+0:10:12.720,0:10:17.409
+the sum without error
+
+0:10:14.320,0:10:17.409
+[Music]
+
+0:10:17.600,0:10:22.880
+let's output a nice message to the user
+
+0:10:20.399,0:10:32.200
+we could use string concatenation here
+
+0:10:22.880,0:10:40.079
+but we'll use string interpolation
+
+0:10:32.200,0:10:42.000
+[Music]
+
+0:10:40.079,0:10:45.360
+and let's run our program to see that
+
+0:10:42.000,0:10:45.360
+nice message to the user
+
+0:10:45.519,0:10:52.320
+i'll input positive 4
+
+0:10:49.120,0:10:52.320
+and negative 3
+
+0:10:53.120,0:11:00.720
+and our program displays the operation
+
+0:10:55.680,0:11:02.079
+and the sum
+
+0:11:00.720,0:11:05.200
+what's interesting about string
+
+0:11:02.079,0:11:05.200
+interpolation is
+
+0:11:05.519,0:11:10.340
+you can actually place any expression in
+
+0:11:08.079,0:11:13.440
+these curly braces so for example
+
+0:11:10.340,0:11:15.600
+[Music]
+
+0:11:13.440,0:11:17.680
+i could add first number and second
+
+0:11:15.600,0:11:18.510
+number right here as part of our string
+
+0:11:17.680,0:11:22.160
+interpolation
+
+0:11:18.510,0:11:24.200
+[Music]
+
+0:11:22.160,0:11:27.320
+i'll enter the same integers this time
+
+0:11:24.200,0:11:27.320
+[Music]
+
+0:11:27.360,0:11:30.830
+and you can see that our code still runs
+
+0:11:29.440,0:11:35.040
+just as we would expect
+
+0:11:30.830,0:11:39.040
+[Music]
+
+0:11:35.040,0:11:41.200
+this look isn't quite as clean so
+
+0:11:39.040,0:11:52.800
+we'll stick with initializing our local
+
+0:11:41.200,0:11:52.800
+variable sum on 25 to calculate the sum
+
