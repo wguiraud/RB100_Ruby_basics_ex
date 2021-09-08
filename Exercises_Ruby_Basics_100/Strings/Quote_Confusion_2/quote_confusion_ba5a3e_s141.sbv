@@ -1,0 +1,129 @@
+0:00:04.720,0:00:08.559
+we need to
+
+0:00:05.680,0:00:10.960
+modify the code that we have been given
+
+0:00:08.559,0:00:11.519
+so that double quotes are used in our
+
+0:00:10.960,0:00:14.559
+string
+
+0:00:11.519,0:00:16.880
+rather than single quotes
+
+0:00:14.559,0:00:19.359
+and we've been given an example of the
+
+0:00:16.880,0:00:21.439
+expected output
+
+0:00:19.359,0:00:23.840
+let's start just by running our code as
+
+0:00:21.439,0:00:23.840
+it is
+
+0:00:24.800,0:00:31.840
+and you can see that our code already
+
+0:00:26.800,0:00:31.840
+matches the expected output
+
+0:00:32.960,0:00:37.200
+the code that was output looks a little
+
+0:00:35.360,0:00:40.000
+bit different than the string that we
+
+0:00:37.200,0:00:42.079
+see on line 1.
+
+0:00:40.000,0:00:44.640
+when using single quotes around our
+
+0:00:42.079,0:00:47.200
+string we need to escape any single
+
+0:00:44.640,0:00:49.600
+quotes within the string
+
+0:00:47.200,0:00:52.399
+if we didn't our output would not be as
+
+0:00:49.600,0:00:52.399
+expected
+
+0:00:52.719,0:00:59.840
+you can see that we have a syntax error
+
+0:01:03.039,0:01:07.040
+so when using single quotes around our
+
+0:01:05.519,0:01:10.159
+string we need to escape
+
+0:01:07.040,0:01:12.560
+single quotes within the string
+
+0:01:10.159,0:01:14.320
+now this problem asks us to use double
+
+0:01:12.560,0:01:16.479
+quotes instead
+
+0:01:14.320,0:01:17.600
+so let's replace the single quotes
+
+0:01:16.479,0:01:20.720
+around our string
+
+0:01:17.600,0:01:20.720
+with double quotes
+
+0:01:25.119,0:01:30.240
+now when we run our code we see the
+
+0:01:27.200,0:01:30.240
+expected output
+
+0:01:34.960,0:01:38.560
+however since we're now using double
+
+0:01:37.119,0:01:41.119
+quotes around our string
+
+0:01:38.560,0:01:44.399
+we no longer need to escape these single
+
+0:01:41.119,0:01:44.399
+quotes within the string
+
+0:01:48.399,0:01:55.840
+running our code again you can see that
+
+0:01:50.640,0:01:55.840
+we still see that expected output
+
+0:01:59.600,0:02:03.439
+according to the ruby style guide it's
+
+0:02:02.079,0:02:05.840
+preferred that we use
+
+0:02:03.439,0:02:08.319
+double quotes around our string when we
+
+0:02:05.840,0:02:10.399
+need to have single quotes within it
+
+0:02:08.319,0:02:11.599
+rather than using single quotes around
+
+0:02:10.399,0:02:23.599
+the string and
+
+0:02:11.599,0:02:23.599
+escaping single quotes within the string
+

@@ -1,0 +1,261 @@
+0:00:05.600,0:00:09.599
+we've been given
+
+0:00:06.720,0:00:11.679
+a local variable pets which references
+
+0:00:09.599,0:00:14.080
+an array of strings
+
+0:00:11.679,0:00:16.800
+and each one of these strings represents
+
+0:00:14.080,0:00:19.840
+a pet
+
+0:00:16.800,0:00:23.359
+the problem asks us to select the string
+
+0:00:19.840,0:00:26.880
+fish from pets and assign the return
+
+0:00:23.359,0:00:29.920
+value to a variable named my pet
+
+0:00:26.880,0:00:31.760
+we will then print the value of my pet
+
+0:00:29.920,0:00:34.960
+as part of the sentence
+
+0:00:31.760,0:00:37.600
+i have a pet fish
+
+0:00:34.960,0:00:38.719
+so this problem has a couple of steps
+
+0:00:37.600,0:00:43.440
+and we'll begin
+
+0:00:38.719,0:00:46.480
+by just selecting fish from pets
+
+0:00:43.440,0:00:47.039
+we can access a specific element from an
+
+0:00:46.480,0:00:50.879
+array
+
+0:00:47.039,0:00:51.280
+using its index in this array we can see
+
+0:00:50.879,0:00:55.039
+that
+
+0:00:51.280,0:00:55.039
+fish is the third element
+
+0:00:57.760,0:01:02.000
+in order to access an element of an
+
+0:01:00.079,0:01:06.479
+array by its index
+
+0:01:02.000,0:01:06.479
+we use the syntax seen on line three
+
+0:01:08.799,0:01:12.159
+and that syntax with the brackets is
+
+0:01:11.360,0:01:15.439
+actually an
+
+0:01:12.159,0:01:16.320
+array method this is an element
+
+0:01:15.439,0:01:18.560
+reference
+
+0:01:16.320,0:01:21.280
+and it will return the element at the
+
+0:01:18.560,0:01:24.159
+specified index
+
+0:01:21.280,0:01:25.200
+you can see that on line 3 we've placed
+
+0:01:24.159,0:01:28.560
+the index
+
+0:01:25.200,0:01:30.720
+three in those brackets
+
+0:01:28.560,0:01:31.680
+and we chose three because we can see
+
+0:01:30.720,0:01:35.040
+that there are
+
+0:01:31.680,0:01:37.840
+four elements in the pets array and fish
+
+0:01:35.040,0:01:40.560
+is the third element
+
+0:01:37.840,0:01:42.880
+let's run our code and see if we output
+
+0:01:40.560,0:01:42.880
+phish
+
+0:01:45.680,0:01:50.880
+and we do not we actually see the output
+
+0:01:48.479,0:01:50.880
+lizard
+
+0:01:52.640,0:01:56.000
+looking back at our code you can see
+
+0:01:54.560,0:01:59.439
+that lizard is the
+
+0:01:56.000,0:02:02.159
+last element in the pet's array
+
+0:01:59.439,0:02:03.680
+there are four total elements and lizard
+
+0:02:02.159,0:02:06.799
+is the fourth
+
+0:02:03.680,0:02:07.520
+so it may seem confusing that lizard is
+
+0:02:06.799,0:02:11.840
+returned
+
+0:02:07.520,0:02:15.280
+when we access the element at index 3.
+
+0:02:11.840,0:02:17.280
+that's because arrays have a 0 based
+
+0:02:15.280,0:02:19.920
+index
+
+0:02:17.280,0:02:20.480
+the first element of an array will be at
+
+0:02:19.920,0:02:23.520
+index
+
+0:02:20.480,0:02:26.319
+0 rather than index 1.
+
+0:02:23.520,0:02:27.440
+this also means that the last element of
+
+0:02:26.319,0:02:30.239
+the array
+
+0:02:27.440,0:02:33.840
+will have an index that is 1 less than
+
+0:02:30.239,0:02:33.840
+the total size of the array
+
+0:02:34.000,0:02:40.640
+so now let's access the element at index
+
+0:02:37.519,0:02:44.640
+0 of our pets array and this time we're
+
+0:02:40.640,0:02:44.640
+expecting to see the string cat
+
+0:02:48.560,0:02:51.840
+and we do
+
+0:02:52.959,0:02:56.319
+we now know that we would expect fish to
+
+0:02:55.280,0:03:00.080
+be at index
+
+0:02:56.319,0:03:01.120
+two so let's access the element of our
+
+0:03:00.080,0:03:03.200
+array at index
+
+0:03:01.120,0:03:05.840
+two and make sure that the output is
+
+0:03:03.200,0:03:05.840
+fish
+
+0:03:09.040,0:03:13.440
+now that we're accessing the correct
+
+0:03:11.280,0:03:15.360
+element of our pet's array
+
+0:03:13.440,0:03:16.640
+let's follow the next step of our
+
+0:03:15.360,0:03:21.040
+problem and
+
+0:03:16.640,0:03:21.040
+assign it to the variable my pet
+
+0:03:23.360,0:03:28.480
+now we want to print my pet as part of a
+
+0:03:30.840,0:03:37.360
+sentence
+
+0:03:32.319,0:03:39.760
+we want to output i have a pet fish
+
+0:03:37.360,0:03:40.400
+in order for our output to match the
+
+0:03:39.760,0:03:42.879
+example
+
+0:03:40.400,0:03:44.159
+output we could use either string
+
+0:03:42.879,0:03:47.840
+concatenation
+
+0:03:44.159,0:03:47.840
+or string interpolation
+
+0:03:49.200,0:03:52.799
+so let's use interpolation
+
+0:03:53.439,0:03:59.040
+and now check whether our output matches
+
+0:03:55.840,0:03:59.040
+the expected output
+
+0:03:59.439,0:04:02.080
+and it does
+
+0:04:04.959,0:04:08.640
+always remember when accessing elements
+
+0:04:07.519,0:04:15.840
+from an array
+
+0:04:08.640,0:04:15.840
+that array indexes begin at zero
+
+0:04:17.280,0:04:19.359
+you
+

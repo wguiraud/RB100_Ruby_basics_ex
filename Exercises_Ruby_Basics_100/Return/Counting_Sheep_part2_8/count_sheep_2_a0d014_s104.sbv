@@ -1,0 +1,102 @@
+0:00:05.359,0:00:09.920
+the code in this problem
+
+0:00:07.040,0:00:10.559
+is very similar to our last problem
+
+0:00:09.920,0:00:13.200
+however
+
+0:00:10.559,0:00:15.360
+we've added a little bit of code on line
+
+0:00:13.200,0:00:18.560
+five
+
+0:00:15.360,0:00:21.520
+you can see that on line five after we
+
+0:00:18.560,0:00:22.880
+invoke the integer times method we've
+
+0:00:21.520,0:00:26.880
+placed the integer
+
+0:00:22.880,0:00:30.160
+10. we can still expect that our
+
+0:00:26.880,0:00:33.440
+count sheet method will output 0 through
+
+0:00:30.160,0:00:35.920
+4 when we invoke the times method
+
+0:00:33.440,0:00:39.040
+but now the return value of our count
+
+0:00:35.920,0:00:42.559
+sheet method that we output on line 8
+
+0:00:39.040,0:00:43.360
+will be different our call to integer
+
+0:00:42.559,0:00:46.320
+times
+
+0:00:43.360,0:00:49.680
+is no longer the last line executed in
+
+0:00:46.320,0:00:49.680
+the count sheet method
+
+0:00:50.079,0:00:54.559
+after ruby has finished executing our
+
+0:00:53.280,0:00:57.600
+call to times
+
+0:00:54.559,0:01:00.160
+and has output 0 through 4
+
+0:00:57.600,0:01:02.559
+line 5 of our count sheet method will be
+
+0:01:00.160,0:01:05.840
+executed
+
+0:01:02.559,0:01:08.640
+the evaluated result of the integer 10
+
+0:01:05.840,0:01:10.720
+is simply the integer 10 so that's what
+
+0:01:08.640,0:01:13.439
+we can expect the return value of our
+
+0:01:10.720,0:01:13.439
+method to b
+
+0:01:13.840,0:01:18.240
+so when we run our code this time we'll
+
+0:01:16.240,0:01:21.280
+expect that the call to put s
+
+0:01:18.240,0:01:25.439
+on line 3 will output 0
+
+0:01:21.280,0:01:26.159
+1 2 3 and 4 while the call to put s on
+
+0:01:25.439,0:01:29.119
+line eight
+
+0:01:26.159,0:01:29.119
+outputs ten
+
+0:01:30.400,0:01:41.840
+and that's what we see
+
+0:01:44.159,0:01:46.240
+you
+

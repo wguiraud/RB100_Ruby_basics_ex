@@ -1,0 +1,306 @@
+0:00:04.960,0:00:08.080
+we need to determine
+
+0:00:06.319,0:00:10.480
+what the code we've been given will
+
+0:00:08.080,0:00:10.480
+print
+
+0:00:10.719,0:00:14.799
+on lines one through five we have a
+
+0:00:13.440,0:00:18.240
+method definition
+
+0:00:14.799,0:00:21.680
+for the method count sheep
+
+0:00:18.240,0:00:23.359
+within that method we invoke the integer
+
+0:00:21.680,0:00:25.840
+times method
+
+0:00:23.359,0:00:28.960
+and for each iteration we print
+
+0:00:25.840,0:00:28.960
+something to the screen
+
+0:00:29.359,0:00:33.760
+on line seven we are invoking the count
+
+0:00:32.239,0:00:36.800
+sheet method
+
+0:00:33.760,0:00:38.000
+and outputting the return value of that
+
+0:00:36.800,0:00:40.320
+method
+
+0:00:38.000,0:00:41.280
+so when thinking about what this code
+
+0:00:40.320,0:00:43.840
+will output
+
+0:00:41.280,0:00:45.680
+we need to be aware that we are printing
+
+0:00:43.840,0:00:48.239
+something to the screen
+
+0:00:45.680,0:00:49.680
+on line three from within the count
+
+0:00:48.239,0:00:52.079
+sheep method
+
+0:00:49.680,0:00:53.680
+as well as printing the return value of
+
+0:00:52.079,0:00:57.120
+count sheep to the screen
+
+0:00:53.680,0:00:59.440
+when we invoke it on line seven
+
+0:00:57.120,0:01:02.000
+to understand what this code will print
+
+0:00:59.440,0:01:03.199
+we need to understand the integer times
+
+0:01:02.000,0:01:06.560
+method
+
+0:01:03.199,0:01:10.080
+we call times on an integer in this case
+
+0:01:06.560,0:01:10.960
+5 and ruby will iterate through the
+
+0:01:10.080,0:01:15.040
+given block
+
+0:01:10.960,0:01:18.080
+integer number of times so in this case
+
+0:01:15.040,0:01:21.280
+five times the block parameter
+
+0:01:18.080,0:01:25.200
+which in this case we've named sheep
+
+0:01:21.280,0:01:27.520
+will represent each number of this count
+
+0:01:25.200,0:01:29.920
+however it's important to note that the
+
+0:01:27.520,0:01:32.240
+count begins at zero
+
+0:01:29.920,0:01:33.600
+so the last number in the count will
+
+0:01:32.240,0:01:36.320
+actually be one
+
+0:01:33.600,0:01:38.400
+less than the integer on which we called
+
+0:01:36.320,0:01:40.880
+times
+
+0:01:38.400,0:01:43.280
+in this particular case we can expect
+
+0:01:40.880,0:01:46.640
+that times will count from zero
+
+0:01:43.280,0:01:48.399
+to four knowing that we can expect that
+
+0:01:46.640,0:01:51.520
+our call to put s on line
+
+0:01:48.399,0:01:55.759
+three will output zero one
+
+0:01:51.520,0:01:58.479
+two three four for now
+
+0:01:55.759,0:01:59.600
+let's invoke count sheep without the
+
+0:01:58.479,0:02:02.640
+call to put us
+
+0:01:59.600,0:02:04.880
+outputting its return value and just see
+
+0:02:02.640,0:02:06.840
+the output that comes from within the
+
+0:02:04.880,0:02:09.840
+method
+
+0:02:06.840,0:02:09.840
+itself
+
+0:02:11.599,0:02:18.239
+as expected we've printed out zero
+
+0:02:14.879,0:02:20.959
+one two three four as
+
+0:02:18.239,0:02:21.840
+our call to the times method iterated
+
+0:02:20.959,0:02:24.560
+through our block
+
+0:02:21.840,0:02:24.560
+five times
+
+0:02:26.400,0:02:30.720
+now that we understand what is output
+
+0:02:28.560,0:02:33.440
+from within the count sheet method
+
+0:02:30.720,0:02:35.200
+we need to know what the return value of
+
+0:02:33.440,0:02:37.360
+this method will be
+
+0:02:35.200,0:02:39.599
+to determine what the call to put s on
+
+0:02:37.360,0:02:41.920
+line 7 will output
+
+0:02:39.599,0:02:42.800
+it may seem a little confusing to
+
+0:02:41.920,0:02:46.239
+determine
+
+0:02:42.800,0:02:48.840
+what the evaluated result of the last
+
+0:02:46.239,0:02:50.560
+line of this method
+
+0:02:48.840,0:02:53.840
+is however
+
+0:02:50.560,0:02:54.800
+remember that this do end block that we
+
+0:02:53.840,0:02:57.920
+see on lines
+
+0:02:54.800,0:03:00.080
+two through four is actually an
+
+0:02:57.920,0:03:01.840
+argument we're passing to the times
+
+0:03:00.080,0:03:04.319
+method
+
+0:03:01.840,0:03:06.080
+the last line being executed in this
+
+0:03:04.319,0:03:10.640
+count sheet method
+
+0:03:06.080,0:03:10.640
+is our invocation of the times method
+
+0:03:11.200,0:03:16.400
+so to determine the return value of the
+
+0:03:14.640,0:03:18.720
+count sheet method
+
+0:03:16.400,0:03:21.599
+we need to know the return value of the
+
+0:03:18.720,0:03:21.599
+times method
+
+0:03:23.040,0:03:27.760
+and if we didn't already know this we
+
+0:03:25.120,0:03:30.720
+could check out the ruby documentation
+
+0:03:27.760,0:03:31.440
+for the integer times method and we
+
+0:03:30.720,0:03:34.239
+would see
+
+0:03:31.440,0:03:35.680
+that times returns the integer it was
+
+0:03:34.239,0:03:39.120
+called on
+
+0:03:35.680,0:03:41.360
+in this case that's five so we can
+
+0:03:39.120,0:03:44.400
+expect that the count sheet method will
+
+0:03:41.360,0:03:44.400
+return the integer
+
+0:03:44.840,0:03:49.360
+five
+
+0:03:47.280,0:03:50.319
+let's run our code again and we'll
+
+0:03:49.360,0:03:53.040
+expect to see
+
+0:03:50.319,0:03:54.640
+both the output from within the method
+
+0:03:53.040,0:03:58.480
+counting from 0 to
+
+0:03:54.640,0:03:59.360
+4 and the output of the return value of
+
+0:03:58.480,0:04:02.879
+this method
+
+0:03:59.360,0:04:02.879
+which we expect to be five
+
+0:04:07.040,0:04:11.040
+and we see the expected result
+
+0:04:12.640,0:04:17.280
+if this isn't clear enough we can
+
+0:04:15.200,0:04:20.320
+comment out the call to put us
+
+0:04:17.280,0:04:24.639
+within the count sheet method and just
+
+0:04:20.320,0:04:24.639
+output the return value of count sheep
+
+0:04:27.680,0:04:43.280
+and you can see that it's five
+

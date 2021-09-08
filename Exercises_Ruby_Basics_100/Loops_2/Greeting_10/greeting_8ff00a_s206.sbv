@@ -1,0 +1,240 @@
+0:00:03.520,0:00:08.160
+we need to use a
+
+0:00:04.720,0:00:10.000
+while loop to print hello twice
+
+0:00:08.160,0:00:12.320
+and we've been given a little bit of
+
+0:00:10.000,0:00:15.679
+code on lines one through three
+
+0:00:12.320,0:00:16.560
+we have a method greeting defined and it
+
+0:00:15.679,0:00:19.039
+appears that
+
+0:00:16.560,0:00:20.960
+this greeting method outputs the string
+
+0:00:19.039,0:00:24.240
+hello
+
+0:00:20.960,0:00:26.960
+on line 5 we also have a local variable
+
+0:00:24.240,0:00:30.720
+number of greetings and it's been
+
+0:00:26.960,0:00:33.200
+initialized to reference to integer 2.
+
+0:00:30.720,0:00:35.280
+let's just start by calling our greeting
+
+0:00:33.200,0:00:36.660
+method
+
+0:00:35.280,0:00:39.720
+and running our code
+
+0:00:36.660,0:00:39.720
+[Music]
+
+0:00:39.840,0:00:44.280
+so as you can see the greeting method
+
+0:00:42.239,0:00:45.760
+outputs hello
+
+0:00:44.280,0:00:47.760
+[Music]
+
+0:00:45.760,0:00:49.039
+now the greeting method outputs hello
+
+0:00:47.760,0:00:51.520
+just one time
+
+0:00:49.039,0:00:52.160
+and the problem requires us to print it
+
+0:00:51.520,0:00:55.680
+twice
+
+0:00:52.160,0:00:55.680
+and also use a while loop
+
+0:00:56.480,0:01:02.230
+so we can place our invocation of the
+
+0:00:59.440,0:01:05.760
+greeting method within a while loop
+
+0:01:02.230,0:01:08.640
+[Music]
+
+0:01:05.760,0:01:10.080
+now we want this while loop to iterate
+
+0:01:08.640,0:01:12.000
+two times
+
+0:01:10.080,0:01:13.280
+and we need to provide some type of
+
+0:01:12.000,0:01:15.920
+condition on line
+
+0:01:13.280,0:01:16.320
+seven to tell the while loop when to
+
+0:01:15.920,0:01:18.880
+stop
+
+0:01:16.320,0:01:18.880
+iterating
+
+0:01:19.360,0:01:22.799
+and while the condition that we provide
+
+0:01:21.439,0:01:24.960
+it is true
+
+0:01:22.799,0:01:27.200
+the loop will continue when the
+
+0:01:24.960,0:01:30.400
+condition returns false
+
+0:01:27.200,0:01:32.479
+then the while loop will stop iterating
+
+0:01:30.400,0:01:33.680
+so we can use the local variable that
+
+0:01:32.479,0:01:36.720
+was given to us
+
+0:01:33.680,0:01:38.560
+number of greetings to make sure we're
+
+0:01:36.720,0:01:41.520
+invoking the greeting method the
+
+0:01:38.560,0:01:43.600
+appropriate number of times
+
+0:01:41.520,0:01:45.439
+instead of initializing number of
+
+0:01:43.600,0:01:47.840
+greetings to zero
+
+0:01:45.439,0:01:48.960
+and incrementing as we iterate through
+
+0:01:47.840,0:01:51.119
+the loop
+
+0:01:48.960,0:01:53.040
+number of greetings has been initialized
+
+0:01:51.119,0:01:54.640
+to two
+
+0:01:53.040,0:01:56.880
+so instead we're going to want to
+
+0:01:54.640,0:01:59.920
+decrement the value of this variable
+
+0:01:56.880,0:01:59.920
+as we loop through
+
+0:02:00.030,0:02:03.310
+[Music]
+
+0:02:04.719,0:02:11.039
+and the syntax for that is
+
+0:02:07.840,0:02:14.160
+similar to incrementing
+
+0:02:11.039,0:02:16.800
+except we are using subtraction now on
+
+0:02:14.160,0:02:20.000
+line nine we are decrementing the value
+
+0:02:16.800,0:02:22.560
+of number of greetings by one each time
+
+0:02:20.000,0:02:24.959
+we iterate through this loop
+
+0:02:22.560,0:02:26.959
+and we know that we want two iterations
+
+0:02:24.959,0:02:27.840
+here because we want to invoke our
+
+0:02:26.959,0:02:30.959
+greeting method
+
+0:02:27.840,0:02:32.640
+twice so it makes sense for our
+
+0:02:30.959,0:02:37.280
+condition to be
+
+0:02:32.640,0:02:41.960
+while number of greetings
+
+0:02:37.280,0:02:45.039
+is greater than zero let's run the code
+
+0:02:41.960,0:02:45.039
+[Music]
+
+0:02:46.080,0:02:51.680
+and we've satisfied the problem
+
+0:02:47.680,0:02:54.319
+requirements by printing hello twice
+
+0:02:51.680,0:02:56.080
+it's important in cases like this to pay
+
+0:02:54.319,0:02:58.159
+attention to whether or not you're using
+
+0:02:56.080,0:03:01.760
+the proper comparison
+
+0:02:58.159,0:03:04.480
+for example if i had set my condition
+
+0:03:01.760,0:03:07.680
+to while number of greetings is greater
+
+0:03:04.480,0:03:07.680
+than or equal to zero
+
+0:03:07.760,0:03:13.440
+hello would have printed three times
+
+0:03:10.730,0:03:16.080
+[Music]
+
+0:03:13.440,0:03:18.480
+so take care to be precise when deciding
+
+0:03:16.080,0:03:28.480
+exactly what conditions and comparisons
+
+0:03:18.480,0:03:28.480
+to use for your loops
+

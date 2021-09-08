@@ -1,0 +1,216 @@
+0:00:06.000,0:00:09.920
+we need to
+
+0:00:06.799,0:00:13.440
+select both fish and lizard from pets
+
+0:00:09.920,0:00:17.920
+at the same time and assign that return
+
+0:00:13.440,0:00:20.720
+value to a variable named my pets
+
+0:00:17.920,0:00:23.359
+then we will print the value of my pets
+
+0:00:20.720,0:00:25.760
+as part of a sentence
+
+0:00:23.359,0:00:26.880
+we know that we can use array element
+
+0:00:25.760,0:00:29.199
+reference to
+
+0:00:26.880,0:00:31.679
+select a particular element from an
+
+0:00:29.199,0:00:34.399
+array
+
+0:00:31.679,0:00:34.880
+in this problem we want to select both
+
+0:00:34.399,0:00:37.600
+fish
+
+0:00:34.880,0:00:37.600
+and lizard
+
+0:00:38.160,0:00:46.800
+so let's select fish by referencing the
+
+0:00:42.239,0:00:46.800
+array element at index 2
+
+0:00:48.719,0:00:53.920
+and also select lizard which is at index
+
+0:00:51.520,0:00:53.920
+3.
+
+0:00:54.640,0:00:59.920
+now we'll run our code
+
+0:00:57.760,0:01:00.879
+and you can see that we successfully
+
+0:00:59.920,0:01:04.079
+selected both
+
+0:01:00.879,0:01:04.079
+fish and lizard
+
+0:01:07.040,0:01:10.960
+however the problem description tells us
+
+0:01:09.280,0:01:14.560
+that we need to select both
+
+0:01:10.960,0:01:17.200
+fish and lizard at the same time
+
+0:01:14.560,0:01:17.600
+when using array element reference we're
+
+0:01:17.200,0:01:20.159
+not
+
+0:01:17.600,0:01:22.080
+limited to passing in only a single
+
+0:01:20.159,0:01:25.840
+index
+
+0:01:22.080,0:01:28.400
+we can also pass in a range
+
+0:01:25.840,0:01:30.640
+in this case we want to select the
+
+0:01:28.400,0:01:34.799
+elements of the array
+
+0:01:30.640,0:01:36.720
+from index 2 through 3.
+
+0:01:34.799,0:01:38.640
+placing a range within these square
+
+0:01:36.720,0:01:41.759
+brackets will return an
+
+0:01:38.640,0:01:45.200
+array with the elements at the indexes
+
+0:01:41.759,0:01:45.200
+included in this range
+
+0:01:45.360,0:01:48.880
+if we had a larger array
+
+0:01:50.399,0:01:57.360
+we could pass in the range from 2 to 5
+
+0:01:54.079,0:02:00.000
+and the elements at index 2 3
+
+0:01:57.360,0:02:01.360
+4 and 5 would be returned in this new
+
+0:02:00.000,0:02:04.399
+array
+
+0:02:01.360,0:02:06.320
+so that we can see that this does return
+
+0:02:04.399,0:02:10.479
+an array
+
+0:02:06.320,0:02:10.479
+let's output the return value with p
+
+0:02:14.560,0:02:23.599
+you can see the returned array includes
+
+0:02:16.879,0:02:25.840
+our desired elements
+
+0:02:23.599,0:02:28.239
+now according to our problem description
+
+0:02:25.840,0:02:32.000
+we need to assign this returned array
+
+0:02:28.239,0:02:32.000
+to a variable mypeds
+
+0:02:34.239,0:02:37.440
+now we need to output both elements of
+
+0:02:36.959,0:02:42.239
+this
+
+0:02:37.440,0:02:42.239
+my pets array as part of a sentence
+
+0:02:44.480,0:02:48.720
+because my pets is an array we will
+
+0:02:47.519,0:02:52.000
+again need to use
+
+0:02:48.720,0:02:52.640
+element reference to interpolate the
+
+0:02:52.000,0:02:56.000
+correct
+
+0:02:52.640,0:02:57.040
+element of the my pets array first we
+
+0:02:56.000,0:02:59.920
+want to select
+
+0:02:57.040,0:03:02.239
+fish the first element of our my pets
+
+0:02:59.920,0:03:02.239
+array
+
+0:03:03.440,0:03:07.440
+and we can do that by referencing the
+
+0:03:06.239,0:03:11.200
+element at index
+
+0:03:07.440,0:03:11.200
+0 the first element
+
+0:03:16.879,0:03:20.159
+to access the second element of our
+
+0:03:19.360,0:03:22.640
+array
+
+0:03:20.159,0:03:22.640
+lizard
+
+0:03:25.599,0:03:30.640
+we will reference the element at index
+
+0:03:28.319,0:03:30.640
+1.
+
+0:03:31.280,0:03:36.720
+let's run our code and see if we've
+
+0:03:33.280,0:03:36.720
+gotten the expected output
+
+0:03:37.840,0:03:49.040
+and we have
+
+0:03:46.959,0:03:49.040
+you
+

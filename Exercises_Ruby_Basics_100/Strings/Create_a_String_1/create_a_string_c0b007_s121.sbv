@@ -1,0 +1,114 @@
+0:00:05.120,0:00:09.920
+in this exercise
+
+0:00:06.480,0:00:13.040
+we are asked to create an empty string
+
+0:00:09.920,0:00:15.360
+using the string class and assign it to
+
+0:00:13.040,0:00:19.520
+a variable
+
+0:00:15.360,0:00:22.160
+so let's call our variable empty string
+
+0:00:19.520,0:00:22.880
+and one way that we can create an empty
+
+0:00:22.160,0:00:25.920
+string
+
+0:00:22.880,0:00:29.199
+is to call the new method
+
+0:00:25.920,0:00:30.960
+on the string class new is a class
+
+0:00:29.199,0:00:33.440
+method
+
+0:00:30.960,0:00:35.600
+when we call new on the string class
+
+0:00:33.440,0:00:38.559
+with no arguments passed in
+
+0:00:35.600,0:00:39.920
+like you see on line 1 an empty string
+
+0:00:38.559,0:00:42.160
+is returned
+
+0:00:39.920,0:00:43.680
+and in this case we are assigning that
+
+0:00:42.160,0:00:48.239
+empty string
+
+0:00:43.680,0:00:48.239
+to the local variable empty string
+
+0:00:48.640,0:00:53.039
+and let's output the value of empty
+
+0:00:51.520,0:00:58.190
+string
+
+0:00:53.039,0:01:01.330
+using the p method to see that
+
+0:00:58.190,0:01:01.330
+[Music]
+
+0:01:02.160,0:01:07.840
+when we run our code you can see that
+
+0:01:04.000,0:01:07.840
+we've output an empty string
+
+0:01:11.600,0:01:16.080
+now there's one other way that we could
+
+0:01:13.760,0:01:19.280
+create an empty string here
+
+0:01:16.080,0:01:19.680
+and that's using a string literal so
+
+0:01:19.280,0:01:26.640
+let's
+
+0:01:19.680,0:01:28.479
+comment out our code on line one
+
+0:01:26.640,0:01:30.079
+and this time we'll assign the local
+
+0:01:28.479,0:01:33.759
+variable empty string
+
+0:01:30.079,0:01:33.759
+to just an empty string
+
+0:01:33.920,0:01:38.720
+again let's run our code in output empty
+
+0:01:38.840,0:01:41.840
+string
+
+0:01:44.000,0:01:47.920
+so there are two ways that we can create
+
+0:01:46.479,0:01:50.399
+an empty string
+
+0:01:47.920,0:01:51.520
+either with a string literal or by
+
+0:01:50.399,0:01:55.840
+calling the
+
+0:01:51.520,0:01:55.840
+new method on the string class
+

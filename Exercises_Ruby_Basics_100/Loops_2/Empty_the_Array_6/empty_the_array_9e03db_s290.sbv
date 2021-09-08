@@ -1,0 +1,327 @@
+0:00:04.240,0:00:09.920
+this problem requires us to
+
+0:00:06.399,0:00:12.719
+use a loop to remove and print
+
+0:00:09.920,0:00:13.120
+each element of our names array from
+
+0:00:12.719,0:00:16.320
+first
+
+0:00:13.120,0:00:18.800
+to last when the names array is empty
+
+0:00:16.320,0:00:22.400
+when we've removed all of the elements
+
+0:00:18.800,0:00:22.400
+then we need to stop looping
+
+0:00:24.720,0:00:30.240
+so first let's create our loop you can
+
+0:00:27.760,0:00:31.039
+see our names array initialize on line
+
+0:00:30.240,0:00:34.559
+one
+
+0:00:31.039,0:00:34.559
+is an array of strings
+
+0:00:36.079,0:00:40.000
+there is a ruby method that allows us to
+
+0:00:38.879,0:00:43.280
+remove the first
+
+0:00:40.000,0:00:45.840
+element of an array and that's the array
+
+0:00:43.280,0:00:45.840
+shift method
+
+0:00:47.840,0:00:52.480
+let me actually comment out our loop for
+
+0:00:50.239,0:00:52.480
+now
+
+0:00:54.559,0:01:01.120
+we'll print our names array then call
+
+0:00:58.079,0:01:01.760
+the shift method on the array and print
+
+0:01:01.120,0:01:05.280
+it again
+
+0:01:01.760,0:01:05.280
+just to see what this looks like
+
+0:01:06.640,0:01:13.040
+the first element of our array sally has
+
+0:01:09.840,0:01:15.600
+been removed
+
+0:01:13.040,0:01:16.240
+the return value of calling shift on an
+
+0:01:15.600,0:01:19.439
+array
+
+0:01:16.240,0:01:21.440
+is that first element itself so we can
+
+0:01:19.439,0:01:23.920
+print that as well
+
+0:01:21.440,0:01:26.479
+[Music]
+
+0:01:23.920,0:01:27.200
+the first element which is removed from
+
+0:01:26.479,0:01:30.400
+the array
+
+0:01:27.200,0:01:30.400
+is also returned
+
+0:01:31.280,0:01:34.799
+so now that we know how shift mutates
+
+0:01:34.000,0:01:37.040
+our array
+
+0:01:34.799,0:01:41.759
+and what it returns we can actually use
+
+0:01:37.040,0:01:43.840
+this in our loop
+
+0:01:41.759,0:01:46.640
+since we want to remove the elements of
+
+0:01:43.840,0:01:49.920
+this array from first to last
+
+0:01:46.640,0:01:52.479
+we can call shift on our names array
+
+0:01:49.920,0:01:54.640
+and the problem requires that we also
+
+0:01:52.479,0:01:56.640
+output this element
+
+0:01:54.640,0:01:59.280
+since we know that the shift method
+
+0:01:56.640,0:02:02.399
+returns the element it removes
+
+0:01:59.280,0:02:06.079
+we can simply call puts
+
+0:02:02.399,0:02:08.640
+now we need a break condition here
+
+0:02:06.079,0:02:09.280
+first let's also print out the array
+
+0:02:08.640,0:02:11.760
+after
+
+0:02:09.280,0:02:12.560
+we execute the code on line four and
+
+0:02:11.760,0:02:14.540
+then break
+
+0:02:12.560,0:02:17.639
+after one iteration
+
+0:02:14.540,0:02:17.639
+[Music]
+
+0:02:17.680,0:02:21.200
+we removed sally from the array and
+
+0:02:20.560,0:02:23.120
+output it
+
+0:02:21.200,0:02:25.520
+appropriately so we're on the right
+
+0:02:23.120,0:02:25.520
+track
+
+0:02:26.930,0:02:31.760
+[Music]
+
+0:02:29.200,0:02:34.239
+but we want to iterate through this loop
+
+0:02:31.760,0:02:36.000
+more than one time
+
+0:02:34.239,0:02:37.360
+so let's think about when we want to
+
+0:02:36.000,0:02:39.680
+break
+
+0:02:37.360,0:02:41.760
+the problem description tells us that we
+
+0:02:39.680,0:02:42.959
+want to break when the name's array is
+
+0:02:41.760,0:02:44.959
+empty
+
+0:02:42.959,0:02:47.519
+so after we've removed all of these
+
+0:02:44.959,0:02:47.519
+elements
+
+0:02:48.480,0:02:54.640
+we can call the array empty method
+
+0:02:51.519,0:02:56.080
+on our names array and that will return
+
+0:02:54.640,0:02:58.800
+a boolean
+
+0:02:56.080,0:02:59.440
+if it returns true we'll break out of
+
+0:02:58.800,0:03:02.720
+our loop
+
+0:02:59.440,0:03:04.970
+otherwise we'll continue to loop so now
+
+0:03:02.720,0:03:07.200
+let's see what we've got
+
+0:03:04.970,0:03:08.720
+[Music]
+
+0:03:07.200,0:03:11.840
+and you can see that we have the
+
+0:03:08.720,0:03:11.840
+appropriate output
+
+0:03:13.520,0:03:17.360
+[Music]
+
+0:03:14.959,0:03:19.840
+just to see what our names array looks
+
+0:03:17.360,0:03:22.560
+like after running through the loop
+
+0:03:19.840,0:03:23.750
+we can print that out on line eight and
+
+0:03:22.560,0:03:26.080
+run the code again
+
+0:03:23.750,0:03:28.080
+[Music]
+
+0:03:26.080,0:03:29.680
+and as you can see on the last line of
+
+0:03:28.080,0:03:33.840
+our output that's now an
+
+0:03:29.680,0:03:33.840
+empty array
+
+0:03:34.090,0:03:38.640
+[Music]
+
+0:03:36.480,0:03:40.799
+now if you didn't happen to know the
+
+0:03:38.640,0:03:44.879
+array empty method
+
+0:03:40.799,0:03:47.920
+you could also do something like this
+
+0:03:44.879,0:03:51.200
+you could compare the size of the array
+
+0:03:47.920,0:03:53.990
+to zero if the size of the array is zero
+
+0:03:51.200,0:03:58.889
+then we know that it's empty
+
+0:03:53.990,0:03:58.889
+[Music]
+
+0:03:59.519,0:04:04.400
+so this also causes our code to run
+
+0:04:01.599,0:04:04.400
+appropriately
+
+0:04:06.560,0:04:10.560
+now how would we handle it if we instead
+
+0:04:08.959,0:04:12.959
+wanted to remove
+
+0:04:10.560,0:04:14.000
+the elements of the array from last to
+
+0:04:12.959,0:04:16.320
+first
+
+0:04:14.000,0:04:17.040
+so in this instance what if we wanted to
+
+0:04:16.320,0:04:21.359
+remove
+
+0:04:17.040,0:04:26.720
+henry then lisa joe and sally
+
+0:04:21.359,0:04:26.720
+there's also an array method named pop
+
+0:04:26.880,0:04:31.759
+and it works similarly to shift except
+
+0:04:29.360,0:04:34.240
+that it removes the last element of the
+
+0:04:31.759,0:04:36.240
+array and returns it
+
+0:04:34.240,0:04:38.400
+so now let's run our code and see if
+
+0:04:36.240,0:04:38.970
+we're removing the elements in reverse
+
+0:04:38.400,0:04:40.960
+order
+
+0:04:38.970,0:04:43.840
+[Music]
+
+0:04:40.960,0:04:43.840
+and we are
+

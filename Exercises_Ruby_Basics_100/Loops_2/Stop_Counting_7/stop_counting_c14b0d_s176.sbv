@@ -1,0 +1,189 @@
+0:00:05.120,0:00:08.960
+the method used in the code we've been
+
+0:00:07.279,0:00:12.080
+given for this problem
+
+0:00:08.960,0:00:14.719
+counts from zero to four that's the
+
+0:00:12.080,0:00:17.840
+integer times method
+
+0:00:14.719,0:00:20.960
+the times method counts from zero to
+
+0:00:17.840,0:00:24.480
+one less than the specified number
+
+0:00:20.960,0:00:27.840
+in this case that number is five
+
+0:00:24.480,0:00:30.240
+the block parameter on line one index
+
+0:00:27.840,0:00:32.480
+represents the number of our current
+
+0:00:30.240,0:00:34.480
+iteration
+
+0:00:32.480,0:00:35.600
+and let's look at this just by
+
+0:00:34.480,0:00:38.160
+outputting
+
+0:00:35.600,0:00:38.160
+index
+
+0:00:39.040,0:00:45.840
+you can see we're counting from zero up
+
+0:00:41.680,0:00:45.840
+to four
+
+0:00:46.960,0:00:52.239
+now the problem requires us to not only
+
+0:00:50.160,0:00:53.440
+modify the block so that it prints the
+
+0:00:52.239,0:00:55.280
+current number
+
+0:00:53.440,0:00:58.399
+which is what we've just done on line
+
+0:00:55.280,0:00:59.920
+two but to stop iterating when the
+
+0:00:58.399,0:01:03.199
+current number is equal to
+
+0:00:59.920,0:01:08.799
+2. so we want to count
+
+0:01:03.199,0:01:08.799
+0 1 2 and then stop iterating
+
+0:01:09.600,0:01:12.720
+if we place the reserved word break on
+
+0:01:11.600,0:01:15.040
+line three
+
+0:01:12.720,0:01:17.759
+our program will stop iterating after
+
+0:01:15.040,0:01:21.040
+only one iteration
+
+0:01:17.759,0:01:23.520
+so that's not what we want we need to
+
+0:01:21.040,0:01:25.600
+give this break a condition
+
+0:01:23.520,0:01:26.560
+and the problem provides that condition
+
+0:01:25.600,0:01:28.640
+for us
+
+0:01:26.560,0:01:30.000
+we want to stop iterating when the
+
+0:01:28.640,0:01:31.920
+current number
+
+0:01:30.000,0:01:33.759
+which is represented by the block
+
+0:01:31.920,0:01:40.660
+parameter index
+
+0:01:33.759,0:01:43.439
+is equal to 2.
+
+0:01:40.660,0:01:46.240
+[Music]
+
+0:01:43.439,0:01:47.119
+with that condition applied our code is
+
+0:01:46.240,0:01:50.240
+fulfilling the
+
+0:01:47.119,0:01:50.240
+problem requirements
+
+0:01:52.799,0:01:56.000
+if you were to change this condition on
+
+0:01:55.119,0:01:59.360
+line three
+
+0:01:56.000,0:02:01.840
+to break if index is equal to four
+
+0:01:59.360,0:02:03.119
+the code would actually run exactly the
+
+0:02:01.840,0:02:09.840
+same as if you
+
+0:02:03.119,0:02:09.840
+had not included that break at all
+
+0:02:10.239,0:02:14.800
+the code counts from zero to four
+
+0:02:13.610,0:02:19.040
+[Music]
+
+0:02:14.800,0:02:21.920
+when we break if index is equal to four
+
+0:02:19.040,0:02:23.920
+if we comment out that line of code and
+
+0:02:21.920,0:02:25.040
+just run the times method without
+
+0:02:23.920,0:02:28.800
+breaking out of the
+
+0:02:25.040,0:02:30.480
+iterations early you'll see that the
+
+0:02:28.800,0:02:32.239
+output is the same
+
+0:02:30.480,0:02:34.319
+and again that's because the times
+
+0:02:32.239,0:02:37.440
+method iterates from zero
+
+0:02:34.319,0:02:39.530
+up to one less than the number provided
+
+0:02:37.440,0:02:41.200
+which in this case is five
+
+0:02:39.530,0:02:43.360
+[Music]
+
+0:02:41.200,0:02:45.519
+it's important to have a good
+
+0:02:43.360,0:02:47.760
+understanding of how a method works when
+
+0:02:45.519,0:02:51.840
+you use it in your code and always check
+
+0:02:47.760,0:02:51.840
+the documentation if you're not sure
+

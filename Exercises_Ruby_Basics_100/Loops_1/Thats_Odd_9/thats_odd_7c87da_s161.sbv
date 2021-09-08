@@ -1,0 +1,180 @@
+0:00:04.400,0:00:07.919
+this
+
+0:00:04.799,0:00:09.360
+problem uses a for loop which may look a
+
+0:00:07.919,0:00:13.120
+little bit different than
+
+0:00:09.360,0:00:15.759
+other loops that we've seen in ruby
+
+0:00:13.120,0:00:17.039
+we often use for loops to iterate
+
+0:00:15.759,0:00:20.160
+through a collection
+
+0:00:17.039,0:00:23.439
+and in this code the collection is
+
+0:00:20.160,0:00:26.640
+the range of integers from 1 to 100
+
+0:00:23.439,0:00:27.439
+inclusive remember that this 2 dot
+
+0:00:26.640,0:00:30.160
+notation
+
+0:00:27.439,0:00:33.840
+is an inclusive range and three dot
+
+0:00:30.160,0:00:33.840
+notation is exclusive
+
+0:00:34.160,0:00:38.879
+now i is a variable representing each
+
+0:00:37.360,0:00:42.399
+element of the collection
+
+0:00:38.879,0:00:44.960
+as we iterate through on line two you
+
+0:00:42.399,0:00:47.200
+can see we output i
+
+0:00:44.960,0:00:49.360
+so let's run our code and look at the
+
+0:00:47.200,0:00:52.320
+output
+
+0:00:49.360,0:00:56.399
+and you can see that from 1 to 100 we've
+
+0:00:52.320,0:00:56.399
+output every element of the collection
+
+0:00:56.960,0:01:00.800
+the challenge here is to output i only
+
+0:01:00.160,0:01:03.550
+if i
+
+0:01:00.800,0:01:05.199
+is an odd number
+
+0:01:03.550,0:01:07.119
+[Music]
+
+0:01:05.199,0:01:12.080
+and we can use an if statement here to
+
+0:01:07.119,0:01:14.240
+do that
+
+0:01:12.080,0:01:15.759
+a ruby method that comes in handy for
+
+0:01:14.240,0:01:19.600
+this particular problem
+
+0:01:15.759,0:01:20.720
+is the integer method odd odd returns a
+
+0:01:19.600,0:01:23.759
+boolean
+
+0:01:20.720,0:01:26.720
+it returns true if the number is odd and
+
+0:01:23.759,0:01:29.200
+false if the number is even so let's run
+
+0:01:26.720,0:01:29.200
+our code
+
+0:01:29.759,0:01:33.360
+and if you look at our output this time
+
+0:01:31.920,0:01:36.720
+you can see that we've output
+
+0:01:33.360,0:01:36.720
+only the odd numbers
+
+0:01:38.079,0:01:42.880
+because our if statement is pretty short
+
+0:01:40.720,0:01:45.280
+we can actually move it all onto one
+
+0:01:42.880,0:01:45.280
+line
+
+0:01:47.759,0:01:51.439
+now if you didn't happen to know the
+
+0:01:50.000,0:01:54.560
+integer odd method
+
+0:01:51.439,0:01:56.560
+or know that a method existed to take
+
+0:01:54.560,0:02:00.479
+care of this logic for you
+
+0:01:56.560,0:02:00.479
+you could write out the logic yourself
+
+0:02:03.200,0:02:07.119
+we can write out our own logic here to
+
+0:02:05.520,0:02:10.239
+determine whether the
+
+0:02:07.119,0:02:11.760
+remainder of i divided by 2 is equal to
+
+0:02:10.239,0:02:15.120
+0 or not
+
+0:02:11.760,0:02:16.959
+and if not the number is odd
+
+0:02:15.120,0:02:19.040
+and again we run our code and see the
+
+0:02:16.959,0:02:20.800
+correct output
+
+0:02:19.040,0:02:22.959
+so don't be afraid to write your own
+
+0:02:20.800,0:02:25.840
+logic whether or not you know
+
+0:02:22.959,0:02:26.879
+a ruby method that can handle it for you
+
+0:02:25.840,0:02:28.959
+it's important
+
+0:02:26.879,0:02:31.280
+that you're able to write working code
+
+0:02:28.959,0:02:31.840
+without having to go method hunting and
+
+0:02:31.280,0:02:34.840
+rely
+
+0:02:31.840,0:02:37.840
+too heavily on the built-in methods
+
+0:02:34.840,0:02:37.840
+provided
+

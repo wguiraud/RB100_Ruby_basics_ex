@@ -1,0 +1,111 @@
+0:00:04.560,0:00:09.120
+we've been given
+
+0:00:05.839,0:00:12.320
+two local variables first name and
+
+0:00:09.120,0:00:15.120
+last name and we've been instructed to
+
+0:00:12.320,0:00:16.560
+combine these two names together to form
+
+0:00:15.120,0:00:18.800
+a full name
+
+0:00:16.560,0:00:20.080
+and assign that value to a variable
+
+0:00:18.800,0:00:22.080
+named full name
+
+0:00:20.080,0:00:24.560
+then we're going to print the value of
+
+0:00:22.080,0:00:24.560
+full name
+
+0:00:29.359,0:00:33.600
+there's more than one way that we can
+
+0:00:31.359,0:00:36.000
+combine the values of these two
+
+0:00:33.600,0:00:38.399
+variables
+
+0:00:36.000,0:00:40.879
+let's begin by concatenating them
+
+0:00:38.399,0:00:40.879
+together
+
+0:00:41.360,0:00:47.920
+we'll pass full name to put us
+
+0:00:44.640,0:00:47.920
+and output its value
+
+0:00:50.239,0:00:55.280
+you can see that we've successfully
+
+0:00:52.320,0:00:59.840
+combined the first name and last name
+
+0:00:55.280,0:00:59.840
+but we forgot an important detail
+
+0:01:02.719,0:01:07.920
+we want a space between our first name
+
+0:01:05.119,0:01:07.920
+and last name
+
+0:01:08.479,0:01:15.119
+so we'll concatenate that space between
+
+0:01:10.960,0:01:15.119
+the values of first name and last name
+
+0:01:17.360,0:01:21.920
+and now our output matches the example
+
+0:01:24.840,0:01:28.799
+output
+
+0:01:26.159,0:01:30.560
+important to note that concatenation
+
+0:01:28.799,0:01:33.680
+returns a new string
+
+0:01:30.560,0:01:35.680
+rather than mutating its color
+
+0:01:33.680,0:01:38.159
+we've stored this new string in the
+
+0:01:35.680,0:01:40.159
+variable full name
+
+0:01:38.159,0:01:43.360
+alternatively we could use string
+
+0:01:40.159,0:01:43.360
+interpolation here
+
+0:01:52.000,0:01:57.280
+using double quotes and the octothorpe
+
+0:01:55.360,0:02:00.159
+and curly brace syntax of
+
+0:01:57.280,0:02:00.159
+interpolation
+
+0:02:02.880,0:02:09.840
+we've combined the first name and
+
+0:02:04.880,0:02:09.840
+lastname variables into a string
+

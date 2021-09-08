@@ -1,0 +1,204 @@
+0:00:05.120,0:00:08.720
+this code looks a little bit different
+
+0:00:07.040,0:00:11.280
+than what we saw in the previous
+
+0:00:08.720,0:00:11.280
+problems
+
+0:00:11.360,0:00:18.720
+our call to integer times is the last
+
+0:00:14.639,0:00:21.600
+evaluated line in our method once again
+
+0:00:18.720,0:00:22.400
+but this time within the block path to
+
+0:00:21.600,0:00:25.680
+times
+
+0:00:22.400,0:00:25.680
+we have an if statement
+
+0:00:27.039,0:00:30.240
+you can see that without this if
+
+0:00:28.840,0:00:32.719
+statement
+
+0:00:30.240,0:00:36.079
+if we commented it out we'll see the
+
+0:00:32.719,0:00:38.399
+same behavior that we saw earlier
+
+0:00:36.079,0:00:39.200
+when we invoke the count sheet method we
+
+0:00:38.399,0:00:42.559
+will output
+
+0:00:39.200,0:00:45.440
+0 through 4 from within the method
+
+0:00:42.559,0:00:47.280
+the method will return the integer 5 and
+
+0:00:45.440,0:00:49.680
+will output the return value of the
+
+0:00:47.280,0:00:49.680
+method
+
+0:00:56.719,0:01:00.960
+so now let's think about how this if
+
+0:00:58.879,0:01:03.359
+statement changes the behavior of our
+
+0:01:00.960,0:01:03.359
+method
+
+0:01:04.400,0:01:07.840
+on line four the conditional we provide
+
+0:01:07.360,0:01:13.040
+is
+
+0:01:07.840,0:01:15.040
+if sheep is greater than or equal to two
+
+0:01:13.040,0:01:16.880
+as we iterate through this block we'll
+
+0:01:15.040,0:01:21.680
+be counting from zero
+
+0:01:16.880,0:01:24.080
+to one to two so on our third iteration
+
+0:01:21.680,0:01:26.159
+this condition will be true sheep will
+
+0:01:24.080,0:01:28.640
+be equal to two
+
+0:01:26.159,0:01:30.640
+because of that ruby will execute line
+
+0:01:28.640,0:01:34.240
+five
+
+0:01:30.640,0:01:36.720
+on line five we have a return
+
+0:01:34.240,0:01:40.000
+remember that return will immediately
+
+0:01:36.720,0:01:42.079
+exit from the method
+
+0:01:40.000,0:01:43.680
+so before we think about the return
+
+0:01:42.079,0:01:46.159
+value of our method
+
+0:01:43.680,0:01:48.640
+let's just run our code and see this
+
+0:01:46.159,0:01:51.759
+behavior
+
+0:01:48.640,0:01:54.880
+we expect to output 0 1
+
+0:01:51.759,0:01:58.719
+2 and then exit the method so we won't
+
+0:01:54.880,0:01:58.719
+count all the way up to 4 this time
+
+0:02:04.000,0:02:11.440
+and that's what we see
+
+0:02:08.800,0:02:14.640
+when shape is equal to 2 we immediately
+
+0:02:11.440,0:02:14.640
+return from the method
+
+0:02:17.040,0:02:20.959
+so in a case like this we need to think
+
+0:02:19.200,0:02:23.840
+about what the return value of the
+
+0:02:20.959,0:02:23.840
+method will be
+
+0:02:24.400,0:02:27.760
+this time the return value of our method
+
+0:02:26.959,0:02:30.800
+won't be
+
+0:02:27.760,0:02:33.920
+5 because when we use return
+
+0:02:30.800,0:02:36.480
+to explicitly return from a method
+
+0:02:33.920,0:02:39.440
+we return the value provided to that
+
+0:02:36.480,0:02:39.440
+keyword return
+
+0:02:40.080,0:02:43.680
+in this case there wasn't any value
+
+0:02:42.319,0:02:46.000
+provided
+
+0:02:43.680,0:02:49.360
+so we can expect that the return value
+
+0:02:46.000,0:02:49.360
+of the method will be nil
+
+0:02:49.440,0:02:56.080
+and we print this using p on line 10 so
+
+0:02:52.480,0:02:56.080
+that we can see that nil
+
+0:03:00.080,0:03:04.080
+so if we don't provide a value to return
+
+0:03:03.040,0:03:07.200
+the return value
+
+0:03:04.080,0:03:09.519
+will be nil let's provide a
+
+0:03:07.200,0:03:12.560
+string to return and see how that
+
+0:03:09.519,0:03:12.560
+changes the output
+
+0:03:17.599,0:03:22.239
+running our code again you can see that
+
+0:03:19.920,0:03:33.840
+our method now returns the string we
+
+0:03:22.239,0:03:33.840
+provided return
+
+0:03:40.720,0:03:42.799
+you
+

@@ -1,0 +1,186 @@
+0:00:04.720,0:00:08.960
+this problem asks
+
+0:00:06.000,0:00:10.719
+us to capitalize the value of our local
+
+0:00:08.960,0:00:14.320
+variable state
+
+0:00:10.719,0:00:16.480
+and then print the modified value
+
+0:00:14.320,0:00:17.440
+state should have the modified value
+
+0:00:16.480,0:00:21.439
+both before
+
+0:00:17.440,0:00:21.920
+and after we print it so looking on line
+
+0:00:21.439,0:00:24.720
+one
+
+0:00:21.920,0:00:28.160
+we can see the local variable state and
+
+0:00:24.720,0:00:31.039
+the value it references
+
+0:00:28.160,0:00:31.920
+if you're aware of the string capitalize
+
+0:00:31.039,0:00:33.600
+method
+
+0:00:31.920,0:00:35.440
+this problem may seem pretty
+
+0:00:33.600,0:00:38.559
+straightforward
+
+0:00:35.440,0:00:38.559
+so let's output
+
+0:00:39.200,0:00:44.079
+the return value of calling the string
+
+0:00:42.399,0:00:46.800
+capitalize method
+
+0:00:44.079,0:00:46.800
+on state
+
+0:00:51.440,0:00:56.079
+and our output matches the expected
+
+0:00:53.600,0:00:56.079
+output
+
+0:00:57.120,0:01:01.440
+now the problem description tells us
+
+0:00:59.440,0:01:04.799
+that state should have the
+
+0:01:01.440,0:01:08.320
+modified value both before and after
+
+0:01:04.799,0:01:12.000
+we print its capitalized form
+
+0:01:08.320,0:01:16.720
+so on line 4 let's output state again
+
+0:01:12.000,0:01:16.720
+and see if it retained that modification
+
+0:01:19.200,0:01:22.320
+you can see that it didn't the first
+
+0:01:21.280,0:01:25.200
+line of output
+
+0:01:22.320,0:01:26.720
+is the result of us invoking capitalize
+
+0:01:25.200,0:01:28.799
+on state
+
+0:01:26.720,0:01:32.079
+we passed the return value of that
+
+0:01:28.799,0:01:34.640
+method call as an argument to put s
+
+0:01:32.079,0:01:37.280
+however on the next line of output when
+
+0:01:34.640,0:01:39.520
+we pass just state to put s
+
+0:01:37.280,0:01:40.560
+you can see that the original string was
+
+0:01:39.520,0:01:43.759
+printed and
+
+0:01:40.560,0:01:47.280
+it hasn't been changed
+
+0:01:43.759,0:01:49.680
+let's go back and look at our code
+
+0:01:47.280,0:01:50.960
+so because we want state to have the
+
+0:01:49.680,0:01:53.840
+modified value
+
+0:01:50.960,0:01:57.360
+both before and after we print it we
+
+0:01:53.840,0:02:00.159
+need to use a destructive method
+
+0:01:57.360,0:02:00.719
+we used a non-destructive capitalize
+
+0:02:00.159,0:02:04.000
+method
+
+0:02:00.719,0:02:07.200
+which returned a new string it did not
+
+0:02:04.000,0:02:10.160
+modify the original string
+
+0:02:07.200,0:02:11.280
+so in order to get the intended behavior
+
+0:02:10.160,0:02:14.400
+for this problem
+
+0:02:11.280,0:02:17.280
+we need to mutate or modify the original
+
+0:02:14.400,0:02:19.840
+string in place
+
+0:02:17.280,0:02:22.239
+and we can do that using the destructive
+
+0:02:19.840,0:02:24.640
+capitalize method
+
+0:02:22.239,0:02:27.040
+so let's run our code again and see if
+
+0:02:24.640,0:02:29.440
+we successfully modified the string in
+
+0:02:27.040,0:02:29.440
+place
+
+0:02:32.160,0:02:36.160
+and we did now you can see that when we
+
+0:02:35.519,0:02:39.200
+output
+
+0:02:36.160,0:02:42.400
+state after our method invocation
+
+0:02:39.200,0:02:44.400
+it has retained that modified state
+
+0:02:42.400,0:02:51.840
+and that's because we used a destructive
+
+0:02:44.400,0:02:51.840
+method and mutated that original value
+
+0:02:54.400,0:02:56.480
+you
+

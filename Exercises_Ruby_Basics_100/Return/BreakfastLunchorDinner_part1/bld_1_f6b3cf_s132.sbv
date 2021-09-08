@@ -1,0 +1,135 @@
+0:00:05.200,0:00:08.480
+this problem asks
+
+0:00:06.399,0:00:09.599
+us what will the code that we've been
+
+0:00:08.480,0:00:13.440
+given print
+
+0:00:09.599,0:00:16.640
+and why on lines one through
+
+0:00:13.440,0:00:17.760
+three we have a method definition for a
+
+0:00:16.640,0:00:21.359
+method called
+
+0:00:17.760,0:00:24.320
+meal on line five we're
+
+0:00:21.359,0:00:26.400
+outputting the return value of invoking
+
+0:00:24.320,0:00:28.720
+the meal method
+
+0:00:26.400,0:00:32.000
+so the question is what is the return
+
+0:00:28.720,0:00:33.760
+value of that method invocation
+
+0:00:32.000,0:00:35.360
+looking at the body of the method
+
+0:00:33.760,0:00:38.239
+definition on line
+
+0:00:35.360,0:00:39.680
+two you can see that we use the keyword
+
+0:00:38.239,0:00:42.719
+return
+
+0:00:39.680,0:00:44.239
+to return the string breakfast from the
+
+0:00:42.719,0:00:47.200
+meal method
+
+0:00:44.239,0:00:49.280
+now when return is executed it will
+
+0:00:47.200,0:00:52.399
+immediately exit the method
+
+0:00:49.280,0:00:53.039
+and return the provided value in this
+
+0:00:52.399,0:00:56.320
+case
+
+0:00:53.039,0:00:58.640
+that's the string breakfast
+
+0:00:56.320,0:01:00.879
+so we expect line five to output
+
+0:00:58.640,0:01:05.280
+breakfast
+
+0:01:00.879,0:01:05.280
+let's run the code and see what we get
+
+0:01:08.640,0:01:13.840
+and you can see that the output is
+
+0:01:10.840,0:01:13.840
+breakfast
+
+0:01:15.600,0:01:20.159
+in the case of this particular method
+
+0:01:18.159,0:01:22.159
+the return value of the meal
+
+0:01:20.159,0:01:25.200
+method would still be the string
+
+0:01:22.159,0:01:27.680
+breakfast with or without this return on
+
+0:01:25.200,0:01:30.640
+line two
+
+0:01:27.680,0:01:30.640
+and that's because
+
+0:01:30.880,0:01:37.040
+the return value of a method in ruby
+
+0:01:33.920,0:01:41.920
+is the evaluated result of the last line
+
+0:01:37.040,0:01:44.720
+executed in this case the last line
+
+0:01:41.920,0:01:46.000
+and only line executed in this method is
+
+0:01:44.720,0:01:48.159
+line two
+
+0:01:46.000,0:01:50.720
+if we run our code again without that
+
+0:01:48.159,0:01:50.720
+return
+
+0:01:50.880,0:01:54.000
+and output the return value of invoking
+
+0:01:53.759,0:01:57.520
+the
+
+0:01:54.000,0:02:09.840
+meal method you can see again
+
+0:01:57.520,0:02:09.840
+that the method still returns breakfast
+
+0:02:12.000,0:02:14.080
+you
+

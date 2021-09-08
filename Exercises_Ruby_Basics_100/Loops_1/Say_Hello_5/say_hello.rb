@@ -39,7 +39,8 @@ count = 1
 
 while say_hello 
 	puts "Hello!"
-	count += 1 say_hello = false if count == 6
+	count += 1 
+	say_hello = false if count == 6
 end
 
 

@@ -1,0 +1,189 @@
+0:00:04.080,0:00:09.120
+in this problem
+
+0:00:05.279,0:00:12.880
+we are given a local variable alphabet
+
+0:00:09.120,0:00:15.759
+that references a string and we're asked
+
+0:00:12.880,0:00:17.680
+to split the value of alphabet by
+
+0:00:15.759,0:00:21.199
+individual characters
+
+0:00:17.680,0:00:21.199
+and print each character
+
+0:00:22.080,0:00:28.000
+we're going to split the string into an
+
+0:00:24.640,0:00:31.679
+array of characters
+
+0:00:28.000,0:00:34.160
+let's hop over to irb
+
+0:00:31.679,0:00:34.880
+and i'm going to paste in that same
+
+0:00:34.160,0:00:38.800
+variable
+
+0:00:34.880,0:00:44.320
+alphabet referencing a string
+
+0:00:38.800,0:00:47.920
+we can use the string split method
+
+0:00:44.320,0:00:48.160
+to split a string and we'll pass in as
+
+0:00:47.920,0:00:50.719
+an
+
+0:00:48.160,0:00:53.680
+argument the character on which we want
+
+0:00:50.719,0:00:53.680
+to split the string
+
+0:00:55.280,0:01:01.199
+in this example let's say we want to
+
+0:00:58.320,0:01:03.120
+split the given string on the character
+
+0:01:01.199,0:01:07.040
+m
+
+0:01:03.120,0:01:09.200
+so we'll pass m in as an argument
+
+0:01:07.040,0:01:10.560
+and you can see that the return value is
+
+0:01:09.200,0:01:13.200
+an array
+
+0:01:10.560,0:01:14.799
+in this particular case it's an array of
+
+0:01:13.200,0:01:17.200
+two elements
+
+0:01:14.799,0:01:18.560
+because m was present only once in our
+
+0:01:17.200,0:01:22.479
+given string
+
+0:01:18.560,0:01:25.200
+our string was split into two
+
+0:01:22.479,0:01:27.759
+another method ruby provides that allows
+
+0:01:25.200,0:01:30.400
+us to split a string into an array of
+
+0:01:27.759,0:01:30.400
+characters
+
+0:01:32.159,0:01:39.680
+is the chars method it returns an array
+
+0:01:36.000,0:01:43.220
+of each character in that string
+
+0:01:39.680,0:01:46.420
+so let's go back and look at our code
+
+0:01:43.220,0:01:46.420
+[Music]
+
+0:01:48.640,0:01:56.880
+we'll call the split method on alphabet
+
+0:01:53.600,0:01:58.000
+you may be wondering what character we
+
+0:01:56.880,0:02:01.280
+need to pass in
+
+0:01:58.000,0:02:04.640
+as an argument to split in order to
+
+0:02:01.280,0:02:08.239
+return an array in which each element
+
+0:02:04.640,0:02:10.959
+is an individual character we can pass
+
+0:02:08.239,0:02:12.160
+an empty string into the split method as
+
+0:02:10.959,0:02:14.959
+an argument
+
+0:02:12.160,0:02:18.560
+and ruby will split the calling string
+
+0:02:14.959,0:02:18.560
+into an array of characters
+
+0:02:20.640,0:02:28.160
+we're going to output the returned array
+
+0:02:23.840,0:02:28.160
+by passing it to put us
+
+0:02:28.480,0:02:32.800
+now in the example output we saw that
+
+0:02:31.440,0:02:35.040
+each character
+
+0:02:32.800,0:02:36.160
+or each element of this array of
+
+0:02:35.040,0:02:39.599
+characters
+
+0:02:36.160,0:02:42.480
+was output on its own line
+
+0:02:39.599,0:02:43.519
+when we pass an array as an argument to
+
+0:02:42.480,0:02:46.720
+put s
+
+0:02:43.519,0:02:50.000
+it outputs each element of that array
+
+0:02:46.720,0:02:53.200
+on its own line so let's run
+
+0:02:50.000,0:02:53.200
+our code and see this
+
+0:02:55.840,0:03:02.640
+our output matches the example output
+
+0:02:59.680,0:03:03.599
+so we've successfully split our alphabet
+
+0:03:02.640,0:03:06.959
+string
+
+0:03:03.599,0:03:11.280
+into an array of characters and printed
+
+0:03:06.959,0:03:11.280
+each element of that array on its own
+
+0:03:14.680,0:03:17.680
+line
+

@@ -1,0 +1,120 @@
+0:00:04.880,0:00:07.759
+we need to modify the code we've been
+
+0:00:07.120,0:00:11.040
+given
+
+0:00:07.759,0:00:16.400
+so that the value of name is printed
+
+0:00:11.040,0:00:19.600
+within the string we see on line three
+
+0:00:16.400,0:00:22.160
+we want our expected output to say hello
+
+0:00:19.600,0:00:24.400
+elizabeth
+
+0:00:22.160,0:00:31.279
+let's run our code just as it is and see
+
+0:00:24.400,0:00:33.840
+what it outputs
+
+0:00:31.279,0:00:35.440
+so we can see our greeting and our
+
+0:00:33.840,0:00:37.680
+punctuation
+
+0:00:35.440,0:00:40.719
+and within that string we want to insert
+
+0:00:37.680,0:00:40.719
+the value of name
+
+0:00:42.160,0:00:48.640
+string interpolation allows us to put an
+
+0:00:45.440,0:00:53.440
+expression within a string
+
+0:00:48.640,0:00:53.440
+and ruby will call 2s on that value
+
+0:00:53.520,0:01:00.160
+the syntax for string interpolation is
+
+0:00:56.640,0:01:02.079
+the pound sign or octothorpe and curly
+
+0:01:00.160,0:01:04.400
+braces
+
+0:01:02.079,0:01:08.240
+so within these curly braces we can
+
+0:01:04.400,0:01:08.240
+place the local variable name
+
+0:01:08.479,0:01:12.799
+and ruby will insert the value
+
+0:01:10.560,0:01:17.520
+referenced by this local variable
+
+0:01:12.799,0:01:17.520
+the string elizabeth into our string
+
+0:01:18.080,0:01:21.119
+let's run our code
+
+0:01:23.680,0:01:28.479
+and we can see that we've gotten the
+
+0:01:25.439,0:01:28.479
+expected output
+
+0:01:32.720,0:01:36.400
+one important thing to note is that we
+
+0:01:35.040,0:01:39.759
+can only use this
+
+0:01:36.400,0:01:41.759
+string interpolation syntax within
+
+0:01:39.759,0:01:43.759
+double quotes
+
+0:01:41.759,0:01:45.360
+i'm going to replace our double quotes
+
+0:01:43.759,0:01:49.680
+with single quotes
+
+0:01:45.360,0:01:49.680
+and now let's take a look at our output
+
+0:01:53.680,0:01:58.240
+so one of the advantages of using double
+
+0:01:56.479,0:02:00.399
+quotes around our strings
+
+0:01:58.240,0:02:02.240
+is that we can easily use string
+
+0:02:00.399,0:02:04.960
+interpolation to
+
+0:02:02.240,0:02:05.920
+insert the value of a variable or
+
+0:02:04.960,0:02:09.840
+expression
+
+0:02:05.920,0:02:09.840
+into our string
+

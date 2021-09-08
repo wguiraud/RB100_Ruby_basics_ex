@@ -11,8 +11,10 @@ we've given the method one argument
 but it was expecting zero 
 
 let's take a look back at line 31 of our code 
-and take a look at the problem on line nine 
-you can see that we've passed the string spot to the dog method 
+and take a look at the problem 
+
+on line 31you can see that 
+we've passed the string spot to the dog method 
 however when we look at our method definition on line 23
 there's no parameter defined
 on line 24 of the method you can see we want to return the name
@@ -43,7 +45,7 @@ on line 32 within the curly braces
 we've invoked the cat method 
 we didn't pass any arguments to the cat method
 
-but when we take a look at our cat method definition on line five
+but when we take a look at our cat method definition on line 27
 you can see we defined a parameter called name
 and on line 28 we return name
 so we do need that argument to be passed in

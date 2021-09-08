@@ -1,0 +1,135 @@
+0:00:05.680,0:00:11.519
+this problem requires us to
+
+0:00:07.839,0:00:14.799
+determine what the given code will print
+
+0:00:11.519,0:00:18.400
+you can see that on line 7 we
+
+0:00:14.799,0:00:22.480
+invoke the meal method and pass it to
+
+0:00:18.400,0:00:25.920
+put s to output its return value
+
+0:00:22.480,0:00:27.039
+on line two you can see the return
+
+0:00:25.920,0:00:30.240
+keyword
+
+0:00:27.039,0:00:33.680
+and the string breakfast on line
+
+0:00:30.240,0:00:37.040
+three we have the string dinner
+
+0:00:33.680,0:00:39.200
+and on line four we invoke put s
+
+0:00:37.040,0:00:41.680
+and pass the string dinner to that
+
+0:00:39.200,0:00:41.680
+method
+
+0:00:42.079,0:00:46.079
+so what will this code output you can
+
+0:00:45.039,0:00:49.280
+see that we have
+
+0:00:46.079,0:00:50.079
+two calls to put us one on line four and
+
+0:00:49.280,0:00:53.039
+one on line
+
+0:00:50.079,0:00:56.559
+seven so you may think that we should
+
+0:00:53.039,0:00:59.600
+expect two lines of output
+
+0:00:56.559,0:01:01.600
+however looking more closely at the meal
+
+0:00:59.600,0:01:04.320
+method definition
+
+0:01:01.600,0:01:06.479
+you can see that the only line of the
+
+0:01:04.320,0:01:10.080
+meal method that will be executed
+
+0:01:06.479,0:01:13.280
+is line two because we use the return
+
+0:01:10.080,0:01:13.920
+keyword on line two ruby will exit this
+
+0:01:13.280,0:01:18.479
+method
+
+0:01:13.920,0:01:21.280
+and never execute lines three and four
+
+0:01:18.479,0:01:21.920
+so put us on line four will never be
+
+0:01:21.280,0:01:25.040
+invoked
+
+0:01:21.920,0:01:25.680
+and we won't output the string dinner we
+
+0:01:25.040,0:01:28.240
+will only
+
+0:01:25.680,0:01:28.720
+output the return value of the meal
+
+0:01:28.240,0:01:31.759
+method
+
+0:01:28.720,0:01:32.400
+on line 7 which in this case is the
+
+0:01:31.759,0:01:34.960
+string
+
+0:01:32.400,0:01:37.520
+breakfast returned from the method on
+
+0:01:34.960,0:01:41.840
+line 2.
+
+0:01:37.520,0:01:41.840
+let's run our code and see that
+
+0:01:44.000,0:01:48.880
+and you can see that we've achieved the
+
+0:01:45.840,0:01:48.880
+expected output
+
+0:01:49.200,0:01:53.040
+so it's very important to be aware that
+
+0:01:52.159,0:01:55.520
+when ruby
+
+0:01:53.040,0:01:56.799
+executes a return it will immediately
+
+0:01:55.520,0:01:58.880
+exit that method
+
+0:01:56.799,0:02:09.040
+and no other code within the method will
+
+0:01:58.880,0:02:09.040
+be executed
+

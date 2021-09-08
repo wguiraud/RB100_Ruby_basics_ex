@@ -62,6 +62,7 @@
 
 =end
 
+# my first solution
 loop do
   puts "How many output lines do you want? Enter a number >= 3 (Q or q to quit):"
   input = gets.chomp
@@ -73,3 +74,17 @@ loop do
 	end
 end
 
+# my second solution
+loop do
+
+  puts "How many output lines do you want? Enter a number >= 3 (Q or q to quit):"
+  input = gets.chomp
+  break if input == 'q' or input == 'Q' # break if %w(q Q).include?(input)
+
+  if input.to_i >= 3
+    input.to_i.times {puts "Launch School is the best!"}
+  else
+    puts "That's not enough lines."
+  end
+
+end

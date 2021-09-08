@@ -1,0 +1,198 @@
+0:00:04.880,0:00:09.679
+this problem
+
+0:00:05.680,0:00:12.799
+asks us to use the array each method
+
+0:00:09.679,0:00:13.599
+to print the plural of each word in our
+
+0:00:12.799,0:00:17.680
+string
+
+0:00:13.599,0:00:18.880
+words you can see that string on line
+
+0:00:17.680,0:00:21.680
+one
+
+0:00:18.880,0:00:25.119
+we have four words in our string each
+
+0:00:21.680,0:00:25.119
+separated by a space
+
+0:00:25.359,0:00:29.199
+because this problem asks us to use
+
+0:00:27.760,0:00:31.119
+array each
+
+0:00:29.199,0:00:34.000
+we know we want to split this string
+
+0:00:31.119,0:00:34.000
+into an array
+
+0:00:34.079,0:00:38.480
+since each word in this string is
+
+0:00:35.920,0:00:41.760
+separated by a space
+
+0:00:38.480,0:00:45.280
+we can simply call split
+
+0:00:41.760,0:00:46.160
+on our string and pass in the space
+
+0:00:45.280,0:00:48.399
+character
+
+0:00:46.160,0:00:50.879
+as the pattern we want to split the
+
+0:00:48.399,0:00:50.879
+string on
+
+0:00:52.160,0:00:55.680
+let's pass the returned array as an
+
+0:00:54.320,0:00:59.840
+argument to put s
+
+0:00:55.680,0:00:59.840
+and take a look at our output
+
+0:01:04.799,0:01:09.920
+the output we see already looks pretty
+
+0:01:07.520,0:01:12.880
+similar to the expected output provided
+
+0:01:09.920,0:01:14.799
+by the problem
+
+0:01:12.880,0:01:16.240
+however we're missing one important
+
+0:01:14.799,0:01:19.119
+detail here
+
+0:01:16.240,0:01:21.119
+we need to output the plural form of
+
+0:01:19.119,0:01:23.520
+these words
+
+0:01:21.119,0:01:24.640
+and for each of these words that simply
+
+0:01:23.520,0:01:28.000
+involves adding an
+
+0:01:24.640,0:01:30.720
+s on to the end of the word so let's go
+
+0:01:28.000,0:01:33.840
+back to our code
+
+0:01:30.720,0:01:36.240
+the problem tells us to use array each
+
+0:01:33.840,0:01:37.200
+and we can use that on the array that
+
+0:01:36.240,0:01:41.119
+was returned
+
+0:01:37.200,0:01:43.360
+by invoking the split method
+
+0:01:41.119,0:01:44.479
+so we'll simply chain the array each
+
+0:01:43.360,0:01:48.960
+method
+
+0:01:44.479,0:01:48.960
+onto our split invocation
+
+0:01:49.600,0:01:59.520
+to iterate through that returned array
+
+0:01:54.880,0:01:59.520
+let's call our block parameter word
+
+0:02:02.079,0:02:06.240
+now we need to think about what code we
+
+0:02:04.079,0:02:10.479
+want to put in this block
+
+0:02:06.240,0:02:10.479
+what do we want to do with each word
+
+0:02:10.560,0:02:17.440
+well we know we want to output each word
+
+0:02:14.400,0:02:19.120
+so let's invoke put us and password in
+
+0:02:17.440,0:02:22.239
+as the argument
+
+0:02:19.120,0:02:23.599
+and run our code and we expect the
+
+0:02:22.239,0:02:27.680
+output to
+
+0:02:23.599,0:02:27.680
+be the same as what we saw previously
+
+0:02:29.840,0:02:35.120
+and it is we're still printing each
+
+0:02:32.160,0:02:37.680
+element of this array
+
+0:02:35.120,0:02:40.160
+so on line four of our code let's use
+
+0:02:37.680,0:02:44.160
+concatenation
+
+0:02:40.160,0:02:46.319
+to add an s onto the end of each word
+
+0:02:44.160,0:02:48.319
+when we pass it in as an argument to put
+
+0:02:46.319,0:02:51.120
+s
+
+0:02:48.319,0:02:52.400
+now we expect to output the result of
+
+0:02:51.120,0:02:55.680
+appending an s
+
+0:02:52.400,0:02:57.040
+to the word and that should give us the
+
+0:02:55.680,0:02:59.599
+plural form of
+
+0:02:57.040,0:02:59.599
+each word
+
+0:03:00.720,0:03:07.930
+and it does
+
+0:03:04.720,0:03:07.930
+[Music]
+
+0:03:14.959,0:03:17.040
+you
+

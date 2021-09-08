@@ -1,0 +1,381 @@
+0:00:04.880,0:00:10.080
+this problem requires that
+
+0:00:06.799,0:00:11.360
+we use an if else statement to run a
+
+0:00:10.080,0:00:14.639
+loop that prints
+
+0:00:11.360,0:00:18.480
+the loop was processed one time if
+
+0:00:14.639,0:00:22.160
+process the loop equals true otherwise
+
+0:00:18.480,0:00:25.439
+print the loop wasn't processed
+
+0:00:22.160,0:00:28.560
+process the loop is a local variable
+
+0:00:25.439,0:00:31.039
+initialized on line one and
+
+0:00:28.560,0:00:33.120
+every time we run our program process
+
+0:00:31.039,0:00:35.840
+the loop will be set to reference
+
+0:00:33.120,0:00:37.680
+either the boolean true or the boolean
+
+0:00:35.840,0:00:40.399
+false
+
+0:00:37.680,0:00:41.920
+we have an array with two elements true
+
+0:00:40.399,0:00:44.719
+and false
+
+0:00:41.920,0:00:45.360
+and we call sample which is an array
+
+0:00:44.719,0:00:48.800
+method
+
+0:00:45.360,0:00:51.840
+on this array sample will return
+
+0:00:48.800,0:00:54.879
+a random element out of that array
+
+0:00:51.840,0:00:56.480
+and in this particular code the return
+
+0:00:54.879,0:00:59.359
+value of calling sample
+
+0:00:56.480,0:01:02.480
+on the array is what is assigned to that
+
+0:00:59.359,0:01:04.640
+local variable process the loop
+
+0:01:02.480,0:01:07.200
+this might seem a little confusing so
+
+0:01:04.640,0:01:09.730
+let's just output the value
+
+0:01:07.200,0:01:11.040
+of process the loop
+
+0:01:09.730,0:01:13.200
+[Music]
+
+0:01:11.040,0:01:15.600
+so we've run our program once and we can
+
+0:01:13.200,0:01:18.080
+see that false was assigned to process
+
+0:01:15.600,0:01:18.080
+the loop
+
+0:01:18.210,0:01:23.119
+[Music]
+
+0:01:21.119,0:01:25.200
+and on the fourth time that we run our
+
+0:01:23.119,0:01:26.080
+program you can see that process the
+
+0:01:25.200,0:01:27.640
+loop reference
+
+0:01:26.080,0:01:31.719
+is true
+
+0:01:27.640,0:01:31.719
+[Music]
+
+0:01:34.960,0:01:39.600
+so now that we know what's happening on
+
+0:01:36.880,0:01:42.320
+line one we can move forward with coding
+
+0:01:39.600,0:01:44.720
+up a solution
+
+0:01:42.320,0:01:45.600
+the problem description tells us that we
+
+0:01:44.720,0:01:48.720
+need to use an
+
+0:01:45.600,0:01:48.720
+if else statement
+
+0:01:49.439,0:01:52.160
+so let's just kind of write out the
+
+0:01:51.360,0:01:53.360
+bones here
+
+0:01:52.160,0:01:56.960
+[Music]
+
+0:01:53.360,0:01:59.040
+now if process the loop is equal to true
+
+0:01:56.960,0:02:02.719
+we want to run a loop that prints the
+
+0:01:59.040,0:02:02.719
+loop was processed one time
+
+0:02:03.520,0:02:12.239
+so what we can do is
+
+0:02:08.239,0:02:15.680
+use process the loop is equal to true
+
+0:02:12.239,0:02:17.680
+as the conditional of our if statement
+
+0:02:15.680,0:02:22.800
+now we could output the loop was
+
+0:02:17.680,0:02:24.160
+processed one time without actually
+
+0:02:22.800,0:02:26.640
+creating a loop
+
+0:02:24.160,0:02:28.850
+but to meet the problem requirements
+
+0:02:26.640,0:02:31.949
+let's put this within a loop
+
+0:02:28.850,0:02:31.949
+[Music]
+
+0:02:32.239,0:02:36.000
+so within the block pass to the loop
+
+0:02:35.360,0:02:39.040
+method we
+
+0:02:36.000,0:02:41.040
+will output the loop was processed and
+
+0:02:39.040,0:02:43.120
+the instructions here specifically tell
+
+0:02:41.040,0:02:44.800
+us that we just want to print the string
+
+0:02:43.120,0:02:47.519
+one time
+
+0:02:44.800,0:02:47.920
+so we'll go ahead and place a break on
+
+0:02:47.519,0:02:50.160
+line
+
+0:02:47.920,0:02:52.800
+six so that our loop will only execute
+
+0:02:50.160,0:02:55.840
+one time
+
+0:02:52.800,0:02:56.959
+going back to the problem description if
+
+0:02:55.840,0:03:00.239
+process the loop
+
+0:02:56.959,0:03:01.200
+is not equal to true we want to output
+
+0:03:00.239,0:03:04.959
+the string
+
+0:03:01.200,0:03:07.120
+the loop wasn't processed
+
+0:03:04.959,0:03:08.310
+and let's just run our code and see what
+
+0:03:07.120,0:03:10.400
+we've got
+
+0:03:08.310,0:03:12.560
+[Music]
+
+0:03:10.400,0:03:14.480
+it looks like the first time through
+
+0:03:12.560,0:03:15.120
+process the loop was set to reference
+
+0:03:14.480,0:03:16.959
+false
+
+0:03:15.120,0:03:19.840
+and so we output the string the loop
+
+0:03:16.959,0:03:19.840
+wasn't processed
+
+0:03:20.159,0:03:26.560
+and the next time we went our program we
+
+0:03:22.959,0:03:28.159
+output the loop was processed
+
+0:03:26.560,0:03:30.640
+everything appears to be working
+
+0:03:28.159,0:03:31.040
+appropriately but just to ensure that it
+
+0:03:30.640,0:03:33.070
+is
+
+0:03:31.040,0:03:36.120
+we can actually
+
+0:03:33.070,0:03:36.120
+[Music]
+
+0:03:36.159,0:03:40.319
+print process the loop so we can see its
+
+0:03:39.120,0:03:43.920
+value
+
+0:03:40.319,0:03:43.920
+next to the output of our program
+
+0:03:44.640,0:03:48.879
+so the first time we run our program we
+
+0:03:46.879,0:03:49.760
+see that the value of process the loop
+
+0:03:48.879,0:03:53.200
+is false
+
+0:03:49.760,0:03:55.120
+and we have the appropriate output
+
+0:03:53.200,0:03:56.239
+the next time through process the loop
+
+0:03:55.120,0:03:58.400
+is true
+
+0:03:56.239,0:04:00.480
+and we see the appropriate output for
+
+0:03:58.400,0:04:03.120
+that as well
+
+0:04:00.480,0:04:04.959
+so everything's working as expected now
+
+0:04:03.120,0:04:07.439
+one important thing to know
+
+0:04:04.959,0:04:09.760
+is that we don't actually need to
+
+0:04:07.439,0:04:12.480
+perform this comparison with true on
+
+0:04:09.760,0:04:12.480
+line five
+
+0:04:13.360,0:04:19.040
+ruby will evaluate the value that
+
+0:04:16.560,0:04:22.639
+process the loop references
+
+0:04:19.040,0:04:25.440
+and if it evaluates to true lines
+
+0:04:22.639,0:04:28.000
+6 through 9 the first branch of our if
+
+0:04:25.440,0:04:31.120
+statement will be executed
+
+0:04:28.000,0:04:32.639
+if it evaluates to false then the else
+
+0:04:31.120,0:04:34.400
+branch of our if statement will be
+
+0:04:32.639,0:04:36.800
+executed
+
+0:04:34.400,0:04:37.680
+without the comparison let's run our
+
+0:04:36.800,0:04:43.050
+code again
+
+0:04:37.680,0:04:45.199
+and see that it still works
+
+0:04:43.050,0:04:47.040
+[Music]
+
+0:04:45.199,0:04:48.240
+you can see that it's still working as
+
+0:04:47.040,0:04:50.800
+expected
+
+0:04:48.240,0:04:51.840
+when the value of process the loop is
+
+0:04:50.800,0:04:54.560
+false
+
+0:04:51.840,0:04:56.800
+we print the loop wasn't processed when
+
+0:04:54.560,0:04:57.420
+the value is true we print the loop was
+
+0:04:56.800,0:04:59.280
+processed
+
+0:04:57.420,0:05:01.280
+[Music]
+
+0:04:59.280,0:05:03.280
+and we can remove this line from our
+
+0:05:01.280,0:05:05.840
+code now that we know it's working
+
+0:05:03.280,0:05:05.840
+properly
+
+0:05:07.759,0:05:22.160
+and our code will run according to the
+
+0:05:09.840,0:05:22.160
+problem requirements
+

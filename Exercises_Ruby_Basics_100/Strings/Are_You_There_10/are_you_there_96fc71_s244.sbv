@@ -1,0 +1,228 @@
+0:00:05.120,0:00:09.519
+we've been given
+
+0:00:06.319,0:00:11.360
+a string of colors referenced by the
+
+0:00:09.519,0:00:14.880
+variable colors
+
+0:00:11.360,0:00:18.000
+and this problem asks us to print true
+
+0:00:14.880,0:00:20.160
+if colors includes the color yellow and
+
+0:00:18.000,0:00:22.480
+print false if it doesn't
+
+0:00:20.160,0:00:24.720
+and print true if colors includes the
+
+0:00:22.480,0:00:26.480
+color purple and print false if it
+
+0:00:24.720,0:00:30.800
+doesn't
+
+0:00:26.480,0:00:35.520
+so let's begin with the color yellow
+
+0:00:30.800,0:00:35.520
+we can use the string include method
+
+0:00:38.000,0:00:44.480
+include returns a boolean either true
+
+0:00:41.200,0:00:45.920
+or false depending on whether the
+
+0:00:44.480,0:00:48.239
+calling string
+
+0:00:45.920,0:00:49.600
+includes the string passed in as an
+
+0:00:48.239,0:00:52.320
+argument
+
+0:00:49.600,0:00:52.960
+so in this case we want to pass in the
+
+0:00:52.320,0:00:56.960
+string
+
+0:00:52.960,0:00:59.600
+yellow as an argument
+
+0:00:56.960,0:01:01.760
+and we expect that our invocation of
+
+0:00:59.600,0:01:04.080
+include will return true
+
+0:01:01.760,0:01:04.960
+because we can see that the string
+
+0:01:04.080,0:01:08.240
+colors
+
+0:01:04.960,0:01:11.040
+does indeed have the word yellow in it
+
+0:01:08.240,0:01:13.840
+let's output the return value of this
+
+0:01:11.040,0:01:13.840
+method invocation
+
+0:01:17.040,0:01:21.119
+and you can see that it does return true
+
+0:01:21.360,0:01:24.560
+one important thing to note is that
+
+0:01:23.520,0:01:27.840
+include is
+
+0:01:24.560,0:01:27.840
+case sensitive
+
+0:01:30.640,0:01:36.320
+if i were to capitalize the word yellow
+
+0:01:33.360,0:01:41.520
+that i've passed in as an argument
+
+0:01:36.320,0:01:43.439
+include will return false
+
+0:01:41.520,0:01:45.759
+and we can see that by running our code
+
+0:01:43.439,0:01:45.759
+again
+
+0:01:46.960,0:01:59.759
+recall that in ruby
+
+0:01:54.960,0:02:02.880
+comparison of strings is case sensitive
+
+0:01:59.759,0:02:04.719
+when i compare two words with the same
+
+0:02:02.880,0:02:09.840
+letters of different cases
+
+0:02:04.719,0:02:09.840
+ruby will return false
+
+0:02:10.879,0:02:15.200
+in order for an equality comparison of
+
+0:02:13.680,0:02:17.680
+two strings to return
+
+0:02:15.200,0:02:23.040
+true they must contain letters of the
+
+0:02:17.680,0:02:25.760
+same case
+
+0:02:23.040,0:02:26.400
+so keep that in mind when using methods
+
+0:02:25.760,0:02:29.520
+such as
+
+0:02:26.400,0:02:31.920
+include to check for certain values in a
+
+0:02:29.520,0:02:31.920
+string
+
+0:02:32.000,0:02:36.000
+now the second step of this problem is
+
+0:02:34.560,0:02:40.000
+to check whether the string
+
+0:02:36.000,0:02:40.000
+colors includes purple
+
+0:02:40.400,0:02:47.120
+and in this case we expect that our
+
+0:02:42.560,0:02:47.120
+invocation of include will return false
+
+0:02:49.360,0:02:52.080
+and it does
+
+0:02:57.360,0:03:04.400
+another thing to keep in mind when using
+
+0:02:59.840,0:03:06.800
+the include method
+
+0:03:04.400,0:03:08.319
+is that it's checking whether the
+
+0:03:06.800,0:03:10.480
+calling string
+
+0:03:08.319,0:03:12.800
+includes the pattern passed in as an
+
+0:03:10.480,0:03:15.360
+argument
+
+0:03:12.800,0:03:17.599
+not necessarily whether the argument is
+
+0:03:15.360,0:03:21.599
+its own word in the string
+
+0:03:17.599,0:03:24.959
+so for example on line 5 i've passed in
+
+0:03:21.599,0:03:27.440
+ink as the argument to include while we
+
+0:03:24.959,0:03:28.879
+don't see the word ink in our colors
+
+0:03:27.440,0:03:31.440
+string
+
+0:03:28.879,0:03:34.080
+we do have the word pink which includes
+
+0:03:31.440,0:03:36.480
+that sequence of characters
+
+0:03:34.080,0:03:38.959
+so let's run our code and see what our
+
+0:03:36.480,0:03:41.280
+invocation of include returns in this
+
+0:03:38.959,0:03:41.280
+case
+
+0:03:43.760,0:03:47.840
+it returns true
+
+0:03:48.560,0:03:51.760
+so the include method can be very useful
+
+0:03:51.360,0:04:01.840
+but
+
+0:03:51.760,0:04:01.840
+be aware of its limitations
+
+0:04:04.000,0:04:06.080
+you
+

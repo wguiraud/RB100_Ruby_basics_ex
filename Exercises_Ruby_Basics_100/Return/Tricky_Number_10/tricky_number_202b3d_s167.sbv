@@ -1,0 +1,192 @@
+0:00:05.040,0:00:08.320
+we need to determine
+
+0:00:06.399,0:00:09.440
+what the code we've been given will
+
+0:00:08.320,0:00:12.320
+output
+
+0:00:09.440,0:00:14.080
+and to do so we need to look closely at
+
+0:00:12.320,0:00:17.600
+the method definition
+
+0:00:14.080,0:00:19.600
+for the tricky number method
+
+0:00:17.600,0:00:20.640
+within this method we have an if
+
+0:00:19.600,0:00:22.640
+statement
+
+0:00:20.640,0:00:23.920
+this first branch of the if statement
+
+0:00:22.640,0:00:25.920
+will be executed
+
+0:00:23.920,0:00:29.279
+if the condition that we provide is
+
+0:00:25.920,0:00:32.079
+truthy or evaluates as true
+
+0:00:29.279,0:00:34.000
+we've provided the boolean true so the
+
+0:00:32.079,0:00:35.040
+first branch of this if statement will
+
+0:00:34.000,0:00:37.840
+be executed
+
+0:00:35.040,0:00:38.719
+every time this method is invoked and
+
+0:00:37.840,0:00:40.960
+therefore
+
+0:00:38.719,0:00:43.040
+the else branch of our if statement will
+
+0:00:40.960,0:00:45.760
+never be executed
+
+0:00:43.040,0:00:48.480
+within the if clause on line three you
+
+0:00:45.760,0:00:51.039
+can see we have a variable assignment
+
+0:00:48.480,0:00:52.000
+we are assigning the integer one to a
+
+0:00:51.039,0:00:55.760
+variable
+
+0:00:52.000,0:00:56.239
+number now we don't use this variable
+
+0:00:55.760,0:00:58.879
+number
+
+0:00:56.239,0:01:01.199
+anywhere else in the code however we
+
+0:00:58.879,0:01:03.680
+need to understand the return value of
+
+0:01:01.199,0:01:06.320
+variable assignment
+
+0:01:03.680,0:01:08.159
+the return value of variable assignment
+
+0:01:06.320,0:01:11.600
+is the value itself
+
+0:01:08.159,0:01:14.240
+in this case the integer one
+
+0:01:11.600,0:01:15.439
+as a result our method returns to
+
+0:01:14.240,0:01:18.080
+integer 1
+
+0:01:15.439,0:01:20.479
+because that is the evaluated result of
+
+0:01:18.080,0:01:22.880
+the last line executed in the tricky
+
+0:01:20.479,0:01:25.439
+number method
+
+0:01:22.880,0:01:28.400
+remember that our else clause will not
+
+0:01:25.439,0:01:31.200
+be evaluated
+
+0:01:28.400,0:01:33.200
+so on line nine when we output the
+
+0:01:31.200,0:01:36.880
+return value of tricky number
+
+0:01:33.200,0:01:41.840
+we expect that we will be outputting one
+
+0:01:36.880,0:01:41.840
+and let's run our code and see that
+
+0:01:43.360,0:01:49.840
+as expected we output one
+
+0:01:47.119,0:01:50.720
+if the condition provided to our if
+
+0:01:49.840,0:01:54.320
+statement
+
+0:01:50.720,0:01:55.119
+were falsy we can place the boolean
+
+0:01:54.320,0:01:58.159
+false here
+
+0:01:55.119,0:01:59.360
+on line two then the if clause would not
+
+0:01:58.159,0:02:02.320
+be executed
+
+0:01:59.360,0:02:03.759
+however the else clause would be that
+
+0:02:02.320,0:02:07.759
+means that ruby would
+
+0:02:03.759,0:02:10.239
+evaluate line five the integer 2
+
+0:02:07.759,0:02:12.720
+and 2 would become the return value of
+
+0:02:10.239,0:02:14.959
+our tricky number method
+
+0:02:12.720,0:02:16.640
+so let's run our code again now with
+
+0:02:14.959,0:02:22.480
+ruby evaluating the
+
+0:02:16.640,0:02:24.480
+else clause
+
+0:02:22.480,0:02:25.520
+you can see that the return value of our
+
+0:02:24.480,0:02:27.840
+method is now
+
+0:02:25.520,0:02:27.840
+two
+
+0:02:30.560,0:02:36.080
+so it's important to understand that the
+
+0:02:33.120,0:02:39.040
+return value of variable assignment
+
+0:02:36.080,0:02:49.680
+as we see on line three is the value
+
+0:02:39.040,0:02:49.680
+that was assigned to the variable
+

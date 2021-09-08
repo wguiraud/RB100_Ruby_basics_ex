@@ -1,0 +1,120 @@
+0:00:06.000,0:00:09.120
+to determine what the code we've been
+
+0:00:07.919,0:00:11.679
+given will print
+
+0:00:09.120,0:00:12.719
+we need to understand how the keyword
+
+0:00:11.679,0:00:16.880
+return
+
+0:00:12.719,0:00:20.080
+works on line six we call put s
+
+0:00:16.880,0:00:23.039
+and pass in the return value of invoking
+
+0:00:20.080,0:00:23.039
+the meal method
+
+0:00:23.199,0:00:29.199
+looking at the meal method definition
+
+0:00:26.320,0:00:32.160
+we can see that the last line in the
+
+0:00:29.199,0:00:34.640
+method is the string dinner
+
+0:00:32.160,0:00:35.840
+so you may think that the return value
+
+0:00:34.640,0:00:39.440
+of the meal method
+
+0:00:35.840,0:00:42.480
+is the string dinner however
+
+0:00:39.440,0:00:46.000
+remember that the return value
+
+0:00:42.480,0:00:49.280
+of a ruby method is the evaluated result
+
+0:00:46.000,0:00:52.239
+of the last line executed
+
+0:00:49.280,0:00:54.480
+in this case the last line executed will
+
+0:00:52.239,0:00:57.280
+be line two
+
+0:00:54.480,0:00:59.120
+and that's because return exits the
+
+0:00:57.280,0:01:01.840
+method
+
+0:00:59.120,0:01:03.520
+so ruby will evaluate line two of the
+
+0:01:01.840,0:01:06.640
+meal method
+
+0:01:03.520,0:01:09.600
+and when return is executed ruby will
+
+0:01:06.640,0:01:12.080
+exit the meal method
+
+0:01:09.600,0:01:13.040
+so line three where you see the string
+
+0:01:12.080,0:01:15.119
+dinner
+
+0:01:13.040,0:01:18.320
+will never be processed by ruby when
+
+0:01:15.119,0:01:21.439
+we're invoking the meal method
+
+0:01:18.320,0:01:23.439
+because we use return on line two
+
+0:01:21.439,0:01:24.799
+we know that the return value of
+
+0:01:23.439,0:01:27.520
+invoking meal
+
+0:01:24.799,0:01:28.159
+will be the string breakfast and that's
+
+0:01:27.520,0:01:31.280
+what we can
+
+0:01:28.159,0:01:34.159
+expect to see output when we call put s
+
+0:01:31.280,0:01:34.159
+on line six
+
+0:01:34.320,0:01:44.640
+to see this let's run our code
+
+0:01:41.360,0:01:47.200
+and as expected we've output the string
+
+0:01:44.640,0:01:47.200
+breakfast
+
+0:01:48.799,0:01:55.840
+that's because we explicitly returned
+
+0:01:51.119,0:01:55.840
+from the method on line two
+

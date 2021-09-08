@@ -1,228 +1,58 @@
-0:00:04.880,0:00:08.000
-we need to
-
-0:00:05.759,0:00:11.120
-modify the code that we've been given so
-
-0:00:08.000,0:00:13.360
-that it iterates five times
-
-0:00:11.120,0:00:14.960
-if we run the code as it's been given to
-
-0:00:13.360,0:00:17.680
-us you can see that
-
-0:00:14.960,0:00:19.039
-right now it iterates only once and
-
-0:00:17.680,0:00:21.279
-that's because
-
-0:00:19.039,0:00:23.119
-our break statement on line five will
-
-0:00:21.279,0:00:25.439
-always be executed
-
-0:00:23.119,0:00:26.720
-there's no condition associated with
-
-0:00:25.439,0:00:29.519
-this break
-
-0:00:26.720,0:00:31.519
+we need to modify the code that we've been given 
+so that it iterates five times
+if we run the code as it's been given to us you can see that 
+right now it iterates only once 
+and that's because our break statement on line 17
+will always be executed
+there's no condition associated with this break
 so the way the code is currently written
-
-0:00:29.519,0:00:32.559
-we're only able to iterate through the
-
-0:00:31.519,0:00:34.719
-loop one time
-
-0:00:32.559,0:00:37.600
+we're only able to iterate through the loop one time
 before encountering the break statement
-
-0:00:34.719,0:00:40.559
 and exiting the block
 
-0:00:37.600,0:00:43.200
-now you can see that on line one a local
-
-0:00:40.559,0:00:46.559
-variable iterations has been initialized
-
-0:00:43.200,0:00:49.280
+now you can see that on line 13
+a local variable iterations has been initialized
 and references the integer one
+we can use this variable to keep track of our iterations WRITING 
+as we loop through this code 
+we can increment iterations by one
+and remember that this syntax is just shorthand for reassignment WRITING COMMENT 
 
-0:00:46.559,0:00:51.120
-we can use this variable to keep track
+now that we have a way to keep track of our number of iterations
+we can add a condition to this break on line 18 WRITING
+your first instinct may be to break if iterations is equal to five 
+let's run that code and see what it looks like
 
-0:00:49.280,0:00:53.440
-of our iterations
+we only iterated through the loop four times
+if you look at this code closely 
+you can determine why that is
+when we increment the value of iterations 
+from four to five on line 17 
 
-0:00:51.120,0:00:56.480
-as we loop through this code we can
+line 18 will break out of this block
+when iterations is equal to 5 
+prior to ever outputting that we've reached our fifth iteration
 
-0:00:53.440,0:00:58.960
-increment iterations by one
+so instead we can use a different comparison 
+and break when iterations is greater than five WRITING
+and with our code written this way
+we will break out of our block 
+after outputting that our number of iterations is five
 
-0:00:56.480,0:00:59.760
-and remember that this syntax is just
+we'll increment iterations to six on line 18
+and then break out of the block 
+so let's run our code and see what it looks like now
 
-0:00:58.960,0:01:01.940
-shorthand
+and this is the result we were looking for
+so it's important to always pay close attention 
+when you're looping through a block 
+to make sure that you're using the
+appropriate comparison operator 
+to determine when to break out of your loop
 
-0:00:59.760,0:01:04.320
-for reassignment
-
-0:01:01.940,0:01:06.799
-[Music]
-
-0:01:04.320,0:01:08.560
-now that we have a way to keep track of
-
-0:01:06.799,0:01:11.040
-our number of iterations
-
-0:01:08.560,0:01:13.840
-we can add a condition to this break on
-
-0:01:11.040,0:01:13.840
-line six
-
-0:01:14.880,0:01:22.159
-your first instinct may be to break if
-
-0:01:18.960,0:01:24.159
-iterations is equal to five let's run
-
-0:01:22.159,0:01:26.240
-that code and see what it looks like
-
-0:01:24.159,0:01:28.640
-we only iterated through the loop four
-
-0:01:26.240,0:01:30.960
-times
-
-0:01:28.640,0:01:33.439
-if you look at this code closely you can
-
-0:01:30.960,0:01:35.040
-determine why that is
-
-0:01:33.439,0:01:37.439
-when we increment the value of
-
-0:01:35.040,0:01:40.240
-iterations from four to five
-
-0:01:37.439,0:01:41.520
-on line five line 6 will break out of
-
-0:01:40.240,0:01:44.720
-this block
-
-0:01:41.520,0:01:46.399
-when iterations is equal to 5 prior to
-
-0:01:44.720,0:01:48.159
-ever outputting that we've reached our
-
-0:01:46.399,0:01:49.920
-fifth iteration
-
-0:01:48.159,0:01:52.560
-so instead we can use a different
-
-0:01:49.920,0:01:55.520
-comparison and break when iterations
-
-0:01:52.560,0:01:56.560
-is greater than five and with our code
-
-0:01:55.520,0:01:59.040
-written this way
-
-0:01:56.560,0:02:01.119
-we will break out of our block after
-
-0:01:59.040,0:02:02.479
-outputting that our number of iterations
-
-0:02:01.119,0:02:04.960
-is five
-
-0:02:02.479,0:02:05.920
-we'll increment iterations to six on
-
-0:02:04.960,0:02:09.440
-line five
-
-0:02:05.920,0:02:11.280
-and then break out of the block so let's
-
-0:02:09.440,0:02:13.040
-run our code and see what it looks like
-
-0:02:11.280,0:02:14.879
-now
-
-0:02:13.040,0:02:16.080
-and this is the result we were looking
-
-0:02:14.879,0:02:18.480
-for
-
-0:02:16.080,0:02:20.400
-so it's important to always pay close
-
-0:02:18.480,0:02:22.239
-attention when you're
-
-0:02:20.400,0:02:23.440
-looping through a block to make sure
-
-0:02:22.239,0:02:25.520
-that you're using the
-
-0:02:23.440,0:02:29.520
-appropriate comparison operator to
-
-0:02:25.520,0:02:29.520
-determine when to break out of your loop
-
-0:02:29.680,0:02:33.040
-now you may also be aware of some ruby
-
-0:02:32.080,0:02:36.160
-methods that
-
-0:02:33.040,0:02:38.160
-allow you to achieve the same result
-
-0:02:36.160,0:02:40.480
-but you won't always have every method
-
-0:02:38.160,0:02:41.280
-memorized and it's important to know the
-
-0:02:40.480,0:02:44.160
-basics
-
-0:02:41.280,0:02:44.720
-of looping and how to write out logic on
-
-0:02:44.160,0:02:46.640
-your own
-
-0:02:44.720,0:02:51.840
-if you're not aware of a method that can
-
-0:02:46.640,0:02:51.840
-do it for you
-
-0:02:54.319,0:02:56.400
-you
-
+now you may also be aware of some ruby methods 
+that allow you to achieve the same result
+but you won't always have every method memorized 
+and it's important to know the basics of looping 
+and how to write out logic on your own
+if you're not aware of a method that can do it for you

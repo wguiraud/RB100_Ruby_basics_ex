@@ -1,0 +1,288 @@
+0:00:05.040,0:00:09.519
+this problem gives us
+
+0:00:06.399,0:00:10.960
+a local variable name referencing the
+
+0:00:09.519,0:00:13.599
+string roger
+
+0:00:10.960,0:00:14.000
+and we've been asked to compare name
+
+0:00:13.599,0:00:16.480
+with
+
+0:00:14.000,0:00:19.520
+a different string roger that has
+
+0:00:16.480,0:00:22.240
+letters of a different case
+
+0:00:19.520,0:00:23.199
+we've been asked to ignore the case of
+
+0:00:22.240,0:00:27.760
+both strings
+
+0:00:23.199,0:00:30.160
+in this comparison ignoring the case
+
+0:00:27.760,0:00:30.800
+we want to print true if the values are
+
+0:00:30.160,0:00:33.840
+the same
+
+0:00:30.800,0:00:36.960
+and false if they are not
+
+0:00:33.840,0:00:37.920
+so recall that when we perform equality
+
+0:00:36.960,0:00:40.879
+comparison
+
+0:00:37.920,0:00:40.879
+on strings
+
+0:00:42.480,0:00:47.120
+strings that contain the same letters
+
+0:00:44.800,0:00:47.360
+but of a different case will not be seen
+
+0:00:47.120,0:00:50.879
+as
+
+0:00:47.360,0:00:51.199
+equal so on line two we're outputting
+
+0:00:50.879,0:00:54.239
+the
+
+0:00:51.199,0:00:57.120
+return value of comparing name
+
+0:00:54.239,0:00:59.840
+to the string roger with letters of a
+
+0:00:57.120,0:00:59.840
+different case
+
+0:01:01.440,0:01:06.559
+and running our code you can see that
+
+0:01:03.280,0:01:06.559
+this returns false
+
+0:01:10.080,0:01:14.640
+this problem instructs us to compare
+
+0:01:13.200,0:01:19.040
+these two strings
+
+0:01:14.640,0:01:21.360
+while ignoring the case of both strings
+
+0:01:19.040,0:01:23.119
+in this case we want a comparison of
+
+0:01:21.360,0:01:27.040
+these two strings to return
+
+0:01:23.119,0:01:28.000
+true in ruby we can compare the value of
+
+0:01:27.040,0:01:31.119
+two strings
+
+0:01:28.000,0:01:34.560
+while ignoring the case using the
+
+0:01:31.119,0:01:34.560
+kcmp method
+
+0:01:36.159,0:01:42.240
+so we'll invoke this method on the name
+
+0:01:39.280,0:01:42.240
+local variable
+
+0:01:44.320,0:01:50.560
+and pass in roger as an argument
+
+0:01:47.759,0:01:50.560
+to this method
+
+0:01:50.799,0:01:55.520
+running our code again you can see that
+
+0:01:52.720,0:01:59.119
+the output is zero
+
+0:01:55.520,0:01:59.119
+and this may seem confusing
+
+0:02:02.399,0:02:07.200
+this method doesn't return a boolean
+
+0:02:04.880,0:02:10.239
+instead it returns an integer
+
+0:02:07.200,0:02:11.920
+if both strings are equal 0 will be
+
+0:02:10.239,0:02:14.959
+returned
+
+0:02:11.920,0:02:17.440
+if the calling string is seen as
+
+0:02:14.959,0:02:18.319
+greater than the string passed in as an
+
+0:02:17.440,0:02:21.280
+argument
+
+0:02:18.319,0:02:22.160
+our method would return 1 and if the
+
+0:02:21.280,0:02:25.360
+calling string
+
+0:02:22.160,0:02:28.720
+is evaluated as less than the argument
+
+0:02:25.360,0:02:31.200
+the method will return negative one
+
+0:02:28.720,0:02:31.840
+so our method invocation on line two
+
+0:02:31.200,0:02:34.879
+returned
+
+0:02:31.840,0:02:35.680
+zero indicating that the value of these
+
+0:02:34.879,0:02:39.840
+two strings
+
+0:02:35.680,0:02:41.920
+is the same however our problem
+
+0:02:39.840,0:02:43.519
+description tells us that we need to
+
+0:02:41.920,0:02:46.080
+output either true or
+
+0:02:43.519,0:02:47.840
+false since we know that this method
+
+0:02:46.080,0:02:51.440
+invocation returns zero
+
+0:02:47.840,0:02:54.480
+when the values are equal we can compare
+
+0:02:51.440,0:02:58.239
+the return value of this method
+
+0:02:54.480,0:02:59.599
+to zero this comparison will return a
+
+0:02:58.239,0:03:02.159
+boolean either true
+
+0:02:59.599,0:03:04.480
+or false which will be output by our
+
+0:03:02.159,0:03:06.319
+call to put us
+
+0:03:04.480,0:03:09.230
+so let's run our code now and we're
+
+0:03:06.319,0:03:12.430
+expecting to output true
+
+0:03:09.230,0:03:12.430
+[Music]
+
+0:03:13.680,0:03:21.280
+and that's the behavior we see
+
+0:03:18.800,0:03:22.480
+the second step to this problem is to
+
+0:03:21.280,0:03:27.519
+compare the
+
+0:03:22.480,0:03:27.519
+name variable to the string dave
+
+0:03:28.959,0:03:32.319
+now in this case we are expecting to
+
+0:03:31.599,0:03:36.879
+output
+
+0:03:32.319,0:03:40.080
+false these two strings are not
+
+0:03:36.879,0:03:42.720
+equal regardless of case
+
+0:03:40.080,0:03:44.000
+again in this case we can simply compare
+
+0:03:42.720,0:03:47.519
+the return value
+
+0:03:44.000,0:03:51.599
+of this method invocation
+
+0:03:47.519,0:03:54.640
+to zero we know that the case cmp method
+
+0:03:51.599,0:03:55.599
+will only return zero if the values of
+
+0:03:54.640,0:03:58.720
+the two strings
+
+0:03:55.599,0:04:00.000
+are the same so we know that comparing
+
+0:03:58.720,0:04:02.959
+that return value to
+
+0:04:00.000,0:04:05.599
+0 will always return false when the
+
+0:04:02.959,0:04:08.640
+strings are not equal
+
+0:04:05.599,0:04:08.640
+let's run our code
+
+0:04:10.640,0:04:15.840
+and we see the expected output
+
+0:04:17.199,0:04:21.120
+for more information on this method and
+
+0:04:19.919,0:04:24.880
+how it works
+
+0:04:21.120,0:04:24.880
+be sure to look at the ruby
+
+0:04:26.840,0:04:31.680
+documentation
+
+0:04:29.600,0:04:31.680
+you
+
