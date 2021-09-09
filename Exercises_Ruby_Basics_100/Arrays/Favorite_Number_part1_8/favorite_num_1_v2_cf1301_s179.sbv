@@ -1,0 +1,183 @@
+0:00:04.560,0:00:10.160
+on line one we can see an array
+
+0:00:07.200,0:00:10.800
+that contains three names and three
+
+0:00:10.160,0:00:14.719
+numbers
+
+0:00:10.800,0:00:17.440
+alternating the problem description
+
+0:00:14.719,0:00:18.320
+asks us without writing any additional
+
+0:00:17.440,0:00:20.960
+code
+
+0:00:18.320,0:00:21.760
+to group each name with the number
+
+0:00:20.960,0:00:25.199
+following it
+
+0:00:21.760,0:00:25.920
+in its own array and each of these
+
+0:00:25.199,0:00:28.720
+smaller
+
+0:00:25.920,0:00:30.480
+two element arrays will be nested in
+
+0:00:28.720,0:00:45.840
+this larger array
+
+0:00:30.480,0:00:45.840
+so let's see what this would look like
+
+0:00:46.160,0:00:49.840
+you can see that we've now got three two
+
+0:00:49.200,0:00:53.360
+element
+
+0:00:49.840,0:00:57.520
+arrays within this outer array
+
+0:00:53.360,0:01:00.719
+so the outer array has three elements
+
+0:00:57.520,0:01:03.760
+each of which are arrays and these three
+
+0:01:00.719,0:01:06.080
+inner arrays each have two elements one
+
+0:01:03.760,0:01:08.080
+string and one integer
+
+0:01:06.080,0:01:09.600
+the important thing to realize here with
+
+0:01:08.080,0:01:12.720
+this exercise
+
+0:01:09.600,0:01:15.119
+is that arrays can contain any object
+
+0:01:12.720,0:01:16.320
+here we see an array that contains other
+
+0:01:15.119,0:01:20.320
+arrays
+
+0:01:16.320,0:01:20.320
+and we call this a nested array
+
+0:01:20.799,0:01:23.840
+let's take a moment to think about how
+
+0:01:23.280,0:01:26.320
+we would
+
+0:01:23.840,0:01:28.479
+access the elements of these inner
+
+0:01:26.320,0:01:31.200
+arrays
+
+0:01:28.479,0:01:32.560
+for example let's say we want to access
+
+0:01:31.200,0:01:35.200
+the number 7
+
+0:01:32.560,0:01:37.840
+which is the second element in our first
+
+0:01:35.200,0:01:41.680
+nested array
+
+0:01:37.840,0:01:44.159
+let's call this array list
+
+0:01:41.680,0:01:45.119
+and using element reference we can
+
+0:01:44.159,0:01:50.000
+access that
+
+0:01:45.119,0:01:50.000
+first nested array at index 0.
+
+0:01:50.159,0:01:55.840
+and let's output this just to see that
+
+0:01:57.520,0:02:02.000
+so we're successfully accessing that
+
+0:01:59.920,0:02:04.159
+first nested array
+
+0:02:02.000,0:02:05.200
+which is the first element of our list
+
+0:02:04.159,0:02:08.399
+array
+
+0:02:05.200,0:02:10.959
+using element reference now how can we
+
+0:02:08.399,0:02:12.319
+access the elements within this nested
+
+0:02:10.959,0:02:14.959
+array
+
+0:02:12.319,0:02:16.640
+recall that element reference is
+
+0:02:14.959,0:02:19.920
+actually an array method
+
+0:02:16.640,0:02:22.000
+and we can chain method calls so the
+
+0:02:19.920,0:02:25.680
+element reference we currently have on
+
+0:02:22.000,0:02:28.720
+line 3 returns the nested array at
+
+0:02:25.680,0:02:31.440
+index 0. by chaining
+
+0:02:28.720,0:02:33.360
+an additional element reference onto
+
+0:02:31.440,0:02:36.000
+this first method call we are
+
+0:02:33.360,0:02:38.319
+invoking the second element reference on
+
+0:02:36.000,0:02:40.640
+the returned array
+
+0:02:38.319,0:02:42.879
+we've specified that we want to access
+
+0:02:40.640,0:02:45.599
+the element at index 1
+
+0:02:42.879,0:02:51.040
+of the subarray so we expect that we'll
+
+0:02:45.599,0:03:00.800
+be outputting the integer 7.
+
+0:02:51.040,0:03:00.800
+and we do
+
