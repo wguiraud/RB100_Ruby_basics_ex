@@ -1,0 +1,135 @@
+0:00:04.480,0:00:08.960
+in this code we have
+
+0:00:05.920,0:00:11.200
+an array pets that contains four
+
+0:00:08.960,0:00:14.000
+different types of pets
+
+0:00:11.200,0:00:14.799
+and a second array my pets which
+
+0:00:14.000,0:00:17.920
+contains
+
+0:00:14.799,0:00:21.359
+two elements from the pet's array fish
+
+0:00:17.920,0:00:24.560
+and lizard this problem asks us to
+
+0:00:21.359,0:00:27.039
+remove lizard from my pets
+
+0:00:24.560,0:00:30.880
+and then print the value of my pets to
+
+0:00:27.039,0:00:34.239
+match the expected output
+
+0:00:30.880,0:00:38.880
+ruby provides us a convenient method to
+
+0:00:34.239,0:00:38.880
+remove the last element of an array
+
+0:00:40.800,0:00:45.840
+let's use p to output my pets
+
+0:00:46.160,0:00:49.840
+you see that this array has two elements
+
+0:00:48.640,0:00:52.559
+and lizard
+
+0:00:49.840,0:00:59.840
+which is the element we want to remove
+
+0:00:52.559,0:00:59.840
+is the last element
+
+0:01:01.680,0:01:09.439
+the array pop method removes
+
+0:01:04.799,0:01:13.760
+and returns the last element of an array
+
+0:01:09.439,0:01:16.799
+so we'll call pop on the my pets array
+
+0:01:13.760,0:01:18.960
+and let's output my pets again because
+
+0:01:16.799,0:01:21.439
+pop is a destructive method
+
+0:01:18.960,0:01:22.640
+we now expect to see an array with only
+
+0:01:21.439,0:01:27.840
+one element
+
+0:01:22.640,0:01:27.840
+fish and that's what we see
+
+0:01:28.720,0:01:32.960
+so we've successfully removed lizard
+
+0:01:31.119,0:01:35.600
+from the my pets array
+
+0:01:32.960,0:01:41.840
+and now we want to print the value of my
+
+0:01:35.600,0:01:41.840
+pets to match the expected output
+
+0:01:48.159,0:01:52.720
+you may think that since my pets now
+
+0:01:50.560,0:01:53.759
+references an array with only one
+
+0:01:52.720,0:01:55.600
+element
+
+0:01:53.759,0:01:58.159
+we don't need to worry about element
+
+0:01:55.600,0:01:58.159
+reference
+
+0:01:59.200,0:02:08.160
+but when we run our code you can see
+
+0:02:00.960,0:02:10.319
+that that's not the case
+
+0:02:08.160,0:02:12.400
+we still need to reference which element
+
+0:02:10.319,0:02:14.959
+we want to access
+
+0:02:12.400,0:02:17.440
+in this case our array has only one
+
+0:02:14.959,0:02:17.440
+element
+
+0:02:18.000,0:02:23.840
+so we know that we can access it at
+
+0:02:20.000,0:02:23.840
+index 0.
+
+0:02:25.120,0:02:37.840
+running our code again we see the
+
+0:02:27.200,0:02:37.840
+expected output
+
+0:02:38.959,0:02:41.040
+you
+

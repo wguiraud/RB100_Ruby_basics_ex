@@ -1,0 +1,174 @@
+0:00:04.640,0:00:09.360
+this problem has
+
+0:00:05.920,0:00:13.920
+a few different steps we want to select
+
+0:00:09.360,0:00:16.400
+dog from pets and add that return value
+
+0:00:13.920,0:00:18.560
+to the my pets array
+
+0:00:16.400,0:00:19.520
+then we're going to print the value of
+
+0:00:18.560,0:00:22.160
+my pets
+
+0:00:19.520,0:00:24.720
+in a sentence that matches the expected
+
+0:00:22.160,0:00:27.359
+output we were given
+
+0:00:24.720,0:00:28.320
+on line 2 you can see that we originally
+
+0:00:27.359,0:00:31.920
+created the my
+
+0:00:28.320,0:00:33.360
+pets array with two elements however on
+
+0:00:31.920,0:00:36.559
+line three
+
+0:00:33.360,0:00:41.440
+we invoked the array pop method
+
+0:00:36.559,0:00:41.440
+and remove the last element of the array
+
+0:00:42.399,0:00:48.399
+let's quickly take a look at what the my
+
+0:00:45.039,0:00:48.399
+pets array looks like now
+
+0:00:50.480,0:00:54.239
+you can see that after removal of the
+
+0:00:52.879,0:00:57.440
+second element
+
+0:00:54.239,0:00:59.840
+the my pets array has only one element
+
+0:00:57.440,0:00:59.840
+fish
+
+0:01:02.239,0:01:06.320
+so the first step of this problem is to
+
+0:01:04.559,0:01:09.520
+select the string dog
+
+0:01:06.320,0:01:09.520
+from the pet's array
+
+0:01:09.920,0:01:14.720
+we can see that dog is the second
+
+0:01:12.000,0:01:16.960
+element in the pets array
+
+0:01:14.720,0:01:18.640
+and because arrays have a zero-based
+
+0:01:16.960,0:01:21.920
+index we can select
+
+0:01:18.640,0:01:27.840
+dog using element reference at
+
+0:01:21.920,0:01:27.840
+index one and let's output that
+
+0:01:31.680,0:01:37.360
+the problem asks us to add the return
+
+0:01:34.960,0:01:41.840
+value of that element reference
+
+0:01:37.360,0:01:41.840
+to the mypet's array
+
+0:01:46.479,0:01:51.040
+in order to add an element to the end of
+
+0:01:50.000,0:01:55.840
+an array
+
+0:01:51.040,0:01:55.840
+ruby provides us the array push method
+
+0:01:55.920,0:02:02.560
+and we can pass in this string dog
+
+0:01:59.520,0:02:05.600
+which our element reference returns
+
+0:02:02.560,0:02:08.399
+as an argument to push
+
+0:02:05.600,0:02:12.000
+push will then add that element on to
+
+0:02:08.399,0:02:16.080
+the end of the my pets array
+
+0:02:12.000,0:02:16.080
+let's output my pets to see that
+
+0:02:19.040,0:02:25.920
+and now we have a two element array with
+
+0:02:22.000,0:02:25.920
+dog being the second element
+
+0:02:26.959,0:02:32.800
+so we successfully modified the my pets
+
+0:02:29.520,0:02:35.280
+array with the array push method
+
+0:02:32.800,0:02:36.000
+and now we want to match the expected
+
+0:02:35.280,0:02:38.400
+output we were
+
+0:02:36.000,0:02:38.400
+given
+
+0:02:44.160,0:02:47.200
+again we'll use element reference here
+
+0:02:46.480,0:02:50.000
+to
+
+0:02:47.200,0:02:52.239
+access each element of this two element
+
+0:02:50.000,0:02:54.800
+array
+
+0:02:52.239,0:02:59.040
+so we know we want to access the first
+
+0:02:54.800,0:02:59.040
+element of the array with index zero
+
+0:03:01.040,0:03:05.519
+and the second and last element of the
+
+0:03:03.519,0:03:09.920
+array
+
+0:03:05.519,0:03:09.920
+dog with index one
+
+0:03:14.080,0:03:19.840
+and we've achieved the expected output
+

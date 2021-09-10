@@ -1,0 +1,258 @@
+0:00:04.640,0:00:07.600
+this problem gives us an array of
+
+0:00:06.799,0:00:10.400
+numbers
+
+0:00:07.600,0:00:11.440
+and we need to use the array select
+
+0:00:10.400,0:00:14.320
+method
+
+0:00:11.440,0:00:14.799
+to iterate over this array of numbers
+
+0:00:14.320,0:00:17.680
+and
+
+0:00:14.799,0:00:19.359
+return a new array containing only the
+
+0:00:17.680,0:00:22.720
+numbers that are divisible by
+
+0:00:19.359,0:00:26.720
+three we will assign the returned array
+
+0:00:22.720,0:00:30.160
+to a variable and then print its value
+
+0:00:26.720,0:00:33.120
+when we want to return a new array
+
+0:00:30.160,0:00:33.840
+that contains only the elements for
+
+0:00:33.120,0:00:37.040
+which
+
+0:00:33.840,0:00:44.800
+some condition evaluates as true
+
+0:00:37.040,0:00:47.039
+then we can use the array select method
+
+0:00:44.800,0:00:49.440
+so we'll call select on our numbers
+
+0:00:47.039,0:00:49.440
+array
+
+0:00:50.239,0:00:54.960
+and let's call our block parameter
+
+0:00:52.559,0:00:54.960
+number
+
+0:00:56.320,0:00:59.600
+and within this block we're going to
+
+0:00:58.320,0:01:02.960
+place the
+
+0:00:59.600,0:01:06.720
+condition by which we want each element
+
+0:01:02.960,0:01:09.280
+of this numbers array evaluated
+
+0:01:06.720,0:01:10.320
+in this case we want to know whether
+
+0:01:09.280,0:01:13.840
+each element
+
+0:01:10.320,0:01:16.320
+is divisible by three
+
+0:01:13.840,0:01:16.880
+so each element of our numbers array
+
+0:01:16.320,0:01:19.200
+will be
+
+0:01:16.880,0:01:22.560
+passed to the block and assigned to the
+
+0:01:19.200,0:01:22.560
+block parameter number
+
+0:01:22.860,0:01:27.200
+[Music]
+
+0:01:24.880,0:01:29.520
+writing our code like this using the
+
+0:01:27.200,0:01:32.640
+modulus operator
+
+0:01:29.520,0:01:36.479
+will return the remainder
+
+0:01:32.640,0:01:39.920
+of dividing number by three
+
+0:01:36.479,0:01:41.280
+we can actually hop into irb to see this
+
+0:01:39.920,0:01:44.640
+we know that 12
+
+0:01:41.280,0:01:47.920
+is evenly divisible by 3.
+
+0:01:44.640,0:01:49.840
+so let's check their return value
+
+0:01:47.920,0:01:51.520
+you can see that the remainder of
+
+0:01:49.840,0:01:55.360
+dividing 12 by 3
+
+0:01:51.520,0:01:58.560
+is 0. let's choose a number let's say
+
+0:01:55.360,0:02:02.240
+11 that's not evenly divisible by
+
+0:01:58.560,0:02:05.680
+3. using the code 11
+
+0:02:02.240,0:02:06.399
+modulus 3 we can see that the return
+
+0:02:05.680,0:02:09.520
+value is
+
+0:02:06.399,0:02:13.440
+2 indicating that 11
+
+0:02:09.520,0:02:15.200
+is not evenly divisible by 3.
+
+0:02:13.440,0:02:16.560
+so the comparison that we need to
+
+0:02:15.200,0:02:19.599
+perform here on line
+
+0:02:16.560,0:02:23.280
+4 is to compare the return value
+
+0:02:19.599,0:02:27.040
+of number modulus 3 or in other words
+
+0:02:23.280,0:02:30.800
+the remainder of number divided by 3
+
+0:02:27.040,0:02:31.440
+to 0. this comparison will return a
+
+0:02:30.800,0:02:35.360
+boolean
+
+0:02:31.440,0:02:37.920
+either true or false if it returns
+
+0:02:35.360,0:02:38.959
+true the element currently being
+
+0:02:37.920,0:02:41.840
+referenced by
+
+0:02:38.959,0:02:42.640
+this block parameter number will be
+
+0:02:41.840,0:02:46.080
+included
+
+0:02:42.640,0:02:47.440
+in the new returned array if this
+
+0:02:46.080,0:02:50.480
+comparison returns
+
+0:02:47.440,0:02:53.440
+false it will not be included let's
+
+0:02:50.480,0:02:55.440
+store this new array returned by the
+
+0:02:53.440,0:03:05.040
+select method
+
+0:02:55.440,0:03:10.080
+in a variable called divisible by 3.
+
+0:03:05.040,0:03:10.080
+and we'll use p to output this new array
+
+0:03:13.599,0:03:17.200
+and you can see that our new array
+
+0:03:15.680,0:03:21.120
+contains the elements
+
+0:03:17.200,0:03:23.360
+9 21 and 39
+
+0:03:21.120,0:03:25.440
+these are the only numbers from our
+
+0:03:23.360,0:03:28.879
+original array
+
+0:03:25.440,0:03:32.720
+which are evenly divisible by 3.
+
+0:03:28.879,0:03:36.000
+so while map performs transformation
+
+0:03:32.720,0:03:39.200
+based on the return value of its block
+
+0:03:36.000,0:03:39.920
+select perform selection if the return
+
+0:03:39.200,0:03:42.720
+value
+
+0:03:39.920,0:03:44.000
+of its block for a given element is
+
+0:03:42.720,0:03:46.879
+truthy
+
+0:03:44.000,0:03:47.519
+then select will place that element in
+
+0:03:46.879,0:03:50.959
+the new
+
+0:03:47.519,0:03:53.680
+returned array if the return value
+
+0:03:50.959,0:03:54.480
+of the block for a particular element is
+
+0:03:53.680,0:03:56.879
+falsy
+
+0:03:54.480,0:04:01.840
+then that element will not be included
+
+0:03:56.879,0:04:01.840
+in the returned array
+
