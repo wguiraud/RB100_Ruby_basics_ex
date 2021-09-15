@@ -34,11 +34,12 @@ Requirements:
 -
 
 =end
-count = 1
+count = 0
 
-until count > 10
-	puts count
+until count == 10
+
 	count += 1
+	puts count
 end
 
 

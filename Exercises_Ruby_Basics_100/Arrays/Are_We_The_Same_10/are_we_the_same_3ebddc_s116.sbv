@@ -1,0 +1,111 @@
+0:00:04.480,0:00:09.360
+we've been given
+
+0:00:05.440,0:00:14.080
+two variables array one and array two
+
+0:00:09.360,0:00:14.080
+each referencing a three element array
+
+0:00:14.240,0:00:20.480
+we need to compare these two arrays and
+
+0:00:17.680,0:00:23.039
+print true or false based on whether
+
+0:00:20.480,0:00:23.039
+they match
+
+0:00:24.320,0:00:31.840
+so we can perform a simple comparison
+
+0:00:29.199,0:00:34.960
+and this equality comparison will return
+
+0:00:31.840,0:00:37.840
+a boolean either true or false
+
+0:00:34.960,0:00:38.559
+so all we need to do to print true or
+
+0:00:37.840,0:00:42.840
+false
+
+0:00:38.559,0:00:44.320
+is to output the return value of this
+
+0:00:42.840,0:00:47.680
+comparison
+
+0:00:44.320,0:00:50.000
+so let's invoke put s and the return
+
+0:00:47.680,0:00:53.440
+value of this comparison will be the
+
+0:00:50.000,0:00:53.440
+argument passed to put us
+
+0:00:55.920,0:00:59.840
+we've output false
+
+0:01:01.520,0:01:07.360
+the two arrays that we were comparing
+
+0:01:04.479,0:01:09.600
+have the same number of elements
+
+0:01:07.360,0:01:11.040
+and in fact they include these same
+
+0:01:09.600,0:01:14.000
+three integers as
+
+0:01:11.040,0:01:16.080
+elements but the order of these elements
+
+0:01:14.000,0:01:17.520
+doesn't match
+
+0:01:16.080,0:01:20.479
+let's see what would happen to our
+
+0:01:17.520,0:01:23.600
+comparison if it did
+
+0:01:20.479,0:01:27.840
+now each array has the elements 1
+
+0:01:23.600,0:01:27.840
+5 and 9 in that order
+
+0:01:28.159,0:01:33.520
+running our code again this time the
+
+0:01:30.720,0:01:35.840
+comparison returns true
+
+0:01:33.520,0:01:38.000
+so these two arrays will be seen as
+
+0:01:35.840,0:01:41.360
+equal
+
+0:01:38.000,0:01:43.680
+if their elements match
+
+0:01:41.360,0:01:44.799
+if they contain the same elements in a
+
+0:01:43.680,0:01:46.960
+different order
+
+0:01:44.799,0:01:55.840
+we see that inequality comparison
+
+0:01:46.960,0:01:55.840
+returns false
+
+0:01:56.159,0:01:58.240
+you
+

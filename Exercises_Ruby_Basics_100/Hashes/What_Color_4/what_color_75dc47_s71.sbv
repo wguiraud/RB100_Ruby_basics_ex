@@ -1,0 +1,54 @@
+0:00:05.040,0:00:10.880
+this problem asks us to
+
+0:00:07.040,0:00:14.320
+select the value blue from our car hash
+
+0:00:10.880,0:00:14.320
+and print it with put s
+
+0:00:14.719,0:00:20.160
+hashes have a very useful element
+
+0:00:17.359,0:00:22.880
+reference method
+
+0:00:20.160,0:00:26.720
+that allow us to retrieve the value
+
+0:00:22.880,0:00:26.720
+associated with a given key
+
+0:00:27.199,0:00:31.119
+in this case we want to retrieve the
+
+0:00:29.279,0:00:34.239
+value associated with
+
+0:00:31.119,0:00:34.239
+the color key
+
+0:00:35.680,0:00:39.600
+we place the key whose value we want to
+
+0:00:38.399,0:00:42.640
+access
+
+0:00:39.600,0:00:44.559
+in the square brackets
+
+0:00:42.640,0:00:47.920
+and this will return the value
+
+0:00:44.559,0:00:47.920
+associated with that key
+
+0:00:48.320,0:00:59.280
+to see that we're going to output the
+
+0:00:50.879,0:01:13.600
+return value with put us
+
+0:00:59.280,0:01:13.600
+and we've output blue as expected
+

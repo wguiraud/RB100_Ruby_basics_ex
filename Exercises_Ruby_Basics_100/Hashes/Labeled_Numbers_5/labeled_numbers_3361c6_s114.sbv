@@ -1,0 +1,102 @@
+0:00:04.400,0:00:08.800
+this problem
+
+0:00:05.200,0:00:12.240
+asks us to use the hash each method
+
+0:00:08.800,0:00:15.599
+to iterate over our numbers hash and
+
+0:00:12.240,0:00:16.160
+print both the key and value from each
+
+0:00:15.599,0:00:18.480
+key value
+
+0:00:16.160,0:00:18.480
+pair
+
+0:00:20.560,0:00:26.160
+so we'll call the hash each method on
+
+0:00:23.519,0:00:26.160
+our hash
+
+0:00:28.400,0:00:33.120
+and define our block now you may be
+
+0:00:30.880,0:00:35.840
+wondering how we're going to access
+
+0:00:33.120,0:00:37.040
+both the key and the value within our
+
+0:00:35.840,0:00:40.079
+block
+
+0:00:37.040,0:00:45.840
+the hash each method allows us to define
+
+0:00:40.079,0:00:45.840
+two block parameters
+
+0:00:46.879,0:00:52.320
+as we iterate through the hash each key
+
+0:00:49.360,0:00:54.399
+value pair will be passed to the block
+
+0:00:52.320,0:00:55.600
+the key will be assigned to the first
+
+0:00:54.399,0:00:57.440
+block parameter
+
+0:00:55.600,0:00:58.879
+while the value will be assigned to the
+
+0:00:57.440,0:01:01.840
+second
+
+0:00:58.879,0:01:06.320
+and in this simple example we've named
+
+0:01:01.840,0:01:06.320
+the block parameters to reflect that
+
+0:01:07.040,0:01:11.920
+so according to the problem description
+
+0:01:09.840,0:01:13.119
+as we iterate through this hash we want
+
+0:01:11.920,0:01:16.400
+to output
+
+0:01:13.119,0:01:19.759
+each key value pair
+
+0:01:16.400,0:01:19.759
+so we'll invoke put us
+
+0:01:20.640,0:01:29.280
+and use string interpolation
+
+0:01:26.240,0:01:32.000
+output each key and each value as part
+
+0:01:29.280,0:01:32.000
+of a string
+
+0:01:33.439,0:01:38.000
+now let's run our code and see if our
+
+0:01:35.680,0:01:41.840
+output matches the expected output that
+
+0:01:38.000,0:01:41.840
+we were given
+
+0:01:44.079,0:01:55.840
+and it does
+

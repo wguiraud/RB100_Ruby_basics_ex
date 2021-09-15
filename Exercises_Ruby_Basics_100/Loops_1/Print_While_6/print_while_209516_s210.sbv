@@ -1,0 +1,66 @@
+in this problem we're asked to use a while loop 
+to print five random numbers between zero and ninety-nine
+and we've been given a little bit of code here to get us started
+
+as with most problems there's more than one way to solve it 
+but we're going to go with what we've been given on line 33
+
+we have a local variable numbers referencing an empty array 
+so we can infer that 
+this is where we're going to collect these five random numbers 
+prior to outputting them to the screen
+
+on lines 35 through 37 
+we have the skeleton of a while loop
+and we can see that we still need to decide 
+what condition we're going to provide to the while loop 
+
+if we know that the numbers array 
+is where we're going to collect these five random numbers
+and we want to continue generating these random numbers 
+until we have five 
+
+we can determine that we want to stop iterating through our while loop
+when our numbers array has five elements
+
+WRITING so we can use the array size method
+to return the size of the numbers array
+and we can use comparison
+to tell our while loop to continue iterating
+WRITING as long as the size of the numbers array is less than 5.
+
+now the next question here is how do we generate these random numbers
+and one way to do this UNCOMMENT
+is with the kernel rand method
+
+rand will return a random number between 0 and 1 less 
+than the argument that you provide it
+
+so in this case we're looking to return a random number between 0 and 99
+inclusive 
+so our argument to rand should be 100
+and let's just demonstrate how the rand method works
+and run our code a few times to output random numbers
+okay and you can see that it's working as we would expect
+
+so now that we know how to generate these random numbers
+we can put a call to rand within our while loop
+the next thing to think about is 
+how are we going to get these numbers into our numbers array
+we can do that 
+with what's called 
+the shovel operator
+and it's actually an array method that mutates the array
+by appending the argument onto the end of the calling array
+
+to see this in action we can actually print the numbers array on each iteration
+you can see our numbers array growing 
+as we append each new number onto the end of the array
+
+so lastly we just need to output the numbers that we're holding 
+within our numbers array
+now if you look at the example output
+you can see that we want to output each number on its own line 
+and we can do that by calling put s
+put s will output each element of the array as a string object
+

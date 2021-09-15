@@ -1,0 +1,84 @@
+0:00:04.160,0:00:12.080
+this problem has given us some data
+
+0:00:07.120,0:00:12.080
+and asked us to create a nested hash
+
+0:00:12.799,0:00:16.720
+we can see that we have a car which has
+
+0:00:15.440,0:00:19.760
+a type a color
+
+0:00:16.720,0:00:20.720
+and a year as well as a truck with a
+
+0:00:19.760,0:00:24.480
+type a color
+
+0:00:20.720,0:00:27.359
+and a year let's begin
+
+0:00:24.480,0:00:27.840
+just by creating hashes for each of
+
+0:00:27.359,0:00:31.840
+these
+
+0:00:27.840,0:00:31.840
+sets of data
+
+0:00:46.440,0:00:49.510
+[Music]
+
+0:00:53.760,0:01:00.160
+now we can see that we have one hash on
+
+0:00:56.559,0:01:03.039
+line one holding the data of a car
+
+0:01:00.160,0:01:06.720
+and a second hash on line two holding
+
+0:01:03.039,0:01:10.159
+the data associated with a truck
+
+0:01:06.720,0:01:14.080
+hash values can be any object including
+
+0:01:10.159,0:01:15.600
+a hash so in order to associate this
+
+0:01:14.080,0:01:18.960
+first hash with a car
+
+0:01:15.600,0:01:21.119
+we can actually make car the key
+
+0:01:18.960,0:01:23.520
+and have our hash be the associated
+
+0:01:21.119,0:01:25.040
+value
+
+0:01:23.520,0:01:27.600
+and we'll do the same thing with the
+
+0:01:25.040,0:01:30.320
+truck
+
+0:01:27.600,0:01:30.880
+now we just need to wrap our key value
+
+0:01:30.320,0:01:33.600
+pairs
+
+0:01:30.880,0:01:36.000
+in curly braces and separate them with a
+
+0:01:33.600,0:01:36.000
+comma
+
+0:01:37.920,0:01:41.840
+and we have a nested hash
+

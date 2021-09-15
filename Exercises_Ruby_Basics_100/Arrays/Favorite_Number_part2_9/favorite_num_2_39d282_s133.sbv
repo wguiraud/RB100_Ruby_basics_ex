@@ -1,0 +1,126 @@
+0:00:04.319,0:00:09.599
+this problem has given
+
+0:00:05.920,0:00:11.679
+us a variable favorites referencing a
+
+0:00:09.599,0:00:14.080
+nested array
+
+0:00:11.679,0:00:16.320
+the problem instructions tell us to use
+
+0:00:14.080,0:00:19.279
+the arrayflatten method
+
+0:00:16.320,0:00:22.240
+to flatten this nested array so that
+
+0:00:19.279,0:00:24.640
+it's a one-dimensional array
+
+0:00:22.240,0:00:25.519
+we're going to assign the new flattened
+
+0:00:24.640,0:00:28.400
+array
+
+0:00:25.519,0:00:32.320
+to a variable named flat favorites and
+
+0:00:28.400,0:00:32.320
+print its values so we can see it
+
+0:00:35.600,0:00:38.879
+so we'll initialize the flat favorites
+
+0:00:38.000,0:00:41.040
+variable
+
+0:00:38.879,0:00:46.000
+and we're going to assign it to the
+
+0:00:41.040,0:00:46.800
+return value of calling the arrayflatten
+
+0:00:46.000,0:00:50.719
+method
+
+0:00:46.800,0:00:50.719
+on our favorites array
+
+0:00:51.120,0:00:54.320
+let's output this new one-dimensional
+
+0:00:53.840,0:00:59.840
+array
+
+0:00:54.320,0:00:59.840
+flat favorites
+
+0:01:00.559,0:01:03.840
+and you can see that it's no longer a
+
+0:01:02.719,0:01:12.000
+nested array
+
+0:01:03.840,0:01:14.960
+and looks just like our expected output
+
+0:01:12.000,0:01:16.479
+one thing to note is that if we also
+
+0:01:14.960,0:01:19.040
+output the value of
+
+0:01:16.479,0:01:21.920
+favorites after calling the flattened
+
+0:01:19.040,0:01:21.920
+method on it
+
+0:01:23.520,0:01:27.759
+favorites is still a two-dimensional
+
+0:01:25.840,0:01:30.240
+array
+
+0:01:27.759,0:01:31.520
+and that's because the flattened method
+
+0:01:30.240,0:01:36.000
+is non-destructive
+
+0:01:31.520,0:01:36.000
+it returns a new flat array
+
+0:01:38.000,0:01:41.759
+if we want to flatten the original array
+
+0:01:40.400,0:01:44.799
+destructively
+
+0:01:41.759,0:01:46.880
+we can use the destructive flatten and
+
+0:01:44.799,0:01:49.520
+this destructive flattened method has a
+
+0:01:46.880,0:01:52.560
+bang operator at the end
+
+0:01:49.520,0:01:57.040
+now if we print flat favorites and
+
+0:01:52.560,0:01:57.040
+favorites our original nested array
+
+0:01:57.280,0:02:04.320
+they appear the same and that's because
+
+0:02:01.200,0:02:09.840
+when we used the destructive flatten we
+
+0:02:04.320,0:02:09.840
+mutated the original array
+

@@ -1,0 +1,168 @@
+0:00:05.040,0:00:09.599
+this problem has
+
+0:00:06.240,0:00:10.320
+given us some data and asked us to
+
+0:00:09.599,0:00:13.360
+create a
+
+0:00:10.320,0:00:15.920
+hash that contains the data
+
+0:00:13.360,0:00:18.160
+and assign this hash to a variable named
+
+0:00:15.920,0:00:18.160
+car
+
+0:00:18.560,0:00:23.199
+before we begin to create a hash with
+
+0:00:21.279,0:00:25.519
+the data we've been given
+
+0:00:23.199,0:00:27.840
+let's first just look at the syntax of a
+
+0:00:25.519,0:00:27.840
+hash
+
+0:00:28.000,0:00:34.480
+hashes are made up of key value pairs
+
+0:00:31.679,0:00:38.160
+and we surround those key value pairs
+
+0:00:34.480,0:00:41.520
+with a pair of curly braces
+
+0:00:38.160,0:00:43.280
+when using a symbol as the key in your
+
+0:00:41.520,0:00:46.800
+hash
+
+0:00:43.280,0:00:50.559
+ruby allows us to use this very simple
+
+0:00:46.800,0:00:50.559
+and easy to read syntax
+
+0:00:50.640,0:00:57.440
+in this example number is the key
+
+0:00:53.840,0:00:59.520
+and one is its value in ruby versions
+
+0:00:57.440,0:01:04.000
+prior to 1.9
+
+0:00:59.520,0:01:04.000
+this same hash would be written like so
+
+0:01:04.159,0:01:09.760
+and you may hear this referred to as the
+
+0:01:06.960,0:01:12.799
+hashrocket syntax
+
+0:01:09.760,0:01:13.840
+now if we don't use symbols as the keys
+
+0:01:12.799,0:01:15.840
+in our hash
+
+0:01:13.840,0:01:18.479
+we still need to use this hashrocket
+
+0:01:15.840,0:01:18.479
+syntax
+
+0:01:20.880,0:01:24.799
+not only does using symbols as the keys
+
+0:01:23.840,0:01:28.400
+in our hash
+
+0:01:24.799,0:01:30.799
+allow us to use this new clean syntax
+
+0:01:28.400,0:01:33.040
+but symbols also take up less memory
+
+0:01:30.799,0:01:35.920
+than strings
+
+0:01:33.040,0:01:38.840
+now let's move on and write a hash for
+
+0:01:35.920,0:01:41.840
+the data that we were given in this
+
+0:01:38.840,0:01:41.840
+problem
+
+0:01:42.159,0:01:47.520
+we want to store a reference to this
+
+0:01:44.159,0:01:50.000
+hash in the local variable car
+
+0:01:47.520,0:01:50.640
+and looking at the table of data we were
+
+0:01:50.000,0:01:53.360
+given
+
+0:01:50.640,0:01:54.000
+we can see pretty clearly how we might
+
+0:01:53.360,0:01:57.360
+model this
+
+0:01:54.000,0:02:01.119
+data in a hash we will use
+
+0:01:57.360,0:02:01.119
+symbols as the keys in our hash
+
+0:02:06.799,0:02:13.920
+we know that our car has a type of sedan
+
+0:02:10.800,0:02:13.920
+is the color blue
+
+0:02:16.720,0:02:19.760
+and when i enter the mileage i'm going
+
+0:02:18.800,0:02:22.480
+to include an
+
+0:02:19.760,0:02:24.319
+underscore there that doesn't change the
+
+0:02:22.480,0:02:27.920
+value of this number
+
+0:02:24.319,0:02:27.920
+but it does make it more readable
+
+0:02:31.519,0:02:38.959
+now that we've written our hash
+
+0:02:36.000,0:02:38.959
+let's output it
+
+0:02:47.760,0:02:51.120
+hashes are a very commonly used data
+
+0:02:50.400,0:02:53.200
+structure
+
+0:02:51.120,0:03:02.879
+so make sure to get comfortable with the
+
+0:02:53.200,0:03:02.879
+required syntax
+

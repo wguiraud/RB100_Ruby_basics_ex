@@ -1,0 +1,207 @@
+0:00:04.640,0:00:09.840
+this problem has given us
+
+0:00:06.640,0:00:11.360
+a hash referenced by the local variable
+
+0:00:09.840,0:00:14.240
+numbers
+
+0:00:11.360,0:00:15.759
+we are asked to iterate over this
+
+0:00:14.240,0:00:19.119
+number's hash
+
+0:00:15.759,0:00:22.240
+using the enumerable map method
+
+0:00:19.119,0:00:22.800
+and return an array that contains each
+
+0:00:22.240,0:00:26.000
+number
+
+0:00:22.800,0:00:28.480
+divided by 2. we're going to
+
+0:00:26.000,0:00:29.840
+assign the returned array to a variable
+
+0:00:28.480,0:00:32.960
+called half numbers
+
+0:00:29.840,0:00:35.040
+and output its value
+
+0:00:32.960,0:00:36.559
+the map method that we're going to be
+
+0:00:35.040,0:00:40.160
+using in this problem
+
+0:00:36.559,0:00:42.000
+is defined in the enumerable module
+
+0:00:40.160,0:00:44.399
+you'll learn more about how this is
+
+0:00:42.000,0:00:46.640
+possible in future courses
+
+0:00:44.399,0:00:48.239
+for now all you need to know is that
+
+0:00:46.640,0:00:52.000
+this enumerable map
+
+0:00:48.239,0:00:54.399
+method is available to all hashes
+
+0:00:52.000,0:00:55.039
+another interesting part of this problem
+
+0:00:54.399,0:00:58.239
+is that
+
+0:00:55.039,0:01:01.600
+although we are iterating over a hash
+
+0:00:58.239,0:01:03.879
+we're going to return an array
+
+0:01:01.600,0:01:05.439
+you can look at the innumerable map
+
+0:01:03.879,0:01:09.200
+documentation to
+
+0:01:05.439,0:01:12.960
+read more about how this method works
+
+0:01:09.200,0:01:15.040
+let's begin to write some code
+
+0:01:12.960,0:01:17.520
+we know we want to store the returned
+
+0:01:15.040,0:01:20.080
+array in a local variable called half
+
+0:01:17.520,0:01:20.080
+numbers
+
+0:01:24.640,0:01:30.880
+so we're going to invoke the map method
+
+0:01:27.680,0:01:30.880
+on our numbers hash
+
+0:01:31.360,0:01:34.479
+and as we iterate through the hash each
+
+0:01:34.000,0:01:36.640
+key
+
+0:01:34.479,0:01:37.759
+and each value will be passed to the
+
+0:01:36.640,0:01:40.000
+block
+
+0:01:37.759,0:01:41.439
+the key will be assigned to the first
+
+0:01:40.000,0:01:43.360
+block parameter
+
+0:01:41.439,0:01:45.040
+and the value will be assigned to the
+
+0:01:43.360,0:01:46.880
+second
+
+0:01:45.040,0:01:49.200
+in this case we've called these block
+
+0:01:46.880,0:01:51.680
+parameters key and value
+
+0:01:49.200,0:01:53.600
+but we could have named them anything
+
+0:01:51.680,0:01:55.040
+the key will always be assigned to the
+
+0:01:53.600,0:01:56.960
+first block parameter
+
+0:01:55.040,0:01:59.600
+and the value will always be assigned to
+
+0:01:56.960,0:01:59.600
+the second
+
+0:02:01.680,0:02:05.200
+let's think about what we need to do
+
+0:02:03.439,0:02:08.399
+within our block
+
+0:02:05.200,0:02:12.160
+the map method performs transformation
+
+0:02:08.399,0:02:14.800
+based on the return value of its block
+
+0:02:12.160,0:02:15.760
+in this case we want that transformation
+
+0:02:14.800,0:02:19.680
+to be that we
+
+0:02:15.760,0:02:23.280
+are dividing each value by two
+
+0:02:19.680,0:02:28.560
+so we can simply return from the block
+
+0:02:23.280,0:02:28.560
+the return value of dividing value by 2.
+
+0:02:29.840,0:02:37.519
+so let's output half numbers
+
+0:02:33.840,0:02:39.440
+which is an array and see if our output
+
+0:02:37.519,0:02:41.760
+matches the expected output that we were
+
+0:02:39.440,0:02:41.760
+given
+
+0:02:44.640,0:02:53.599
+and it does
+
+0:02:50.959,0:02:56.400
+be sure to read the documentation for
+
+0:02:53.599,0:02:58.480
+any method that you're unfamiliar with
+
+0:02:56.400,0:03:00.319
+in this case if you weren't familiar
+
+0:02:58.480,0:03:02.640
+with the enumerable map
+
+0:03:00.319,0:03:04.480
+method you may be surprised to know that
+
+0:03:02.640,0:03:14.800
+it returns an array
+
+0:03:04.480,0:03:14.800
+even when we invoke it on a hash
+

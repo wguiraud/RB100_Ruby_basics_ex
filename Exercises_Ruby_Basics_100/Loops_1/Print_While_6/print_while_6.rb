@@ -30,11 +30,10 @@ Requirements:
 - keep track of the number of elements extracted  until it reaches 5
 =end
 
-numbers = (0..99).to_a
-element_count = 0
+numbers = []
 
-while element_count< 5
-	puts numbers.sample
-	element_count += 1
+while numbers.size < 5
+  numbers << rand(100)
 end
+puts numbers
 

@@ -1,0 +1,69 @@
+0:00:04.880,0:00:09.599
+this problem
+
+0:00:05.759,0:00:13.840
+asks us to delete the mileage key
+
+0:00:09.599,0:00:16.080
+and its value from our car hash
+
+0:00:13.840,0:00:19.039
+ruby provides hashes with a lot of
+
+0:00:16.080,0:00:19.039
+useful methods
+
+0:00:20.480,0:00:24.880
+we can invoke the delete method on our
+
+0:00:23.279,0:00:27.439
+hash
+
+0:00:24.880,0:00:29.519
+and pass in the key that we want to
+
+0:00:27.439,0:00:32.719
+delete
+
+0:00:29.519,0:00:35.600
+in this case that's mileage
+
+0:00:32.719,0:00:36.399
+both the key and the value associated
+
+0:00:35.600,0:00:39.520
+with the key
+
+0:00:36.399,0:00:44.879
+will be deleted from the hash and this
+
+0:00:39.520,0:00:47.840
+is a destructive method
+
+0:00:44.879,0:00:48.239
+let's output the car hash both before
+
+0:00:47.840,0:00:52.239
+and
+
+0:00:48.239,0:00:52.239
+after invoking the delete method
+
+0:00:55.600,0:00:59.680
+and you can see that action was
+
+0:00:57.280,0:01:00.320
+destructive and we've successfully
+
+0:00:59.680,0:01:03.680
+deleted
+
+0:01:00.320,0:01:03.680
+mileage from our hash
+
+0:01:07.840,0:01:13.840
+be sure to check out the hash
+
+0:01:09.360,0:01:13.840
+documentation for more useful methods
+

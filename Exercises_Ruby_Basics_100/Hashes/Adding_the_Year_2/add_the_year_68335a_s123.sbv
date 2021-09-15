@@ -1,0 +1,105 @@
+0:00:05.279,0:00:09.440
+we've been asked
+
+0:00:06.399,0:00:12.880
+to add an additional key value pair
+
+0:00:09.440,0:00:15.519
+to our car hash hash
+
+0:00:12.880,0:00:19.199
+objects have a built-in element
+
+0:00:15.519,0:00:19.199
+assignment method that we can use
+
+0:00:19.439,0:00:24.000
+there's a little bit of syntactical
+
+0:00:21.279,0:00:24.000
+sugar here
+
+0:00:25.279,0:00:28.560
+we'll place the key
+
+0:00:29.039,0:00:36.960
+within the square brackets
+
+0:00:32.320,0:00:36.960
+and assign that key to our chosen value
+
+0:00:37.680,0:00:43.840
+so in this case let's reassign the value
+
+0:00:41.440,0:00:46.960
+associated with the key color
+
+0:00:43.840,0:00:46.960
+from blue to green
+
+0:00:47.440,0:00:53.360
+and we'll output our car hash and see if
+
+0:00:50.000,0:00:53.360
+that change is reflected
+
+0:00:55.840,0:00:59.840
+and it is
+
+0:01:01.920,0:01:06.799
+so how can we create a new key value
+
+0:01:04.559,0:01:13.840
+pair inside of our hash
+
+0:01:06.799,0:01:13.840
+we can use the same syntax
+
+0:01:14.320,0:01:17.680
+if the key that we pass in does not
+
+0:01:16.479,0:01:22.320
+already exist
+
+0:01:17.680,0:01:22.320
+in the hash then it will be created
+
+0:01:23.200,0:01:26.720
+so in this case we want to create an
+
+0:01:25.600,0:01:30.320
+additional key
+
+0:01:26.720,0:01:33.360
+in our car hash year
+
+0:01:30.320,0:01:36.159
+and assign it to 2003
+
+0:01:33.360,0:01:37.360
+let's output our car hash again and see
+
+0:01:36.159,0:01:41.840
+if we now have
+
+0:01:37.360,0:01:41.840
+four key value pairs
+
+0:01:44.079,0:01:46.799
+and we do
+
+0:01:47.439,0:01:50.960
+so this handy built-in element
+
+0:01:49.680,0:01:54.240
+assignment method
+
+0:01:50.960,0:01:58.320
+can reassign existing values or
+
+0:01:54.240,0:01:58.320
+create new key value pairs within your
+
+0:02:02.200,0:02:05.200
+hash
+
