@@ -1,228 +1,55 @@
-0:00:04.319,0:00:08.559
-this problem
+this problem asks us to use an until loop 
+to print each element of the numbers array to the screen
+and looking at the example output 
+we can see that we want to print each number to the screen 
+on its own line
 
-0:00:05.200,0:00:10.719
-asks us to use an intel loop to print
+one simple way to access individual elements of an array
+is by using their index 
+and we know that arrays have a zero-based index
 
-0:00:08.559,0:00:12.000
-each element of the numbers array to the
-
-0:00:10.719,0:00:14.719
-screen
-
-0:00:12.000,0:00:16.320
-and looking at the example output we can
-
-0:00:14.719,0:00:18.640
-see that we want to print
-
-0:00:16.320,0:00:20.160
-each number to the screen on its own
-
-0:00:18.640,0:00:22.640
-line
-
-0:00:20.160,0:00:24.480
-one simple way to access individual
-
-0:00:22.640,0:00:27.680
-elements of an array
-
-0:00:24.480,0:00:30.400
-is by using their index and we know that
-
-0:00:27.680,0:00:33.440
-arrays have a zero-based index
-
-0:00:30.400,0:00:35.680
 because arrays have a zero-based index
+the index of the last element of the array
+will be one less than the size of the array
 
-0:00:33.440,0:00:36.640
-the index of the last element of the
+WRITING let's initialize a local variable count
+and set it equal to zero 
+as we iterate through the numbers array
+we can use this variable to access elements at each index of the array 
 
-0:00:35.680,0:00:38.719
-array
-
-0:00:36.640,0:00:41.120
-will be one less than the size of the
-
-0:00:38.719,0:00:41.120
-array
-
-0:00:41.440,0:00:48.559
-let's initialize a local variable count
-
-0:00:45.039,0:00:50.079
-and set it equal to zero as we iterate
-
-0:00:48.559,0:00:53.039
-through the numbers array
-
-0:00:50.079,0:00:53.840
-we can use this variable to access
-
-0:00:53.039,0:00:56.640
-elements at
-
-0:00:53.840,0:00:58.160
-each index of the array initially
-
-0:00:56.640,0:01:00.990
-beginning at index 0
-
-0:00:58.160,0:01:03.760
+initially beginning at index 0
 which is the first element of the array
 
-0:01:00.990,0:01:05.920
-[Music]
-
-0:01:03.760,0:01:07.119
-so let's create the skeleton of our
-
-0:01:05.920,0:01:09.280
-until loop
-
-0:01:07.119,0:01:11.520
-now we know we need to provide a
-
-0:01:09.280,0:01:14.080
-condition to this until loop
-
-0:01:11.520,0:01:15.119
+WRITING so let's create the skeleton of our until loop
+now we know we need to provide a condition to this until loop
 and when the condition evaluates to true
+the loop will stop iterating 
 
-0:01:14.080,0:01:18.400
-the loop will stop
+WRITING if we want to use the index of each element of the array 
+to access these numbers
+we can stop when the index is equal to the size of the array
 
-0:01:15.119,0:01:20.880
-iterating if we want to use the index
+and again that's because the index of the last element of the array
+will always be one less than the size of the array
 
-0:01:18.400,0:01:23.520
-of each element of the array to access
-
-0:01:20.880,0:01:26.159
-these numbers
-
-0:01:23.520,0:01:28.880
-we can stop when the index is equal to
-
-0:01:26.159,0:01:31.119
-the size of the array
-
-0:01:28.880,0:01:33.280
-and again that's because the index of
-
-0:01:31.119,0:01:35.520
-the last element of the array
-
-0:01:33.280,0:01:36.720
-will always be one less than the size of
-
-0:01:35.520,0:01:38.880
-the array
-
-0:01:36.720,0:01:41.200
-within the loop we know that we need to
-
-0:01:38.880,0:01:42.399
-increment our variable count on each
-
-0:01:41.200,0:01:44.960
-iteration
-
-0:01:42.399,0:01:46.399
+WRITiNG within the loop we know that we need to increment our variable count 
+on each iteration
 so that we're moving through the array
+and eventually reaching the size of the array 
+so that our loop will stop executing and not become infinite
 
-0:01:44.960,0:01:48.399
-and eventually
+WRITING and just to see this in action let's output the count and run our code
+as you can see we increment count from zero to four
+and that will access each element of this five element array
+we've already done most of the heavylifting here
+now all we need to do is use the count variable
+to access and output the appropriate element of the array
+WRITING and we can do that using the following syntax
 
-0:01:46.399,0:01:50.479
-reaching the size of the array so that
+we're now calling put s on the element of the numbers array
+at the given index which will be anywhere from 0 to 4.
+because we're calling put s which stands for put string
+each of these numbers will be printed on their own line as a string object
 
-0:01:48.399,0:01:53.280
-our loop will stop executing and not
-
-0:01:50.479,0:01:55.439
-become infinite
-
-0:01:53.280,0:01:56.399
-and just to see this in action let's
-
-0:01:55.439,0:01:59.200
-output the count
-
-0:01:56.399,0:01:59.200
-and run our code
-
-0:02:00.000,0:02:04.159
-as you can see we increment count from
-
-0:02:02.399,0:02:06.399
-zero to four
-
-0:02:04.159,0:02:09.759
-and that will access each element of
-
-0:02:06.399,0:02:11.520
-this five element array
-
-0:02:09.759,0:02:12.959
-we've already done most of the heavy
-
-0:02:11.520,0:02:15.520
-lifting here
-
-0:02:12.959,0:02:16.640
-now all we need to do is use the count
-
-0:02:15.520,0:02:19.599
-variable
-
-0:02:16.640,0:02:23.840
-to access and output the appropriate
-
-0:02:19.599,0:02:25.760
-element of the array
-
-0:02:23.840,0:02:26.580
-and we can do that using the following
-
-0:02:25.760,0:02:29.639
-syntax
-
-0:02:26.580,0:02:29.639
-[Music]
-
-0:02:31.360,0:02:35.760
-we're now calling put s on the element
-
-0:02:34.160,0:02:38.239
-of the numbers array
-
-0:02:35.760,0:02:41.280
-at the given index which will be
-
-0:02:38.239,0:02:43.760
-anywhere from 0 to 4.
-
-0:02:41.280,0:02:45.440
-because we're calling put s which stands
-
-0:02:43.760,0:02:47.599
-for put string
-
-0:02:45.440,0:02:49.040
-each of these numbers will be printed on
-
-0:02:47.599,0:02:51.840
-their own line as a string
-
-0:02:49.040,0:02:51.840
-object
-
-0:02:52.080,0:03:05.840
-okay and we can see that our output
-
-0:02:54.080,0:03:05.840
-matches the expected output
+okay and we can see that our output matches the expected output
 
