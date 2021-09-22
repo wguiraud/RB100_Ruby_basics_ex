@@ -30,9 +30,11 @@ number_b = 0
 loop do 
 	number_a += rand(2)
 	number_b += rand(2)
-  next if number_a != 5 || next if number_b != 5 
-	puts "5 was reached!" 
-	break 
+	# first solution
+  #	next if number_a <= 5 || number_b <= 5
+	# second solution that avoids repetition
+	next if (number_a || number_b) <= 5
+	print "5 was reached!"
+	break
 end
-
 

@@ -61,7 +61,7 @@
  - repeat the program until the user input q or Q 
 
 =end
-
+=begin
 # my first solution
 loop do
   puts "How many output lines do you want? Enter a number >= 3 (Q or q to quit):"
@@ -88,3 +88,33 @@ loop do
   end
 
 end
+=end
+loop do 
+	number_of_lines = nil
+	loop do
+		puts '>> How many output lines do you want? Enter a number >= 3: (Q to quit)'
+		number_of_lines = gets.to_i 
+		break if number_of_lines >= 3 
+		puts ">> That's not enough lines."
+	end
+
+	while number_of_lines > 0
+		puts 'Launch School is the best!'
+		number_of_lines -= 1
+	end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

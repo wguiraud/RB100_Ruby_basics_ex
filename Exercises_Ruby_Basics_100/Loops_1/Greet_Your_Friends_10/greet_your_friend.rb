@@ -14,7 +14,7 @@ friends = ['Sarah', 'John', 'Hannah', 'Dave']
 
 friends = ['Sarah', 'John', 'Hannah', 'Dave']
 
-for name in friends
-	puts "Hello, #{name}!"
+for friend in friends
+	puts "hello  #{friend}!"
 end
 

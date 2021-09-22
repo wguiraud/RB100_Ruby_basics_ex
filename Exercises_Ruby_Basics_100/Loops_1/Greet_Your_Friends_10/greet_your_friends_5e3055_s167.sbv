@@ -1,183 +1,46 @@
-0:00:04.319,0:00:09.840
-this problem requires us to
+this problem requires us to use a for loop to iterate over the friends
+in our friend's array 
+and greet each one of them individually
+and we've been given some expected output 
+so that we know how to format our greeting 
+but first let's just get started on our for loop
 
-0:00:06.720,0:00:10.400
-use a for loop to iterate over the
-
-0:00:09.840,0:00:13.519
-friends
-
-0:00:10.400,0:00:16.160
-in our friend's array and greet each one
-
-0:00:13.519,0:00:18.560
-of them individually
-
-0:00:16.160,0:00:20.480
-and we've been given some expected
-
-0:00:18.560,0:00:23.760
-output so that we know how to
-
-0:00:20.480,0:00:27.439
-format our greeting but first let's just
-
-0:00:23.760,0:00:27.439
-get started on our for loop
-
-0:00:27.840,0:00:32.480
-remember that in a for loop we use a
-
-0:00:30.880,0:00:35.200
-named variable to
-
-0:00:32.480,0:00:37.970
-represent each element of the collection
-
-0:00:35.200,0:00:40.480
-that we're iterating through
-
-0:00:37.970,0:00:43.120
-[Music]
-
-0:00:40.480,0:00:44.000
-if we call our variable friend it's
-
-0:00:43.120,0:00:46.960
-pretty clear that
-
-0:00:44.000,0:00:48.800
-we're referring to one individual out of
-
-0:00:46.960,0:00:51.440
-our array of friends
-
-0:00:48.800,0:00:53.840
-[Music]
-
-0:00:51.440,0:00:56.480
-and we can just start out here by
-
-0:00:53.840,0:00:56.480
-outputting
-
-0:00:56.840,0:01:00.320
-friends
-
-0:00:58.399,0:01:03.440
+WRITING remember that in a for loop we use 
+a named variable to represent each element of the collection
+that we're iterating through WRITING
+if we call our variable friend 
+it's pretty clear that
+we're referring to one individual out of our array of friends WRITING
+and we can just start out here 
+by outputting friends WRITING
 and you can see that we successfully
-
-0:01:00.320,0:01:05.680
 output each element of the friends array
 
-0:01:03.440,0:01:06.960
-now we could use any variable name that
+now we could use any variable name 
+that we want here
+there's nothing that dictates that we need to call it friend WRITING
+however let's say we use the variable n WRITING
+our code still runs just exactly the same 
+however n is not a clear or descriptive variable name for these elements WRITING
+now let's consider how we can output a greeting that
+matches the expected output we were given
 
-0:01:05.680,0:01:09.040
-we want here
-
-0:01:06.960,0:01:10.000
-there's nothing that dictates that we
-
-0:01:09.040,0:01:13.840
-need to call it
-
-0:01:10.000,0:01:17.920
-friend however let's say we use
-
-0:01:13.840,0:01:21.280
-the variable n our code still runs
-
-0:01:17.920,0:01:23.600
-just exactly the same however n is not a
-
-0:01:21.280,0:01:27.840
-clear or descriptive variable name for
-
-0:01:23.600,0:01:27.840
-these elements
-
-0:01:29.600,0:01:32.960
-now let's consider how we can output a
-
-0:01:32.000,0:01:34.960
-greeting that
-
-0:01:32.960,0:01:37.360
-matches the expected output we were
-
-0:01:34.960,0:01:37.360
-given
-
-0:01:37.840,0:01:43.119
-we need to output a string
-
-0:01:41.090,0:01:46.399
-[Music]
-
-0:01:43.119,0:01:47.040
-that says hello and greets the friend by
-
-0:01:46.399,0:01:50.240
-name
-
-0:01:47.040,0:01:52.560
+we need to output a string that says hello WRITING
+and greets the friend by name
 followed by an exclamation point
 
-0:01:50.240,0:01:54.240
-there are two different ways that we can
+there are two different ways that we can achieve this output
+and the first way that we'll look at 
+is concatenation WRITING
 
-0:01:52.560,0:01:56.280
-achieve this output
-
-0:01:54.240,0:01:58.280
-and the first way that we'll look at is
-
-0:01:56.280,0:02:02.240
-concatenation
-
-0:01:58.280,0:02:05.119
-[Music]
-
-0:02:02.240,0:02:06.320
-so we can use concatenation to simply
-
-0:02:05.119,0:02:09.360
-insert the element
-
-0:02:06.320,0:02:11.520
+so we can use concatenation to simply insert the element WRITING
 into our string output
 
-0:02:09.360,0:02:14.800
-in running our code you can see that our
+in running our code you can see that our output matches the expected output
 
-0:02:11.520,0:02:16.959
-output matches the expected output
-
-0:02:14.800,0:02:20.319
-now let's consider another way that we
-
-0:02:16.959,0:02:23.920
-can achieve the expected output
-
-0:02:20.319,0:02:26.239
+now let's consider another way that we can achieve the expected output
 and that's through string interpolation
-
-0:02:23.920,0:02:28.239
-string interpolation has a special
-
-0:02:26.239,0:02:31.040
-syntax
-
-0:02:28.239,0:02:32.319
+string interpolation has a special syntax WRITING
 using the pound signed and curly braces
-
-0:02:31.040,0:02:37.760
-and we can
-
-0:02:32.319,0:02:49.200
-insert our variable name in here
-
-0:02:37.760,0:02:49.200
+and we can insert our variable name in here
 and we'll see the same output
-
