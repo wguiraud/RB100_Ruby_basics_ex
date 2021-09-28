@@ -5,9 +5,9 @@
 # Do not check for the positive/negative requirement until both integers are
 # entered, and start over if the requirement is not met. 
 # You may use the following method to validate input integers:
-def valid_number?(number_string)
-	number_string.to_i.to_s == number_string && number_string.to_i != 0
-end
+#def valid_number?(number_string)
+#	number_string.to_i.to_s == number_string && number_string.to_i != 0
+#end
 
 =begin
  PROBLEM
@@ -80,31 +80,31 @@ one_pos_one_neg_vv? helper method
 #	puts "Sorry. One integer must be positive, one must be negative."
 
 # second try is successful using nested loops 
-loop do
-
-  loop do	
-		puts ">> Please Enter a positive or negative integer:"
-		user_input1 = gets.chomp
-		puts ">> Please Enter a positive or negative integer:"
-		user_input2 = gets.chomp
-
-		break if valid_number?(user_input1) == true && valid_number?(user_input2) == true
-    puts " Invalid input. Only non-zero integers are allowed."
-	end
-	
-	user_input1 = nil
-	user_input2 = nil
-
-	if user_input1.to_i * user_input2.to_i < 0
-		sum = user_input1.to_i + user_input2.to_i 
-		puts "#{user_input1} / #{user_input2} = #{sum}"
-		break
-	else
-		puts "Sorry. One integer must be positive, one must be negative"
-  end
-
-end
-
+#loop do
+#
+#  loop do	
+#		puts ">> Please Enter a positive or negative integer:"
+#		user_input1 = gets.chomp
+#		puts ">> Please Enter a positive or negative integer:"
+#		user_input2 = gets.chomp
+#
+#		break if valid_number?(user_input1) == true && valid_number?(user_input2) == true
+#    puts " Invalid input. Only non-zero integers are allowed."
+#	end
+#	
+#	user_input1 = nil
+#	user_input2 = nil
+#
+#	if user_input1.to_i * user_input2.to_i < 0
+#		sum = user_input1.to_i + user_input2.to_i 
+#		puts "#{user_input1} / #{user_input2} = #{sum}"
+#		break
+#	else
+#		puts "Sorry. One integer must be positive, one must be negative"
+#  end
+#
+#end
+#
 # third try usding a method to obtain both input integers!
 
 #def obtain_input
@@ -121,6 +121,43 @@ end
 #
 
 
+fourth try
+
+def valid_number?(number_string)
+  number_string.to_i.to_s == number_string && number_string.to_i != 0
+end
+
+def both_input_int(first, second )
+  if valid_number?(first) == false
+    puts "Invalid input. Only non-zero integers are allowed."
+  elsif valid_number?(second) == false
+    puts "Invalid input. Only non-zero integers are allowed."
+  else
+    true
+  end
+end
+
+def one_pos_other_neg(first, second)
+  if (first.to_i * second.to_i) < 0
+    true
+  else
+    puts "Sorry. One integer must be positive, one must be negative."
+    puts "Please start over."
+  end
+end
+
+
+loop do
+  puts "Please enter a positive or negative integer:"
+  input_1 = gets.chomp
+  puts "Please enter a positive or negative integer:"
+  input_2 = gets.chomp
+
+
+  if both_input_int(input_1, input_2) && one_pos_other_neg(input_1, input_2)
+    return puts "#{input_1} + #{input_2} = #{input_1.to_i + input_2.to_i}"
+    end
+end
 
 
 
